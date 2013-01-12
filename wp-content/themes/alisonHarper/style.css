@@ -1,0 +1,21 @@
+/*
+Theme Name: Alison Harper
+Theme URI: 
+Description: A custom theme for Alison Harper and Co
+
+Author: Eleven Peppers Studios
+Author URI: http://elevenpeppers.com/
+Version: 0.1
+Tags: responsive
+
+License:
+License URI:
+
+This theme was built on Bootstrap responsive theme
+*/
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+     padding-top: 60px; 
+     padding-bottom: 40px; 
+}
