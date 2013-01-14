@@ -27,7 +27,7 @@
         <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <?php wp_list_pages(array('title_li' => '', 'exclude' => 12)); ?>
+            <?php wp_list_pages(array('title_li' => '', 'exclude' => 12, 'depth' => '1')); ?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
