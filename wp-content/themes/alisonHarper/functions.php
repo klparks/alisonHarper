@@ -26,5 +26,6 @@ function my_user_contactmethods($user_contactmethods){
   
   return $user_contactmethods;  
 }  
+add_filter('show_admin_bar', '__return_false'); 
 
 ?>
