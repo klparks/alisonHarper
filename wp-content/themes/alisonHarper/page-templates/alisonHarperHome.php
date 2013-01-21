@@ -21,5 +21,7 @@ Template Name: Home Page
 </head>
 <body>
 <div class="container">
-This is the home page
+
+Home
+
 <?php get_footer(); ?>
