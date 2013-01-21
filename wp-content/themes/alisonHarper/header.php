@@ -26,7 +26,7 @@
         </a>
         <a class="brand" href="<?php echo site_url(); ?>">
 			<hgroup>
-				<h1 id="logo"><img src="/wp-content/themes/alisonHarper/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
+				<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
 				<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
 			</hgroup>
 		</a>
