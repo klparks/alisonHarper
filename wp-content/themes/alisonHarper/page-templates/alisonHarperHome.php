@@ -46,6 +46,8 @@ Template Name: Home Page
 		<li><h3>North Carolina</h3></li>
 		<li><a href="#">Outter Banks</a></li>
 	</ul></nav>
+</div>
 
 
+<div class="container">
 <?php get_footer(); ?>
