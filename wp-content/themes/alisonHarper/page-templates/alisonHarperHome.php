@@ -20,15 +20,17 @@ Template Name: Home Page
 </head>
 <body>
 <div class="container landingContainer">
-	<hgroup>
-		<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
-		<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
-	</hgroup>
-	<nav class="topHomeNav"><ul>
-		<li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
-		<li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
-	</ul></nav>
-	<header><p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p></header>
+	<header>
+		<nav class="topHomeNav uppercase"><ul>
+			<li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
+			<li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
+		</ul></nav>
+		<hgroup>
+			<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
+			<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
+		</hgroup>
+		<p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
+	</header>
 	<nav class="locationsList"><ul>
 		<li><h3>Maryland</h3></li>
 		<li><a href="#">Annapolis</a></li>
