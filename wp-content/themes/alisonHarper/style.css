@@ -58,6 +58,8 @@ body a {
 	float:right;
 }
 
+/*end floats */
+
 /*footer styles */
 footer  {
 	background-color: #FFFFFF;
@@ -96,28 +98,34 @@ footer section li a:hover {
 footer section li a.noLinkStyle:hover {
 	color:#B6B6B6;
 }
-
 /*social media icons */
 footer .socialMedia li {
-	float:left:
+	float: left;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 
-footer .socialMedia li a{
+footer .socialMedia li a {
+	display:block;
+	background-repeat:no-repeat;
 	width:32px;
 	height:32px;
-	background-repeat:no-repeat;	
-}
-	
-footer .socialMedia li.facebook a {
-	background-image:url(/images/facebook.png);
+
 }
 
-footer .socialMedia li.youtube a {
-	background-image:url(/images/youtube.png);
+footer .socialMedia li .facebook {
+	background-image:url(/wp-content/themes/alisonHarper/images/facebook.png);
 }
-footer .socialMedia li.pinterest a {
-	background-image:url(/images/pinterest.png);
+
+footer .socialMedia li .youtube {
+	background-image:url(/wp-content/themes/alisonHarper/images/youTube.png)}
+	
+footer .socialMedia li .pinterest {
+	background-image:url(/wp-content/themes/alisonHarper/images/pinterest.png);
 }
-footer .socialMedia li.twitter a {
-	background-image:url(/images/twitter.png);
+footer .socialMedia li .twitter {
+	background-image:url(/wp-content/themes/alisonHarper/images/twitter.png);
 }
+
+/*end social media icons */
+/*end footer*/
