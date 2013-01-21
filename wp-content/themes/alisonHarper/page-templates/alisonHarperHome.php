@@ -17,11 +17,35 @@ Template Name: Home Page
   <![endif]-->
 
   <?php wp_enqueue_script("jquery"); ?>
-  <?php wp_head(); ?>
 </head>
 <body>
 <div class="container">
+	<hgroup>
+		<h1 id="logo"><img src="/wp-content/themes/alisonHarper/logo.png" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
+		<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
+	</hgroup>
+	<nav class="topHomeNav"><ul>
+		<li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
+		<li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
+	</ul></nav>
+	<header><p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p></header>
+	<nav class="locationsList"><ul>
+		<li><h2>Maryland</h2></li>
+		<li><a href="#">Annapolis</a></li>
+		<li><a href="#">Baltimore</a></li>
+		<li><a href="#">Central Maryland</a></li>
+		<li><h2>District of Columbia</h2></li>
+		<li><a href="#">Washington</a></li>
+		<li><h2>Virginia</h2></li>
+		<li><a href="#">Alexandria</a></li>
+		<li><a href="#">Arlington</a></li>
+		<li><a href="#">Charlottesville</a></li>
+		<li><a href="#">Leesburg</a></li>
+		<li><a href="#">Hampton Roads</a></li>
+		<li><a href="#">Richmond</a></li>
+		<li><h2>North Carolina</h2></li>
+		<li><a href="#">Outter Banks</a></li>
+	</ul></nav>
 
-Home
 
 <?php get_footer(); ?>
