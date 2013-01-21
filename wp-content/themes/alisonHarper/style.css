@@ -113,19 +113,36 @@ footer .socialMedia li a {
 
 }
 
+/*
 footer .socialMedia li .facebook {
+	background-image:url(/wp-content/themes/alisonHarper/images/facebook.png);
+}
+
+footer .socialMedia li .facebook:hover {
 	background-image:url(/wp-content/themes/alisonHarper/images/facebook.png);
 }
 
 footer .socialMedia li .youtube {
 	background-image:url(/wp-content/themes/alisonHarper/images/youTube.png)}
 	
+footer .socialMedia li .youtube:hover {
+	background-image:url(/wp-content/themes/alisonHarper/images/youTube.png)}
+	
 footer .socialMedia li .pinterest {
+	background-image:url(/wp-content/themes/alisonHarper/images/pinterest.png);
+}
+
+footer .socialMedia li .pinterest:hover {
 	background-image:url(/wp-content/themes/alisonHarper/images/pinterest.png);
 }
 footer .socialMedia li .twitter {
 	background-image:url(/wp-content/themes/alisonHarper/images/twitter.png);
 }
 
+footer .socialMedia li .twitter:hover {
+	background-image:url(/wp-content/themes/alisonHarper/images/twitter.png);
+}
+*/
 /*end social media icons */
+
 /*end footer*/
