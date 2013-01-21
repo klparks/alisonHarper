@@ -14,5 +14,17 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h3>', 
         'after_title' => '</h3>', 
     ));
+	
+add_filter('user_contactmethods', 'my_user_contactmethods');                 
+function my_user_contactmethods($user_contactmethods){  
+  
+  $user_contactmethods['phone'] = 'Phone Number';  
+  $user_contactmethods['facebook'] = 'Facebook Username';  
+  $user_contactmethods['twitter'] = 'Twitter Username';  
+  $user_contactmethods['pinterest'] = 'Pinterest Username';  
+  $user_contactmethods['youtube'] = 'YouTube Username';  
+  
+  return $user_contactmethods;  
+}  
 
 ?>
