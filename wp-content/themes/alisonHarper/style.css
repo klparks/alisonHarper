@@ -18,4 +18,82 @@ This theme was built on Bootstrap responsive theme
 body { 
      padding-top: 60px; 
      padding-bottom: 40px; 
+	 font-family:Arial, Helvetica, sans-serif;
+	 padding-left:25px;
+	 padding-right:25px;
 }
+
+body a {
+	text-decoration:none;
+}
+
+
+/* style for a tags that are not links */
+.noLinkStyle, .noLinkStyle:hover {
+	text-decoration:none;
+}
+
+
+/* case changing classes */
+.uppercase {
+	text-transform:uppercase;
+}
+
+.lowercase {
+	text-transform:lowercase;
+}
+	
+
+/* fonts */
+
+
+
+/* floats */
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+/*footer styles */
+footer  {
+	background-color: #FFFFFF;
+    border-top: 1px solid #CCC;
+    padding-top: 40px;
+}
+
+footer .right {
+	text-align:right;
+}
+
+footer ul {
+	margin:0;
+}
+
+footer section li {
+	color: #B6B6B6;
+    font-size: 0.75em;
+    line-height: 2.5em;
+    list-style-type: none;
+}
+
+footer section li:hover {
+	color:#b6b6b6;
+}
+
+
+footer section li a {
+	color: #b6b6b6;
+	line-height:1em;	
+}
+
+footer section li a:hover {
+	color:#848484;
+}
+footer section li a.noLinkStyle:hover {
+	color:#B6B6B6;
+}
+
