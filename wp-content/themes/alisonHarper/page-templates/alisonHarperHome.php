@@ -19,7 +19,7 @@ Template Name: Home Page
   <?php wp_enqueue_script("jquery"); ?>
 </head>
 <body>
-<div class="container">
+<div class="container landingContainer">
 	<hgroup>
 		<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
 		<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
