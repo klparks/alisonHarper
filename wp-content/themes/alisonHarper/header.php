@@ -24,7 +24,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+        <a class="brand" href="<?php echo site_url(); ?>">
+			<hgroup>
+				<h1 id="logo"><img src="/wp-content/themes/alisonHarper/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
+				<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
+			</hgroup>
+		</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <?php wp_list_pages(array('title_li' => '', 'exclude' => 12, 'depth' => '1')); ?>
