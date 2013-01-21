@@ -164,5 +164,6 @@ pip-log.txt
 
 
 #Alison Harper Files
-/.htaccess
-/wp-config.php
+.htaccess
+wp-config.php
+wp-content/plugins/**/*
