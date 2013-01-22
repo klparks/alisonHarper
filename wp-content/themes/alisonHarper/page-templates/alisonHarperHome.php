@@ -16,7 +16,7 @@ Template Name: Home Page
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <?php wp_enqueue_script("jquery"); ?>
+  <?php wp_enqueue_scripts(); ?>
 </head>
 <body>
 <div class="container landingContainer">
@@ -37,9 +37,11 @@ Template Name: Home Page
 			foreach($categories as $category) {
 				$list = '<li><h3>' . $category->name . '</h3></li>';
 				$currentLocationId = $category->cat_ID;
-				$locations = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
-				foreach( $locations as $location ) {
-					$list .= '<li><a href="' . get_page_link( $location->ID ) . '">' . $location->post_title . '</a></li>';
+				$locationPages = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
+				foreach( $locationPages as $page ) {
+					if(in_category('2', $page) && in_category( $currentLocationId, $page) ) {
+						$list .= '<li><a href="' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a></li>';
+					}
 				}
 				echo $list;
 			}

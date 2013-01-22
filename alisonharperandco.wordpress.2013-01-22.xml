@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.5" created="2013-01-22 00:03" -->
+<!-- generator="WordPress/3.5" created="2013-01-22 03:12" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Alison Harper and Co</title>
 	<link>http://alisonharper.dev</link>
 	<description>On location hair and makeup services</description>
-	<pubDate>Tue, 22 Jan 2013 00:03:03 +0000</pubDate>
+	<pubDate>Tue, 22 Jan 2013 03:12:34 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://alisonharper.dev</wp:base_site_url>
@@ -37,23 +37,23 @@
 
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>info@AlisonHarperAndCompany.com</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
+	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>uncategorized</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>2</wp:term_id><wp:category_nicename>location</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Location]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename>maryland</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[Maryland]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>north-carolina</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[North Carolina]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>17</wp:term_id><wp:category_nicename>outer-banks</wp:category_nicename><wp:category_parent>north-carolina</wp:category_parent><wp:cat_name><![CDATA[Outer Banks]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>uncategorized</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>district-of-columbia</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[District of Columbia]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>5</wp:term_id><wp:category_nicename>virginia</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[Virginia]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>11</wp:term_id><wp:category_nicename>alexandria</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Alexandria]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>north-carolina</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[North Carolina]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>7</wp:term_id><wp:category_nicename>annapolis</wp:category_nicename><wp:category_parent>maryland</wp:category_parent><wp:cat_name><![CDATA[Annapolis]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>12</wp:term_id><wp:category_nicename>arlington</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Arlington]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>8</wp:term_id><wp:category_nicename>baltimore</wp:category_nicename><wp:category_parent>maryland</wp:category_parent><wp:cat_name><![CDATA[Baltimore]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>9</wp:term_id><wp:category_nicename>central-maryland</wp:category_nicename><wp:category_parent>maryland</wp:category_parent><wp:cat_name><![CDATA[Central Maryland]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>13</wp:term_id><wp:category_nicename>charlottesville</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Charlottesville]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>district-of-columbia</wp:category_nicename><wp:category_parent>location</wp:category_parent><wp:cat_name><![CDATA[District of Columbia]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>15</wp:term_id><wp:category_nicename>hampton-roads</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Hampton Roads]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>14</wp:term_id><wp:category_nicename>leesburg</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Leesburg]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>16</wp:term_id><wp:category_nicename>richmond</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Richmond]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>10</wp:term_id><wp:category_nicename>washington</wp:category_nicename><wp:category_parent>district-of-columbia</wp:category_parent><wp:cat_name><![CDATA[Washington]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>11</wp:term_id><wp:category_nicename>alexandria</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Alexandria]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>12</wp:term_id><wp:category_nicename>arlington</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Arlington]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>13</wp:term_id><wp:category_nicename>charlottesville</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Charlottesville]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>14</wp:term_id><wp:category_nicename>leesburg</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Leesburg]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>15</wp:term_id><wp:category_nicename>hampton-roads</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Hampton Roads]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>16</wp:term_id><wp:category_nicename>richmond</wp:category_nicename><wp:category_parent>virginia</wp:category_parent><wp:cat_name><![CDATA[Richmond]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>17</wp:term_id><wp:category_nicename>outer-banks</wp:category_nicename><wp:category_parent>north-carolina</wp:category_parent><wp:cat_name><![CDATA[Outer Banks]]></wp:cat_name></wp:category>
 
 	<generator>http://wordpress.org/?v=3.5</generator>
 
@@ -143,7 +143,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>home</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
+		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -174,7 +174,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>about</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
+		<wp:menu_order>3</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -204,7 +204,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>contact-us</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
+		<wp:menu_order>5</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -234,7 +234,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>blog</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
+		<wp:menu_order>6</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -249,7 +249,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Baltimore</title>
-		<link>http://alisonharper.dev/home/baltimore/</link>
+		<link>http://alisonharper.dev/maryland/baltimore/</link>
 		<pubDate>Sun, 13 Jan 2013 17:16:15 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=53</guid>
@@ -263,12 +263,11 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:ping_status>closed</wp:ping_status>
 		<wp:post_name>baltimore</wp:post_name>
 		<wp:status>publish</wp:status>
-		<wp:post_parent>12</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
+		<wp:post_parent>100</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="baltimore"><![CDATA[Baltimore]]></category>
 		<category domain="category" nicename="location"><![CDATA[Location]]></category>
 		<category domain="category" nicename="maryland"><![CDATA[Maryland]]></category>
 		<wp:postmeta>
@@ -282,7 +281,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Services</title>
-		<link>http://alisonharper.dev/home/baltimore/services/</link>
+		<link>http://alisonharper.dev/maryland/baltimore/services/</link>
 		<pubDate>Sun, 13 Jan 2013 18:05:21 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=55</guid>
@@ -297,10 +296,11 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>services</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>53</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
+		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="baltimore"><![CDATA[Baltimore]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -325,7 +325,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>staff</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -338,6 +338,14 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1358816488]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -357,10 +365,133 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:post_name>careers</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Portfolio</title>
+		<link>http://alisonharper.dev/maryland/baltimore/portfolio/</link>
+		<pubDate>Tue, 22 Jan 2013 01:04:38 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/?page_id=93</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>93</wp:post_id>
+		<wp:post_date>2013-01-22 01:04:38</wp:post_date>
+		<wp:post_date_gmt>2013-01-22 01:04:38</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>portfolio</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>53</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="baltimore"><![CDATA[Baltimore]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Portfolio</title>
+		<link>http://alisonharper.dev/portfolio/</link>
+		<pubDate>Tue, 22 Jan 2013 01:04:59 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/?page_id=95</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>95</wp:post_id>
+		<wp:post_date>2013-01-22 01:04:59</wp:post_date>
+		<wp:post_date_gmt>2013-01-22 01:04:59</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>portfolio</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>About</title>
+		<link>http://alisonharper.dev/maryland/baltimore/about/</link>
+		<pubDate>Tue, 22 Jan 2013 01:06:30 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/?page_id=98</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>98</wp:post_id>
+		<wp:post_date>2013-01-22 01:06:30</wp:post_date>
+		<wp:post_date_gmt>2013-01-22 01:06:30</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>about</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>53</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="baltimore"><![CDATA[Baltimore]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Maryland</title>
+		<link>http://alisonharper.dev/maryland/</link>
+		<pubDate>Tue, 22 Jan 2013 01:07:43 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/?page_id=100</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date>2013-01-22 01:07:43</wp:post_date>
+		<wp:post_date_gmt>2013-01-22 01:07:43</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>maryland</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="location"><![CDATA[Location]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>

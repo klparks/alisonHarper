@@ -16,10 +16,9 @@
 		</section>
 		<section class="right">
 			<ul>
-				<li><select name="page-dropdown"
-						onchange='document.location.href=this.options[this.selectedIndex].value;'> 
-					 <option value="">
-					<?php echo esc_attr( __( 'Select location' ) ); ?></option> 
+				<li><select class="customSelect" name="page-dropdown"
+						onchange='if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;'> 
+					 <option value=""><?php echo esc_attr( __( 'Select location' ) ); ?></option> 
 					 <?php 
 					  $pages = get_pages(array('child_of' => 12, 'parent' => 12)); 
 					  foreach ( $pages as $page ) {
@@ -29,6 +28,23 @@
 						echo $option;
 					  }
 					 ?>
+					 <?php 
+						$categories = get_categories( array( 'child_of'=>2, 'parent'=>2, 'hide_empty'=>0 ) ); 
+						foreach($categories as $category) {
+							echo '<option value="" class="uppercase disabled" disabled="disabled">' . esc_attr( __( $category->name ) ) . '</option> ';
+							$currentLocationId = $category->cat_ID;
+							$locationPages = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
+							foreach( $locationPages as $page ) {
+								if(in_category('2', $page) && in_category( $currentLocationId, $page) ) {
+									$option = '<option class="uppercase indent" value="' . get_page_link( $page->ID ) . '">';
+									$option .= $page->post_title;
+									$option .= '</option>';
+									echo $option;
+								}
+							}
+							echo $list;
+						}
+					?>
 				</select></li>
 				<li>All images and materials Copyright &copy; 2013</li>
 				<li>Alison Harper and Company, LLC. All Rights Reserved</li>

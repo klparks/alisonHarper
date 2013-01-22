@@ -1,12 +1,18 @@
 <?php 
 
-function wpbootstrap_scripts_with_jquery() { 
+add_action( 'wp_enqueue_scripts', 'alisonHarper_enqueue_scripts' ); 
+function alisonHarper_enqueue_scripts() { 
     // Register the script like this for a theme: 
-    wp_register_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) ); 
-    // For either a plugin or a theme, you can then enqueue the script: 
-    wp_enqueue_script( 'bootstrap' ); 
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) ); 
+    wp_enqueue_script( 'customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array( 'jquery' ) );  
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery', 'jquery-ui-core') );  
 } 
-add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' ); 
+add_action( 'wp_enqueue_scripts', 'alisonHarper_enqueue_styles' );  
+function alisonHarper_enqueue_styles()  
+{  
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css');  
+	wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . 'bootstrap/css/bootstrap-responsive.css'); 
+}  
 if ( function_exists('register_sidebar') ) 
     register_sidebar(array( 
         'before_widget' => '', 
