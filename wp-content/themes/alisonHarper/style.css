@@ -19,8 +19,13 @@ body {
      padding-top: 60px; 
      padding-bottom: 40px; 
 	 font-family:Arial, Helvetica, sans-serif;
-	 padding-left:25px;
-	 padding-right:25px;
+	  padding:0;
+}
+
+
+.container #logo span {
+	left: -5000px;
+    position: absolute;
 }
 
 body a {
@@ -59,6 +64,49 @@ body a {
 }
 
 /*end floats */
+
+
+/*landing page styles */
+.landingContainer {
+	background-image:
+}
+
+.topHomeNav {
+	float:right;
+	background-color:white;
+}
+
+.topHomeNav li {
+	list-style-type:none;
+	display:inline;
+	padding-left:15px;
+}
+
+.topHomeNav li a {
+	color:#424242;
+	font-size:.75em;
+}
+
+.landingContainer hgroup {
+	position:relative;
+	top:-10px;
+}
+
+#logo {
+	padding:0;
+	margin:0;
+}
+
+
+#tagline {
+	color: #FFFFFF;
+    font-size: 0.75em;
+    font-weight: normal;
+    left: 14px;
+    position: relative;
+    top: -60px;
+	}
+
 
 /*footer styles */
 footer  {
@@ -101,8 +149,9 @@ footer section li a.noLinkStyle:hover {
 /*social media icons */
 footer .socialMedia li {
 	float: left;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     padding-right: 10px;
+    padding-top: 5px;
 }
 
 footer .socialMedia li a {

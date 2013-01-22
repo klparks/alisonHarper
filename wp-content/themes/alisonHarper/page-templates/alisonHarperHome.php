@@ -26,7 +26,7 @@ Template Name: Home Page
 			<li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
 		</ul></nav>
 		<hgroup>
-			<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/>Alison Harper and Company</h1>
+			<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
 			<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
 		</hgroup>
 		<p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
