@@ -10,8 +10,8 @@ function alisonHarper_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'alisonHarper_enqueue_styles' );  
 function alisonHarper_enqueue_styles()  
 {  
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css');  
-	wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . 'bootstrap/css/bootstrap-responsive.css'); 
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');  
+	wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css'); 
 }  
 if ( function_exists('register_sidebar') ) 
     register_sidebar(array( 

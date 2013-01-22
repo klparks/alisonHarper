@@ -1,4 +1,5 @@
-      <footer>
+</div>
+	  <footer>
 		<section class="left">
 			<ul>
 				<li><a class="uppercase" href="<?php echo get_page_link(81); ?>">Career Opportunities</a></li>

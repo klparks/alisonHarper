@@ -15,7 +15,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-
+<header>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -30,6 +30,11 @@
 				<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
 			</hgroup>
 		</a>
+		<div id="search">
+			<?php get_search_form(); ?>
+        </div>
+		</div>
+		</form>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <?php wp_list_pages(array('title_li' => '', 'exclude' => 12, 'depth' => '1')); ?>
@@ -38,5 +43,5 @@
       </div>
     </div>
   </div>
-
+</header>
   <div class="container">
