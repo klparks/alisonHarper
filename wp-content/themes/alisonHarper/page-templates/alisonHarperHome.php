@@ -32,21 +32,18 @@ Template Name: Home Page
 		<p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
 	</header>
 	<nav class="locationsList"><ul>
-		<li><h3>Maryland</h3></li>
-		<li><a href="#">Annapolis</a></li>
-		<li><a href="#">Baltimore</a></li>
-		<li><a href="#">Central Maryland</a></li>
-		<li><h3>District of Columbia</h3></li>
-		<li><a href="#">Washington</a></li>
-		<li><h3>Virginia</h3></li>
-		<li><a href="#">Alexandria</a></li>
-		<li><a href="#">Arlington</a></li>
-		<li><a href="#">Charlottesville</a></li>
-		<li><a href="#">Leesburg</a></li>
-		<li><a href="#">Hampton Roads</a></li>
-		<li><a href="#">Richmond</a></li>
-		<li><h3>North Carolina</h3></li>
-		<li><a href="#">Outter Banks</a></li>
+		<?php 
+			$categories = get_categories( array( 'child_of'=>2, 'parent'=>2, 'hide_empty'=>0 ) ); 
+			foreach($categories as $category) {
+				$list = '<li><h3>' . $category->name . '</h3></li>';
+				$currentLocationId = $category->cat_ID;
+				$locations = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
+				foreach( $locations as $location ) {
+					$list .= '<li><a href="' . get_page_link( $location->ID ) . '">' . $location->post_title . '</a></li>';
+				}
+				echo $list;
+			}
+		?>
 	</ul></nav>
 </div>
 
