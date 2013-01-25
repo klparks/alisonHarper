@@ -33,17 +33,12 @@ Template Name: Home Page
 	</header>
 	<nav class="locationsList"><ul>
 		<?php 
-			$categories = get_categories( array( 'child_of'=>2, 'parent'=>2, 'hide_empty'=>0 ) ); 
-			foreach($categories as $category) {
-				$list = '<li><h3>' . $category->name . '</h3></li>';
-				$currentLocationId = $category->cat_ID;
-				$locationPages = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
-				foreach( $locationPages as $page ) {
-					if(in_category('2', $page) && in_category( $currentLocationId, $page) ) {
-						$list .= '<li><a href="' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a></li>';
-					}
+			$regions = get_locations();
+			foreach($regions as $r){
+				echo '<li><h3>' . $r->name . '</h3></li>';
+				foreach($r->locations as $l){
+					echo '<li><a href="' . $l->url . '">' . $l->name . '</a></li>';
 				}
-				echo $list;
 			}
 		?>
 	</ul></nav>

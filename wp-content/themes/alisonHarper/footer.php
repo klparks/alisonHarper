@@ -21,29 +21,15 @@
 						onchange='if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;'> 
 					 <option value=""><?php echo esc_attr( __( 'Select location' ) ); ?></option> 
 					 <?php 
-					  $pages = get_pages(array('child_of' => 12, 'parent' => 12)); 
-					  foreach ( $pages as $page ) {
-						$option = '<option class="uppercase" value="' . get_page_link( $page->ID ) . '">';
-						$option .= $page->post_title;
-						$option .= '</option>';
-						echo $option;
-					  }
-					 ?>
-					 <?php 
-						$categories = get_categories( array( 'child_of'=>2, 'parent'=>2, 'hide_empty'=>0 ) ); 
-						foreach($categories as $category) {
-							echo '<option value="" class="uppercase disabled" disabled="disabled">' . esc_attr( __( $category->name ) ) . '</option> ';
-							$currentLocationId = $category->cat_ID;
-							$locationPages = get_posts('numberposts=-1&category=' . $currentLocationId . '&orderby=title&order=ASC&post_type=page');
-							foreach( $locationPages as $page ) {
-								if(in_category('2', $page) && in_category( $currentLocationId, $page) ) {
-									$option = '<option class="uppercase indent" value="' . get_page_link( $page->ID ) . '">';
-									$option .= $page->post_title;
+						$regions = get_locations();
+						foreach($regions as $r){
+							echo '<option value="" class="uppercase disabled" disabled="disabled">' . esc_attr( __( $r->name ) ) . '</option> ';
+							foreach($r->locations as $l){
+									$option = '<option class="uppercase indent" value="' . $l->url . '">';
+									$option .= $l->name;
 									$option .= '</option>';
 									echo $option;
-								}
 							}
-							echo $list;
 						}
 					?>
 				</select></li>

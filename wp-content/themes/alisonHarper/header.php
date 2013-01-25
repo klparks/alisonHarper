@@ -31,13 +31,29 @@
 			</hgroup>
 		</a>
 		<div id="search">
-			<?php get_search_form(); ?>
+			<?php get_search_form();?>
         </div>
+		<?php
+			if(get_current_location()){
+				echo "<div class='location'>";
+				echo "Welcome to " . get_current_location();
+				echo "<a href='" . site_url() .  "'>not right?</a>";
+			}
+		?>
 		</div>
 		</form>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <?php wp_list_pages(array('title_li' => '', 'exclude' => 12, 'depth' => '1')); ?>
+            <?php
+				//If we're on a location, list the child pages
+				if(get_current_location()){
+					list_location_pages();
+				} else {//Otherwise link to the global pages
+					$exclude = get_all_location_page_ids();
+					$exclude[] = 81;
+					wp_list_pages(array('title_li' => '', 'exclude'=>implode(',', $exclude) ,'depth' => '1'));
+				}
+			?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -45,3 +61,6 @@
   </div>
 </header>
   <div class="container">
+  <?php
+  
+  ?>
