@@ -167,3 +167,4 @@ pip-log.txt
 .htaccess
 wp-config.php
 wp-content/plugins/**/*
+/nbproject
