@@ -2,8 +2,8 @@
 <footer class="shaddow">
     <section class="left">
         <ul>
-            <li><?php echo getLocationCareerOpenAnchor(); ?>Career Opportunities</a></li>
-            <li><?php echo getLocationContactOpenAnchor(); ?>Contact Us</a></li>
+            <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
+            <li><?php echo getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID); ?>Contact Us</a></li>
             <li><ul class="socialMedia">
                     <li><a target="_blank" href="http://facebook.com/<?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?>" class="facebook" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"><img src="/wp-content/themes/alisonHarper/images/facebook.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"/></a></li>
                     <li><a target="_blank" href="https://twitter.com/intent/follow?screen_name=<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?>" class="twitter" title="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"><img src="/wp-content/themes/alisonHarper/images/twitter.png" alt="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"/></a></li>

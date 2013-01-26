@@ -9,6 +9,8 @@ define("BLOG_PAGE_ID", "19");
 define("CONTACT_PAGE_ID", "16");
 define("CAREERS_PAGE_ID", "81");
 define("ADMIN_USER_ID", "1");
+define("CONTACT_PAGE_SLUG", "contact-us");
+define("CAREERS_PAGE_SLUG", "careers");
 
 //Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
@@ -154,17 +156,21 @@ function getLocationHomeOpenAnchor(){
         echo '<a class="brand" href="' . site_url() . '">';
     }
 }
-function getLocationContactOpenAnchor(){
+function getLocationOpenAnchor($slug, $defaultId){
     if(getCurrentCity("cat_name")){
     //Get the contact page id
         $cityPage = getCityHomepage(getCurrentCity("cat_ID"));
         $query = new WP_Query();
-        $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID, 'pagename'=>'contact-us'));
-        //echo '<a class="brand" href="' . get_page_link() . '">';
+        $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
+        foreach ($contactPage as $page){
+            if($page->post_name == $slug){
+                echo '<a class="uppercase" href="' . get_page_link($page->ID) . '">';
+                break;
+            } else {
+                echo '<a class="uppercase" href="' . get_page_link($defaultId) . '">';
+            }
+        }
     } else {
-        echo '<a class="uppercase" href="' . get_page_link(CAREERS_PAGE_ID) . '">';
+        echo '<a class="uppercase" href="' . get_page_link($defaultId) . '">';
     }
-}
-function getLocationCareerOpenAnchor(){
-
 }
