@@ -1,5 +1,5 @@
 </div>
-<footer class="shaddow">
+<footer class="shadow">
     <section class="left">
         <ul>
             <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
