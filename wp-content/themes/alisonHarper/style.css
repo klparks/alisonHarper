@@ -40,9 +40,10 @@ body a {
 .shadow {
 	-moz-box-shadow: 0 10px 25px #EDEEEE;
 	-webkit-box-shadow: 0 10px 25px #EDEEEE;
-	 box-shadow: 0 10px 25px #EDEEEE;
+	box-shadow: 0 0 25px 25px #e6e5e6;
 	/* For IE 8 */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	filter:alpha(opacity=50);
 }
 
 /* style for a tags that are not links */
@@ -168,7 +169,7 @@ body a {
 }
 
 .locationsList ul {
-	padding-left:820px;
+	padding-left:75%;
 }
 
 .locationsList li {
@@ -194,6 +195,61 @@ body a {
 
 /* end landing page */
 
+
+/*custom select */
+.customSelect {
+    border: 1px solid #8F367B;
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px 10px;
+}
+
+.customSelectInner {
+	font-size: 1.4em;
+    font-weight: 100;
+    letter-spacing: 0.04em;
+    text-align: left;
+	background-image:url(/wp-content/themes/alisonHarper/images/carot.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	color: #8A8B8B;
+}
+
+
+li .customSelect option {
+	text-transform:none;
+	font-weight:100;
+	letter-spacing:.03em;
+	font-size:1.4em;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+li .customSelect option.indent {
+	color:#696969;
+	text-indent:.5em;
+	font-weight:200;
+}
+
+
+li .customSelect option.disabled {
+
+}
+
+li .customSelect option:hover, li .customSelect option:focus {
+	background-color:#8F367B;
+	color:#fff;
+}
+
+.customSelectChanged option:focus {
+	background-color:black;
+}
+
+
+.customSelect.customSelectOpen {
+	
+}
 
 /*footer styles */
 footer  {
