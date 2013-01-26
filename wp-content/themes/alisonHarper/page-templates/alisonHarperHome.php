@@ -18,7 +18,8 @@
 
     <?php wp_enqueue_scripts(); ?>
 </head>
-<body class="landingContainer">
+<body>
+<div class="landingContainer">
 <nav class="topHomeNav uppercase shadow"><ul>
                     <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
                     <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
@@ -51,3 +52,4 @@
 
   
         <?php get_footer(); ?>
+		</div>
