@@ -1,49 +1,49 @@
 <?php
 /*
-Template Name: Home Page
-*/
+  Template Name: Home Page
+ */
 ?>
 <head>
-  <meta charset="utf-8">
-  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title><?php wp_title('|', 1, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Le styles -->
-  <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+    <!-- Le styles -->
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  <?php wp_enqueue_scripts(); ?>
+    <?php wp_enqueue_scripts(); ?>
 </head>
 <body>
-<div class="container landingContainer">
-	<header>
-		<nav class="topHomeNav uppercase"><ul>
-			<li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
-			<li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
-		</ul></nav>
-		<hgroup>
-			<h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
-			<h2 id="tagline" class="lowercase"> <?php echo get_bloginfo ( 'description' ); ?></h2>
-		</hgroup>
-		<p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
-	</header>
-	<nav class="locationsList"><ul>
-		<?php 
-			$regions = get_locations();
-			foreach($regions as $r){
-				echo '<li><h3>' . $r->name . '</h3></li>';
-				foreach($r->locations as $l){
-					echo '<li><a href="' . $l->url . '">' . $l->name . '</a></li>';
-				}
-			}
-		?>
-	</ul></nav>
-</div>
+    <div class="container landingContainer">
+        <header>
+            <nav class="topHomeNav uppercase"><ul>
+                    <li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
+                    <li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
+                </ul></nav>
+            <hgroup>
+                <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
+                <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>
+            </hgroup>
+            <p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
+        </header>
+        <nav class="locationsList"><ul>
+                <?php
+                $regions = getLocations();
+                foreach ($regions as $r) {
+                    echo '<li><h3>' . $r->name . '</h3></li>';
+                    foreach ($r->cities as $city) {
+                        echo '<li><a href="' . $city->url . '">' . $city->name . '</a></li>';
+                    }
+                }
+                ?>
+            </ul></nav>
+    </div>
 
 
-<div class="container">
-<?php get_footer(); ?>
+    <div class="container">
+        <?php get_footer(); ?>
