@@ -116,38 +116,14 @@ function getCityHomePage($cityId) {
 }
 
 function listCityChildrenPages() {
-    global $wp_query;
-    $output = "";
-    $args = array('title_li' => '', 'depth' => '1');
-    $defaults = array(
-        'depth' => 0, 'show_date' => '',
-        'date_format' => get_option('date_format'),
-        'child_of' => 0, 'exclude' => '',
-        'title_li' => __('Pages'), 'echo' => 1,
-        'authors' => '', 'sort_column' => 'menu_order, post_title',
-        'link_before' => '', 'link_after' => '', 'walker' => '',
-    );
-
-    $r = wp_parse_args($args, $defaults);
-    extract($r, EXTR_SKIP);
-    $r['hierarchical'] = 0;
+    //Args for home
     $locationHomePage = getCityHomePage(getCurrentCity("cat_ID"));
-
-    //add home
-    $pages = get_pages(array("include" => $locationHomePage->ID));
-    if (is_page() || is_attachment() || $wp_query->is_posts_page)
-        $current_page = $wp_query->get_queried_object_id();
-    $output .= walk_page_tree($pages, $r['depth'], $current_page, $r);
-
-    //add children pages
-    $pages = get_pages(array('child_of' => $locationHomePage->ID));
-    $output .= walk_page_tree($pages, $r['depth'], $current_page, $r);
-    //add blog
-    $pages = get_pages(array("include" => BLOG_PAGE_ID));
-    $output .= walk_page_tree($pages, $r['depth'], $current_page, $r);
-    
-    $output .= '</ul></li>';
-    echo $output;
+    $homeArgs = array('title_li' =>'', 'depth' => '1', 'include'=>$locationHomePage->ID);
+    $cityArgs = array('title_li' =>'', 'depth' => '1', 'child_of'=>$locationHomePage->ID);
+    $blogArgs = array('title_li' =>'', 'depth' => '1', 'include'=>BLOG_PAGE_ID);
+    wp_list_pages($homeArgs);
+    wp_list_pages($cityArgs);
+    wp_list_pages($blogArgs);
 }
 function getLocationHomeOpenAnchor(){
     if(getCurrentCity("cat_name")){
