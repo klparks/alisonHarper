@@ -20,16 +20,30 @@ body {
 	  padding:0;
 }
 
+/* reset styles */
 
-.container #logo span {
-	left: -5000px;
-    position: absolute;
-}
 
 body a {
 	text-decoration:none;
 }
 
+/* end reset styles */
+
+
+/*this moves the logo text off screen, but usable by search engines*/
+.container #logo span {
+	left: -5000px;
+    position: absolute;
+}
+
+/*drop shadow */
+.shadow {
+	-moz-box-shadow: 0 10px 25px #EDEEEE;
+	-webkit-box-shadow: 0 10px 25px #EDEEEE;
+	 box-shadow: 0 10px 25px #EDEEEE;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+}
 
 /* style for a tags that are not links */
 .noLinkStyle, .noLinkStyle:hover {
@@ -66,12 +80,23 @@ body a {
 
 /*landing page styles */
 .landingContainer {
-	background-image:
+	background-color:#F1F8FA;
+	background-image:url(/wp-content/themes/alisonHarper/images/map.png);
+	background-repeat:no-repeat;
+}
+
+.landingContainer .container {
+	height:646px;
 }
 
 .topHomeNav {
-	float:right;
-	background-color:white;
+	background-color: white;
+    text-align: right;
+    width: 100%;
+}
+
+.topHomeNav ul {
+	padding-right:20px;
 }
 
 .topHomeNav li {
@@ -86,8 +111,11 @@ body a {
 }
 
 .landingContainer hgroup {
-	position:relative;
-	top:-10px;
+	height: 151px;
+    position: relative;
+    top: -33px;
+    width: 251px;
+	float:left;
 }
 
 #logo {
@@ -104,13 +132,77 @@ body a {
     position: relative;
     top: -60px;
 	}
+	
+
+/* headlines and subline */
+.landingContainer aside {
+	float: left;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.landingContainer p {
+	margin:0;
+}
+
+.landingContainer .headline {
+	color: #8f367b;
+    font-size: 2em;
+    font-weight: 100;
+	letter-spacing:.05em;
+}
+
+.landingContainer .subline {
+	color: #5E5E5E;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+/* end headline and subline */
+
+/*list of locations */
+	
+.locationsList {
+	clear:both;
+	position:relative;
+	top:-50px;
+}
+
+.locationsList ul {
+	padding-left:820px;
+}
+
+.locationsList li {
+	list-style-type:none;
+	line-height:.5em;
+}
+
+.locationsList h3 {
+	font-weight:200;
+	color:#8f367b;
+	text-indent:-1em;
+	font-size:1em;
+	margin: 35px 0 0;
+}
+
+.locationsList li a {
+	font-weight: 100;
+    letter-spacing: 0.04em;
+	color:#5E5E5E;
+	font-size:.8em;
+}
+
+
+/* end landing page */
 
 
 /*footer styles */
 footer  {
 	background-color: #FFFFFF;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #CCCCCC;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 40px;
+	height:100%;
 }
 
 footer .right {
@@ -144,6 +236,7 @@ footer section li a:hover {
 footer section li a.noLinkStyle:hover {
 	color:#B6B6B6;
 }
+
 /*social media icons */
 footer .socialMedia li {
 	float: left;
@@ -160,36 +253,5 @@ footer .socialMedia li a {
 
 }
 
-/*
-footer .socialMedia li .facebook {
-	background-image:url(/wp-content/themes/alisonHarper/images/facebook.png);
-}
-
-footer .socialMedia li .facebook:hover {
-	background-image:url(/wp-content/themes/alisonHarper/images/facebook.png);
-}
-
-footer .socialMedia li .youtube {
-	background-image:url(/wp-content/themes/alisonHarper/images/youTube.png)}
-	
-footer .socialMedia li .youtube:hover {
-	background-image:url(/wp-content/themes/alisonHarper/images/youTube.png)}
-	
-footer .socialMedia li .pinterest {
-	background-image:url(/wp-content/themes/alisonHarper/images/pinterest.png);
-}
-
-footer .socialMedia li .pinterest:hover {
-	background-image:url(/wp-content/themes/alisonHarper/images/pinterest.png);
-}
-footer .socialMedia li .twitter {
-	background-image:url(/wp-content/themes/alisonHarper/images/twitter.png);
-}
-
-footer .socialMedia li .twitter:hover {
-	background-image:url(/wp-content/themes/alisonHarper/images/twitter.png);
-}
-*/
-/*end social media icons */
 
 /*end footer*/

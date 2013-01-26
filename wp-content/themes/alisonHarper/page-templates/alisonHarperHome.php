@@ -18,20 +18,24 @@
 
     <?php wp_enqueue_scripts(); ?>
 </head>
-<body>
-    <div class="container landingContainer">
-        <header>
-            <nav class="topHomeNav uppercase"><ul>
+<body class="landingContainer">
+<nav class="topHomeNav uppercase shadow"><ul>
                     <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
                     <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
                 </ul></nav>
+    <div class="container">
+        <header>
+            
             <hgroup>
                 <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
                 <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>
             </hgroup>
-            <p><span class="lowercase headline">Hello Friend!</span><span class="lowercase subline">Please select your closest location.</span></p>
+            <aside>
+            	<p class="lowercase headline">Hello Friend!</p>
+            	<p class="lowercase subline">Please select your closest location.</p>
+            </aside>
         </header>
-        <nav class="locationsList"><ul>
+        <nav class="locationsList uppercase"><ul>
                 <?php
                 $regions = getLocations();
                 foreach ($regions as $r) {
@@ -45,5 +49,5 @@
     </div>
 
 
-    <div class="container">
+  
         <?php get_footer(); ?>
