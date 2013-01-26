@@ -4,13 +4,23 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
 //Constants to use throughout the application
-define("LOCATION_ROOT_ID", "2");
-define("BLOG_PAGE_ID", "19");
-define("CONTACT_PAGE_ID", "16");
-define("CAREERS_PAGE_ID", "81");
+//User Ids
 define("ADMIN_USER_ID", "1");
-define("CONTACT_PAGE_SLUG", "contact-us");
+//Category Ids
+define("HIRING_CAT_ID", "19");
+define("LOCATION_ROOT_ID", "2");
+define("NEW_CAT_ID", "18");
+//Page Ids
+define("BLOG_PAGE_ID", "19");
+define("CAREERS_PAGE_ID", "81");
+define("CONTACT_PAGE_ID", "16");
+define("PORTFOLIO_PAGE_ID", "81");
+define("TEAM_PAGE_ID", "81");
+//Page Slugs
 define("CAREERS_PAGE_SLUG", "careers");
+define("CONTACT_PAGE_SLUG", "contact-us");
+define("PORTFOLIO_PAGE_SLUG", "portfolio");
+define("TEAM_PAGE_SLUG", "careers");
 
 //Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
@@ -55,14 +65,14 @@ function customContactMethods($user_contactmethods) {
 add_filter('show_admin_bar', '__return_false');
 
 function getCurrentCity($property) {
-    $ignore_ids = array();
-    $ignore_ids[] = LOCATION_ROOT_ID;
+    $ignoreIds = array();
+    $ignoreIds[] = LOCATION_ROOT_ID;
     $regions = get_categories(array('child_of' => LOCATION_ROOT_ID, 'parent' =>LOCATION_ROOT_ID, 'hide_empty' => 0));
     foreach ($regions as $region) {
-        $ignore_ids[] = $region->cat_ID;
+        $ignoreIds[] = $region->cat_ID;
     }
     foreach ((get_the_category()) as $category) {
-        if (!in_array($category->cat_ID, $ignore_ids) && cat_is_ancestor_of(LOCATION_ROOT_ID, $category->cat_ID)) {
+        if (!in_array($category->cat_ID, $ignoreIds) && cat_is_ancestor_of(LOCATION_ROOT_ID, $category->cat_ID)) {
             if ($property) {
                 return $category->$property;
             } else {
@@ -105,7 +115,10 @@ function getLocations() {
     return $allLocations;
 }
 
-function getCityHomePage($cityId) {
+function getCityHomePage($cityId = "") {
+    if(!$cityId){
+        $cityId = getCurrentCity("cat_ID");
+    }
     $locationPages = get_posts('numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page');
 
     foreach ($locationPages as $page) {
@@ -117,7 +130,7 @@ function getCityHomePage($cityId) {
 
 function listCityChildrenPages() {
     //Args for home
-    $locationHomePage = getCityHomePage(getCurrentCity("cat_ID"));
+    $locationHomePage = getCityHomePage();
     $homeArgs = array('title_li' =>'', 'depth' => '1', 'include'=>$locationHomePage->ID);
     $cityArgs = array('title_li' =>'', 'depth' => '1', 'child_of'=>$locationHomePage->ID);
     $blogArgs = array('title_li' =>'', 'depth' => '1', 'include'=>BLOG_PAGE_ID);
@@ -127,7 +140,7 @@ function listCityChildrenPages() {
 }
 function getLocationHomeOpenAnchor(){
     if(getCurrentCity("cat_name")){
-        echo '<a class="brand" href="' . get_page_link(getCityHomepage(getCurrentCity("cat_ID"))->ID) . '">';
+        echo '<a class="brand" href="' . get_page_link(getCityHomepage()->ID) . '">';
     } else {
         echo '<a class="brand" href="' . site_url() . '">';
     }
@@ -135,7 +148,7 @@ function getLocationHomeOpenAnchor(){
 function getLocationOpenAnchor($slug, $defaultId){
     if(getCurrentCity("cat_name")){
     //Get the contact page id
-        $cityPage = getCityHomepage(getCurrentCity("cat_ID"));
+        $cityPage = getCityHomepage();
         $query = new WP_Query();
         $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
         foreach ($contactPage as $page){
@@ -148,5 +161,14 @@ function getLocationOpenAnchor($slug, $defaultId){
         }
     } else {
         echo '<a class="uppercase" href="' . get_page_link($defaultId) . '">';
+    }
+}
+function isLocationHiring(){
+    //if location has the category
+    $currentCityPage = getCityHomePage();
+    if(in_category(HIRING_CAT_ID, $currentCityPage->ID) || in_category(HIRING_CAT_ID, $currentCityPage->post_parent)){
+        return true;
+    } else {
+        return false;
     }
 }
