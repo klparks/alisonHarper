@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.5.1" created="2013-01-26 05:01" -->
+<!-- generator="WordPress/3.5.1" created="2013-01-26 17:48" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Alison Harper and Co</title>
 	<link>http://alisonharper.dev</link>
 	<description>On location hair and makeup services</description>
-	<pubDate>Sat, 26 Jan 2013 05:01:23 +0000</pubDate>
+	<pubDate>Sat, 26 Jan 2013 17:48:09 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://alisonharper.dev</wp:base_site_url>
@@ -81,6 +81,14 @@
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[143]]></wp:meta_value>
+		</wp:postmeta>
 		<wp:comment>
 			<wp:comment_id>1</wp:comment_id>
 			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
@@ -104,38 +112,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=12</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-<h1>Hello, world!</h1>
-This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-
-<a class="btn btn-primary btn-large">Learn more »</a>
-
-</div>
-<!-- Example row of columns -->
-<div class="row">
-<div class="span4">
-<h2>Heading</h2>
-Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-
-<a class="btn" href="#">View details »</a>
-
-</div>
-<div class="span4">
-<h2>Heading</h2>
-Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-
-<a class="btn" href="#">View details »</a>
-
-</div>
-<div class="span4">
-<h2>New header</h2>
-Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. This is new text
-
-<a class="btn" href="#">View details »</a>
-
-</div>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[The landing page has no editable content.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>12</wp:post_id>
 		<wp:post_date>2013-01-12 21:28:37</wp:post_date>
@@ -251,12 +228,15 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Baltimore</title>
-		<link>http://alisonharper.dev/maryland/baltimore/</link>
+		<link>http://alisonharper.dev/baltimore/</link>
 		<pubDate>Sun, 13 Jan 2013 17:16:15 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=53</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[<div class="h1Img"><img class="alignnone size-medium wp-image-144" alt="map" src="http://alisonharper.dev/wp-content/uploads/2013/01/map-300x170.png" width="300" height="170" /></div>
+<div class="&quot;h2Img"><img class="alignnone size-thumbnail wp-image-143" alt="logo" src="http://alisonharper.dev/wp-content/uploads/2013/01/logo-150x150.jpg" width="150" height="150" /></div>
+<h4>Welcome to Bawlmore, Hon!</h4>
+<div class="cityDescription">This is the baltimore-specific description.  I don't know what the content should be so I'm just filling up some space.  We will come back later and generate more interesting content.  Perhaps even add in some global content blocks explaining how Alison Harper and Co is a unique, on-site, talented hair company that you won't be dissappointed in choosing!</div>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>53</wp:post_id>
 		<wp:post_date>2013-01-13 17:16:15</wp:post_date>
@@ -265,12 +245,13 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:ping_status>closed</wp:ping_status>
 		<wp:post_name>baltimore</wp:post_name>
 		<wp:status>publish</wp:status>
-		<wp:post_parent>100</wp:post_parent>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="category" nicename="baltimore"><![CDATA[Baltimore]]></category>
+		<category domain="category" nicename="hiring"><![CDATA[Currently Hiring]]></category>
 		<category domain="category" nicename="location"><![CDATA[Location]]></category>
 		<category domain="category" nicename="maryland"><![CDATA[Maryland]]></category>
 		<wp:postmeta>
@@ -284,7 +265,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Services</title>
-		<link>http://alisonharper.dev/maryland/baltimore/services/</link>
+		<link>http://alisonharper.dev/baltimore/services/</link>
 		<pubDate>Sun, 13 Jan 2013 18:05:21 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=55</guid>
@@ -383,7 +364,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Portfolio</title>
-		<link>http://alisonharper.dev/maryland/baltimore/portfolio/</link>
+		<link>http://alisonharper.dev/baltimore/portfolio/</link>
 		<pubDate>Tue, 22 Jan 2013 01:04:38 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=93</guid>
@@ -444,7 +425,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>About</title>
-		<link>http://alisonharper.dev/maryland/baltimore/about/</link>
+		<link>http://alisonharper.dev/baltimore/about/</link>
 		<pubDate>Tue, 22 Jan 2013 01:06:30 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=98</guid>
@@ -506,7 +487,7 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 	</item>
 	<item>
 		<title>Contact Us</title>
-		<link>http://alisonharper.dev/maryland/baltimore/contact-us/</link>
+		<link>http://alisonharper.dev/baltimore/contact-us/</link>
 		<pubDate>Sat, 26 Jan 2013 01:49:27 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://alisonharper.dev/?page_id=124</guid>
@@ -537,6 +518,68 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 		<wp:postmeta>
 			<wp:meta_key>_dp_original</wp:meta_key>
 			<wp:meta_value><![CDATA[16]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>logo</title>
+		<link>http://alisonharper.dev/baltimore/logo/</link>
+		<pubDate>Sat, 26 Jan 2013 16:41:55 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/wp-content/uploads/2013/01/logo.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>143</wp:post_id>
+		<wp:post_date>2013-01-26 16:41:55</wp:post_date>
+		<wp:post_date_gmt>2013-01-26 16:41:55</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>logo</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>53</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://alisonharper.dev/wp-content/uploads/2013/01/logo.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2013/01/logo.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:251;s:6:"height";i:151;s:4:"file";s:16:"2013/01/logo.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"logo-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>map</title>
+		<link>http://alisonharper.dev/baltimore/map/</link>
+		<pubDate>Sat, 26 Jan 2013 16:42:13 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://alisonharper.dev/wp-content/uploads/2013/01/map.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>144</wp:post_id>
+		<wp:post_date>2013-01-26 16:42:13</wp:post_date>
+		<wp:post_date_gmt>2013-01-26 16:42:13</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>map</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>53</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://alisonharper.dev/wp-content/uploads/2013/01/map.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2013/01/map.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1195;s:6:"height";i:678;s:4:"file";s:15:"2013/01/map.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"map-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:15:"map-300x170.png";s:5:"width";i:300;s:6:"height";i:170;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:16:"map-1024x580.png";s:5:"width";i:1024;s:6:"height";i:580;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

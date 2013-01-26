@@ -22,6 +22,8 @@ define("CONTACT_PAGE_SLUG", "contact-us");
 define("PORTFOLIO_PAGE_SLUG", "portfolio");
 define("TEAM_PAGE_SLUG", "careers");
 
+ add_theme_support( 'post-thumbnails' );
+ 
 //Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
 function enqueueScripts() {
@@ -44,6 +46,15 @@ if (function_exists('register_sidebar')) {
         'after_widget' => '',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
+    ));
+    register_sidebar(array(
+        'name' => 'City Homepage Featured Blog Posts',
+        'id'=>"city-home-featured",
+        'description' => 'This is where featured blog posts are chosen',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
     ));
 }
 
@@ -171,4 +182,34 @@ function isLocationHiring(){
     } else {
         return false;
     }
+}
+function getRecentPosts($numToShow = 3)
+{
+    $args = array( "showposts" => $numToShow );                  
+    query_posts($args);
+
+    $content = "";
+
+    if( have_posts() ) : 
+
+        while( have_posts() ) :
+
+            the_post();
+            $link = get_permalink();
+            $title = get_the_title();
+            $id = get_the_ID();
+            $thumbnail = get_the_post_thumbnail($id, array(100,100) );
+            
+            $content .= "<div style='padding: 5px; border: 1px solid red'>";
+            $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
+            $content .= $thumbnail;
+            $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
+            $content .= "</div>";
+
+        endwhile;
+
+        wp_reset_query();
+
+    endif;
+    echo $content;   // For use as widget
 }
