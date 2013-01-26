@@ -22,8 +22,8 @@
     <div class="container landingContainer">
         <header>
             <nav class="topHomeNav uppercase"><ul>
-                    <li><a href="<?php echo get_page_link(19); ?>">Blog</a></li>
-                    <li><a href="<?php echo get_page_link(16); ?>">Contact</a></li>
+                    <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
+                    <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
                 </ul></nav>
             <hgroup>
                 <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>

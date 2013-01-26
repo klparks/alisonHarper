@@ -50,7 +50,7 @@
                             listCityChildrenPages();
                         } else {//Otherwise link to the global pages
                             $exclude = getAllLocationPageIds();
-                            $exclude[] = 81;
+                            $exclude[] = CAREERS_PAGE_ID;
                             wp_list_pages(array('title_li' => '', 'exclude' => implode(',', $exclude), 'depth' => '1'));
                         }
                         ?>
@@ -61,5 +61,3 @@
     </div>
 </header>
 <div class="container">
-    <?php
-    ?>

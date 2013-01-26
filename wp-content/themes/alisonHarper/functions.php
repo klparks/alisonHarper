@@ -3,8 +3,13 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
-add_action('wp_enqueue_scripts', 'enqueueScripts');
+define("LOCATION_ROOT_ID", "2");
+define("BLOG_PAGE_ID", "19");
+define("CONTACT_PAGE_ID", "16");
+define("CAREERS_PAGE_ID", "81");
+define("ADMIN_USER_ID", "1");
 
+add_action('wp_enqueue_scripts', 'enqueueScripts');
 function enqueueScripts() {
     // Register the script like this for a theme: 
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
@@ -46,15 +51,14 @@ function customContactMethods($user_contactmethods) {
 add_filter('show_admin_bar', '__return_false');
 
 function getCurrentCity($property) {
-    $locationRootId = 2;
     $ignore_ids = array();
-    $ignore_ids[] = $locationRootId;
-    $regions = get_categories(array('child_of' => $locationRootId, 'parent' => $locationRootId, 'hide_empty' => 0));
+    $ignore_ids[] = LOCATION_ROOT_ID;
+    $regions = get_categories(array('child_of' => LOCATION_ROOT_ID, 'parent' =>LOCATION_ROOT_ID, 'hide_empty' => 0));
     foreach ($regions as $region) {
         $ignore_ids[] = $region->cat_ID;
     }
     foreach ((get_the_category()) as $category) {
-        if (!in_array($category->cat_ID, $ignore_ids) && cat_is_ancestor_of($locationRootId, $category->cat_ID)) {
+        if (!in_array($category->cat_ID, $ignore_ids) && cat_is_ancestor_of(LOCATION_ROOT_ID, $category->cat_ID)) {
             if ($property) {
                 return $category->$property;
             } else {
@@ -67,7 +71,7 @@ function getCurrentCity($property) {
 
 function getAllLocationPageIds() {
     $ids = array();
-    $regionPages = get_posts('numberposts=-1&category=2&orderby=title&order=ASC&post_type=page');
+    $regionPages = get_posts('numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page');
     foreach ($regionPages as $page) {
         $ids[] = $page->ID;
     }
@@ -75,9 +79,8 @@ function getAllLocationPageIds() {
 }
 
 function getLocations() {
-    $locationRootId = 2;
     $allLocations = array();
-    $regions = get_categories(array('child_of' => $locationRootId, 'parent' => $locationRootId, 'hide_empty' => 0));
+    $regions = get_categories(array('child_of' => LOCATION_ROOT_ID, 'parent' => LOCATION_ROOT_ID, 'hide_empty' => 0));
     foreach ($regions as $region) {
         $cities = null;
         $cities = array();
@@ -85,7 +88,7 @@ function getLocations() {
         $locationPages = get_posts('numberposts=-1&category=' . $currentRegionId . '&orderby=title&order=ASC&post_type=page');
 
         foreach ($locationPages as $page) {
-            if (in_category('2', $page) && in_category($currentRegionId, $page)) {
+            if (in_category(LOCATION_ROOT_ID, $page) && in_category($currentRegionId, $page)) {
                 $city = null;
                 $city->url = get_page_link($page->ID);
                 $city->name = $page->post_title;
@@ -101,11 +104,10 @@ function getLocations() {
 }
 
 function getCityHomePage($cityId) {
-    $locationRootId = 2;
-    $locationPages = get_posts('numberposts=-1&category=' . $locationRootId . '&orderby=title&order=ASC&post_type=page');
+    $locationPages = get_posts('numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page');
 
     foreach ($locationPages as $page) {
-        if (in_category((string) $locationRootId, $page) && in_category($cityId, $page)) {
+        if (in_category((string) LOCATION_ROOT_ID, $page) && in_category($cityId, $page)) {
             return $page;
         }
     }
@@ -113,7 +115,6 @@ function getCityHomePage($cityId) {
 
 function listCityChildrenPages() {
     global $wp_query;
-    $blogId = 19;
     $output = "";
     $args = array('title_li' => '', 'depth' => '1');
     $defaults = array(
@@ -140,7 +141,7 @@ function listCityChildrenPages() {
     $pages = get_pages(array('child_of' => $locationHomePage->ID));
     $output .= walk_page_tree($pages, $r['depth'], $current_page, $r);
     //add blog
-    $pages = get_pages(array("include" => $blogId));
+    $pages = get_pages(array("include" => BLOG_PAGE_ID));
     $output .= walk_page_tree($pages, $r['depth'], $current_page, $r);
     
     $output .= '</ul></li>';
