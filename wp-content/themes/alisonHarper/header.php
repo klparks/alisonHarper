@@ -24,7 +24,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="<?php echo site_url(); ?>">
+                    <?php getLocationHomeOpenAnchor(); ?>
                         <hgroup>
                             <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
                             <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>

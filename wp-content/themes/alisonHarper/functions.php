@@ -3,12 +3,14 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
+//Constants to use throughout the application
 define("LOCATION_ROOT_ID", "2");
 define("BLOG_PAGE_ID", "19");
 define("CONTACT_PAGE_ID", "16");
 define("CAREERS_PAGE_ID", "81");
 define("ADMIN_USER_ID", "1");
 
+//Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
 function enqueueScripts() {
     // Register the script like this for a theme: 
@@ -17,8 +19,8 @@ function enqueueScripts() {
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core'));
 }
 
+//Load necessary styles on page load
 add_action('wp_enqueue_scripts', 'enqueueStyles');
-
 function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
@@ -82,14 +84,12 @@ function getLocations() {
     $allLocations = array();
     $regions = get_categories(array('child_of' => LOCATION_ROOT_ID, 'parent' => LOCATION_ROOT_ID, 'hide_empty' => 0));
     foreach ($regions as $region) {
-        $cities = null;
         $cities = array();
         $currentRegionId = $region->cat_ID;
-        $locationPages = get_posts('numberposts=-1&category=' . $currentRegionId . '&orderby=title&order=ASC&post_type=page');
+        $cityPages = get_posts('numberposts=-1&category=' . $currentRegionId . '&orderby=title&order=ASC&post_type=page');
 
-        foreach ($locationPages as $page) {
+        foreach ($cityPages as $page) {
             if (in_category(LOCATION_ROOT_ID, $page) && in_category($currentRegionId, $page)) {
-                $city = null;
                 $city->url = get_page_link($page->ID);
                 $city->name = $page->post_title;
                 $cities[] = $city;
@@ -146,4 +146,25 @@ function listCityChildrenPages() {
     
     $output .= '</ul></li>';
     echo $output;
+}
+function getLocationHomeOpenAnchor(){
+    if(getCurrentCity("cat_name")){
+        echo '<a class="brand" href="' . get_page_link(getCityHomepage(getCurrentCity("cat_ID"))->ID) . '">';
+    } else {
+        echo '<a class="brand" href="' . site_url() . '">';
+    }
+}
+function getLocationContactOpenAnchor(){
+    if(getCurrentCity("cat_name")){
+    //Get the contact page id
+        $cityPage = getCityHomepage(getCurrentCity("cat_ID"));
+        $query = new WP_Query();
+        $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID, 'pagename'=>'contact-us'));
+        //echo '<a class="brand" href="' . get_page_link() . '">';
+    } else {
+        echo '<a class="uppercase" href="' . get_page_link(CAREERS_PAGE_ID) . '">';
+    }
+}
+function getLocationCareerOpenAnchor(){
+
 }
