@@ -15,15 +15,24 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
 
     <?php wp_enqueue_scripts(); ?>
 </head>
-<body>
-<div class="landingContainer">
+<body class="landingBody gradient">
 <nav class="topHomeNav uppercase shadow"><ul>
                     <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
                     <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
                 </ul></nav>
+
+
     <div class="container">
         <header>
             
@@ -36,7 +45,11 @@
             	<p class="lowercase subline">Please select your closest location.</p>
             </aside>
         </header>
-        <nav class="locationsList uppercase"><ul>
+
+            
+    </div>
+
+<nav class="locationsList uppercase"><ul>
                 <?php
                 $regions = getLocations();
                 foreach ($regions as $r) {
@@ -47,9 +60,7 @@
                 }
                 ?>
             </ul></nav>
-    </div>
-
-
   
         <?php get_footer(); ?>
-		</div>
+		</body>
+       

@@ -14,8 +14,6 @@ License URI:
 This theme was built on Bootstrap responsive theme
 */
 body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
 	 font-family:Arial, Helvetica, sans-serif;
 	  padding:0;
 }
@@ -25,6 +23,11 @@ body {
 
 body a {
 	text-decoration:none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* end reset styles */
@@ -80,14 +83,40 @@ body a {
 
 
 /*landing page styles */
+
+.landingBody {
+	background: #fcfcfc; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWY4ZmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(left,  #fcfcfc 0%, #f1f8fa 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfcfc), color-stop(100%,#f1f8fa)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* IE10+ */
+
+background: linear-gradient(to right,  #fcfcfc 0%,#f1f8fa 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f8fa',GradientType=1 ); /* IE6-8 */
+
+
+}
 .landingContainer {
-	background-color:#F1F8FA;
-	background-image:url(/wp-content/themes/alisonHarper/images/map.png);
-	background-repeat:no-repeat;
+	
 }
 
-.landingContainer .container {
-	height:646px;
+.landingBody .container {
+    margin: 0 auto;
+	background-image: url("/wp-content/themes/alisonHarper/images/map.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+	height:630px;
 }
 
 .topHomeNav {
@@ -98,6 +127,7 @@ body a {
 
 .topHomeNav ul {
 	padding-right:20px;
+	margin:0;
 }
 
 .topHomeNav li {
@@ -111,7 +141,7 @@ body a {
 	font-size:.75em;
 }
 
-.landingContainer hgroup {
+.landingBody hgroup {
 	height: 151px;
     position: relative;
     top: -33px;
@@ -136,23 +166,23 @@ body a {
 	
 
 /* headlines and subline */
-.landingContainer aside {
+.landingBody aside {
 	float: left;
     margin-left: 10px;
-    margin-top: 80px;
+    margin-top: 71px;
 }
 .landingContainer p {
 	margin:0;
 }
 
-.landingContainer .headline {
+.landingBody .headline {
 	color: #8f367b;
     font-size: 2em;
     font-weight: 100;
 	letter-spacing:.05em;
 }
 
-.landingContainer .subline {
+.landingBody .subline {
 	color: #5E5E5E;
     font-weight: 100;
     letter-spacing: 0.1em;
@@ -160,16 +190,20 @@ body a {
 
 /* end headline and subline */
 
+.landingContainer .content {
+	clear:both}
+
+
 /*list of locations */
 	
 .locationsList {
-	clear:both;
-	position:relative;
-	top:-50px;
+	    left: 300px;
+    position: absolute;
+    top: 100px;
 }
 
 .locationsList ul {
-	padding-left:75%;
+	padding-left:80%;
 }
 
 .locationsList li {
@@ -259,6 +293,7 @@ footer  {
     padding-right: 20px;
     padding-top: 40px;
 	height:30%;
+	clear:both;
 }
 
 footer .right {
@@ -309,5 +344,77 @@ footer .socialMedia li a {
 
 }
 
-
 /*end footer*/
+
+@media screen and (max-width: 980px) {
+.landingBody {
+	padding:0;
+	width:100%;
+}
+.landingBody .container {
+    margin: 0 auto;
+	background-image: url("/wp-content/themes/alisonHarper/images/map980.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+	height:544px;
+}
+
+.locationsList {
+	clear:both;
+	position:relative;
+	top:0;
+	left:0}
+	
+.locationsList ul {
+    padding-left: 0;
+}
+
+.locationsList h3 {
+    text-indent: 0;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+.landingBody {
+	padding:0;
+	width:100%;
+}
+
+.locationsList {
+	display:none;
+}
+
+.landingBody .container {
+    margin: 0 auto;
+	background-image: url("/wp-content/themes/alisonHarper/images/map650.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+	height:361px;
+}
+
+footer {
+	overflow:visible;
+}
+
+.customSelect {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 330px;
+    z-index: 10;
+}
+
+
+footer {
+	height:60%;
+	width:100%;
+
+}
+
+footer .right {
+	clear:both;
+	text-align:left;
+	float:left;
+}
+	
+}
