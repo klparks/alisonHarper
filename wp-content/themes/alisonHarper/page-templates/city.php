@@ -1,12 +1,16 @@
+
 <?php
+
 /*
 Template Name: City
 */
+
 ?>
+<div class="container city">
 <?php get_header(); ?>
-<div class="row">
+
     <!-- SIDE NAVIGATION -->
-    <nav class="uppercase">
+    <aside class="uppercase left">
         <ul>
             <li><?php getLocationOpenAnchor(PORTFOLIO_PAGE_SLUG, PORTFOLIO_PAGE_ID)?>View our portfolio</a></li>
             <li><?php getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID)?>Drop us a note</a></li>
@@ -15,9 +19,10 @@ Template Name: City
                 <li><?php getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID)?>We're hiring!</a></li>
             <?php } ?>
         </ul>
-    </nav>
+    </aside>
     
     <!-- PAGE CONTENT -->
+    <div class="content left">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <?php the_content(); ?>
     <?php endwhile; else: ?> 
@@ -26,5 +31,7 @@ Template Name: City
         
     <!-- FEATURED POSTS -->
     <?php getRecentPosts(3);?>
-</div>
+    </div>
+    </div>
+
 <?php  get_footer(); ?>

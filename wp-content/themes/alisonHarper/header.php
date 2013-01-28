@@ -16,22 +16,19 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
     <header>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <?php getLocationHomeOpenAnchor(); ?>
+                    <div class="brand left"><?php getLocationHomeOpenAnchor(); ?>
                         <hgroup>
                             <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
                             <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>
                         </hgroup>
                     </a>
-                    <div id="search">
+                    </div>
+                    <div class="global left">
+                    
+                    
+                    <div class="search right">
                         <?php get_search_form(); ?>
                     </div>
                     <?php
@@ -41,10 +38,11 @@
                         echo "<a href='" . site_url() . "'>not right?</a>";
                     }
                     ?>
-                </div>
+              
                 </form>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
+                </div>
+                <nav class="nav-collapse collapse clear">
+                    <ul class="nav uppercase">
                         <?php
                         //If we're on a location, list the child pages
                         if (getCurrentCity("cat_name")) {
@@ -56,9 +54,9 @@
                         }
                         ?>
                     </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </div>
+                </nav><!--/.nav-collapse -->
+                </div>
+
+
 </header>
-<div class="container">
+</body>

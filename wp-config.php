@@ -27,6 +27,10 @@ define('DB_PASSWORD', 'root');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
+/* This makes the localhost un-editable in the UI */
+define('WP_HOME','http://alisonHarper.dev');
+define('WP_SITEURL','http://alisonHarper.dev');
+
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 

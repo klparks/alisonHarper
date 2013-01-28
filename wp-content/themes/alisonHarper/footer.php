@@ -1,23 +1,24 @@
 </div>
-<footer class="shadow">
+<footer class="shadow clearfix">
     <section class="left">
         <ul>
             <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
             <li><?php echo getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID); ?>Contact Us</a></li>
-            <li><ul class="socialMedia">
+            
+            <li><div class="uppercase" id="subscribeNewsletter">Subscribe to our newsletter:</div></li>
+            <li><a href="mailto:<?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?>"><?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?></a></li>
+            <li><a class="noLinkStyle" href="tel:<?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?>"><?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?></a></li>
+        </ul>
+       <ul class="socialMedia">
                     <li><a target="_blank" href="http://facebook.com/<?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?>" class="facebook" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"><img src="/wp-content/themes/alisonHarper/images/facebook.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"/></a></li>
                     <li><a target="_blank" href="https://twitter.com/intent/follow?screen_name=<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?>" class="twitter" title="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"><img src="/wp-content/themes/alisonHarper/images/twitter.png" alt="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"/></a></li>
                     <li><a target="_blank" href="http://pinterest.com/<?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?>" class="pinterest" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"><img src="/wp-content/themes/alisonHarper/images/pinterest.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"/></a></li>
                     <li><a target="_blank" href="http://www.youtube.com/subscription_center?add_user=<?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?>" class="youtube" title="Subscribe to <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"><img src="/wp-content/themes/alisonHarper/images/youTube.png" alt="Subscribe <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"/></a></li>
                 </ul>
-            <li><div class="uppercase" id="subscribeNewsletter">Subscribe to our newsletter:</div></li>
-            <li><a href="mailto:<?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?>"><?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?></a></li>
-            <li><a class="noLinkStyle" href="tel:<?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?>"><?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?></a></li>
-        </ul>
     </section>
     <section class="right">
         <ul>
-            <li><select class="customSelect" name="page-dropdown"
+            <li class="locationSelect"><select class="customSelect" name="page-dropdown"
                         onchange='if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;'> 
                     <option value=""><?php echo esc_attr(__('Select location')); ?></option> 
                     <?php
