@@ -111,16 +111,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 height:300px;
 
 }
-.landingContainer {
-	
-}
+
 
 .landingBody .container {
     margin: 0 auto;
 	background-image: url("/wp-content/themes/alisonHarper/images/map.png");
     background-position: left top;
     background-repeat: no-repeat;
-	height:630px;
+	min-height:630px;
 }
 
 .topHomeNav {
@@ -291,14 +289,27 @@ li .customSelect option:hover, li .customSelect option:focus {
 
 /*footer styles */
 footer  {
-	background-color: #FFFFFF;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+
     border-top: 1px solid #CCCCCC;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
-	height:30%;
+    padding: 40px 20px 20px;
 	clear:both;
-	height:100%;
 }
 
 footer .right {
@@ -356,6 +367,7 @@ footer .socialMedia li a {
 
 .container {
 	height:auto;
+	min-height:800px;
 }
 .city li {
 	font-size:.75em;
@@ -435,7 +447,7 @@ footer .socialMedia li a {
     background-position: left top;
     background-repeat: no-repeat;
 	height:544px;
-	width:100%;
+	min-height:544px;
 }
 
 .locationsList {
@@ -506,12 +518,13 @@ footer .socialMedia li a {
     background-image: url("/wp-content/themes/alisonHarper/images/map650.png");
     background-position: left top 130px;
     background-repeat: no-repeat;
-    height: 455px;
+    height: 485px;
     margin: 0 auto;
+    min-height: 485px;
 }
 
 
-.locationSelect {
+.landingBody .locationSelect {
     background-color: #FFFFFF;
     left: 200px;
     position: absolute;
