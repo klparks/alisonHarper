@@ -22,17 +22,18 @@ body {
 img {
 	width:auto;
 	height:auto;
+	max-width:inherit !important;
 }
 
 body a {
 	text-decoration:none;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
 
+h1, h2, h3, h4, h5, h6 {
+	margin:0 !important;
+
+}
 /* end reset styles */
 
 
@@ -414,7 +415,8 @@ footer .socialMedia li a {
 }
 
 .city header nav li.current_page_item {
-	border-top:4px solid black;
+    border-top: 4px solid black;
+    margin-top: -4px;
 }
 
 /* end header */
@@ -423,7 +425,6 @@ footer .socialMedia li a {
 
 .city aside {
     width: 255px;
-	padding-top:10px;
 }
 
 .city aside ul {
@@ -437,18 +438,44 @@ footer .socialMedia li a {
 
 /* begin content */
 .bodyContent .content {
-	width:75%;
+	width:78%;
 }
 
-.mainHome {
+.featuredImage {
 	overflow:hidden;
-	height:200px;
+}
+	
+.mainHome {
+    background-image: url("/wp-content/themes/alisonHarper/images/homepage/bride.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 400px;
+    margin: 0;
+    width: auto;
 }
 
-.city .content > * {
-	border:0 !important;
-	padding: 0!important;
+.column {
+	float:left;
+	width:50%;
+	padding-top:10px;
 }
+
+/* blog area of homepage */
+.excerpt {
+	float:left;
+	width:64%;
+}
+
+.blogSnipPic {
+	width:auto;
+	float:left;
+	padding-right:10px;
+}
+.bodyContent p{
+    font-size: 0.9em;
+    line-height: auto;
+}
+
 
 @media screen and (max-width: 980px) {
 .landingBody {

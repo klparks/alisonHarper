@@ -1,6 +1,6 @@
 <div class="container city">
 <?php get_header(); ?>
-
+<div class="bodyContent">
     <!-- SIDE NAVIGATION -->
     <aside class="uppercase left">
         <ul>
@@ -15,15 +15,20 @@
     
     <!-- PAGE CONTENT -->
     <div class="content left">
+    <div class="featuredImage"><figure class="mainHome"></figure></div>
+    <article class="column">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <?php the_content(); ?>
     <?php endwhile; else: ?> 
         <p>Sorry, this page does not exist.</p> 
     <?php endif; ?>
-        
-    <!-- FEATURED POSTS -->
+    </article>
+    <article class="column">
     <?php getRecentPosts(3);?>
-    </div>
-    </div>
+    </article>
 
+    </div>
+    </div>
+	</div>
+    
 <?php  get_footer(); ?>
