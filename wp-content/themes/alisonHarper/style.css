@@ -19,7 +19,10 @@ body {
 }
 
 /* reset styles */
-
+img {
+	width:auto;
+	height:auto;
+}
 
 body a {
 	text-decoration:none;
@@ -146,7 +149,7 @@ height:300px;
 .landingBody hgroup {
 	height: 151px;
     position: relative;
-    top: -33px;
+    top: -23px;
     width: 251px;
 	float:left;
 }
@@ -375,11 +378,11 @@ footer .socialMedia li a {
 
 /*header*/
 .brand {
-	width:20%;
+	width:22%;
 }
 
 .brand hgroup{
-	height:141px;
+	height:151px;
 }
 
 .location {
@@ -392,15 +395,15 @@ footer .socialMedia li a {
 }
 
 .global {
-    width: 80%;
+    width: 78%;
 }
 
-.global > * {
-	margin-left:15px;
+.global nav {
+	margin-top:136px;
 }
 
 .city header nav {
-	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .city header nav li {
@@ -409,7 +412,7 @@ footer .socialMedia li a {
 }
 
 .city header nav li.current_page_item {
-	border-bottom:4px solid black;
+	border-top:4px solid black;
 }
 
 /* end header */
@@ -418,7 +421,7 @@ footer .socialMedia li a {
 
 .city aside {
     clear: both;
-    width: 250px;
+    width: 255px;
 	padding-top:10px;
 }
 
@@ -434,6 +437,7 @@ footer .socialMedia li a {
 /* begin content */
 .city .content > * {
 	border:0 !important;
+	padding: 0!important;
 }
 
 @media screen and (max-width: 980px) {
