@@ -28,24 +28,35 @@ define("TEAM_PAGE_SLUG", "careers");
 add_action('wp_enqueue_scripts', 'enqueueScripts');
 function enqueueScripts() {
     // Register the script like this for a theme:
-    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
+    //comment the following for device development, uncomment it for local
+	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
     wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core')); 
-    //TODO: REMOVE ON PROD
-    wp_enqueue_script('bsLocalJs', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
-    wp_enqueue_script('csLocalJs', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
-    wp_enqueue_script('mainLocalJs', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core')); 
+    
+	//TODO: REMOVE ON PROD
+	//uncomment the following for device development, comment it for local
+	
+    /*wp_enqueue_script('bsLocalJs','http://kparks/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
+    wp_enqueue_script('csLocalJs','http://kparks/wp-content/themes/alisonHarper/js/plugins/customSelect/customSelect.js', array('jquery'));
+    wp_enqueue_script('mainLocalJs', 'http://kparks/wp-content/themes/alisonHarper/js/main.js', array('jquery', 'jquery-ui-core')); 
+*/
 }
 
 //Load necessary styles on page load
 add_action('wp_enqueue_scripts', 'enqueueStyles');
 function enqueueStyles() {
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+    //comment the following for device development, uncomment it for local
+	
+	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
-    //TODO: REMOVE ON PROD
-    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
-    wp_enqueue_style('baResponsiveLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');
-    wp_enqueue_style('ahLocal', 'http://josie-pc/wp-content/themes/alisonHarper/style.css');
+    
+	//TODO: REMOVE ON PROD
+    //uncomment the following for device development, comment it for local
+	
+	/*wp_enqueue_style('bsLocal', 'http://kparks/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
+    wp_enqueue_style('baResponsiveLocal', 'http://kparks/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');
+    wp_enqueue_style('ahLocal', 'http://kparks/wp-content/themes/alisonHarper/style.css');
+*/
 }
 
 if (function_exists('register_sidebar')) {

@@ -372,6 +372,8 @@ footer .socialMedia li a {
 	height:auto;
 	min-height:800px;
 }
+
+
 .city li {
 	font-size:.75em;
 }
@@ -420,7 +422,6 @@ footer .socialMedia li a {
 /* begin sidebar */
 
 .city aside {
-    clear: both;
     width: 255px;
 	padding-top:10px;
 }
@@ -435,6 +436,15 @@ footer .socialMedia li a {
 }
 
 /* begin content */
+.bodyContent .content {
+	width:75%;
+}
+
+.mainHome {
+	overflow:hidden;
+	height:200px;
+}
+
 .city .content > * {
 	border:0 !important;
 	padding: 0!important;

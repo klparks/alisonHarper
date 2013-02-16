@@ -9,6 +9,7 @@ Template Name: City
 <div class="container city">
 <?php get_header(); ?>
 
+<div class="bodyContent clear">
     <!-- SIDE NAVIGATION -->
     <aside class="uppercase left">
         <ul>
@@ -33,5 +34,5 @@ Template Name: City
     <?php getRecentPosts(3);?>
     </div>
     </div>
-
+</div>
 <?php  get_footer(); ?>
