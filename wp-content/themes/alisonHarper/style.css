@@ -460,6 +460,13 @@ footer .socialMedia li a {
 	padding-top:10px;
 }
 
+.intro {
+	text-transform:uppercase;
+	font-size:1.3em;
+	font-weight:100px;
+    color: #8E367B;
+
+}
 /* blog area of homepage */
 .excerpt {
 	float:left;
@@ -476,6 +483,11 @@ footer .socialMedia li a {
     line-height: auto;
 }
 
+.miniBlog h3 a {
+    color: #8E367B;
+    font-weight: 100;
+    letter-spacing: 0.03em;
+}
 
 @media screen and (max-width: 980px) {
 .landingBody {
