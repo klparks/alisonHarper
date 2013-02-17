@@ -209,7 +209,7 @@ function isLocationHiring(){
 }
 function getRecentPosts($numToShow = 3)
 {
-    $args = array( "showposts" => $numToShow );                  
+    $args = array( "showposts" => $numToShow, "post__in"=>get_option('sticky_posts') );                  
     query_posts($args);
 
     $content = "";

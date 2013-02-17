@@ -1,3 +1,4 @@
+<!-- Blog homepage template -->
 <?php get_header(); ?>
 <div class="row">
     <h1>News</h1>

@@ -21,8 +21,10 @@
         <p>Sorry, this page does not exist.</p> 
     <?php endif; ?>
         
-    <!-- FEATURED POSTS -->
-    <?php getRecentPosts(3);?>
+    <!-- FEATURED POSTS (on city homepages only) -->
+    <?php if(getCityHomepage()->ID == $post->ID){ ?>
+        <?php getRecentPosts(3);?>
+    <?php }?>
     </div>
     </div>
 
