@@ -460,11 +460,14 @@ footer .socialMedia li a {
 	padding-top:10px;
 }
 
+.column.leftSide > * {
+	padding-right:2em;
+}
+
 .intro {
-	text-transform:uppercase;
 	font-size:1.3em;
-	font-weight:100px;
     color: #8E367B;
+	padding-top:5px;
 
 }
 /* blog area of homepage */
