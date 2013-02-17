@@ -222,11 +222,11 @@ function getRecentPosts($numToShow = 3)
             $link = get_permalink();
             $title = get_the_title();
             $id = get_the_ID();
-            $thumbnail = get_the_post_thumbnail($id, array(100,100) );
+            $thumbnail = get_the_post_thumbnail($id, array(120,120) );
             
-            $content .= "<div style='padding: 5px; border: 1px solid red'>";
+            $content .= "<div class='clear'>";
             $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
-            $content .= $thumbnail;
+            $content .= "<p class='blogSnipPic'>" . $thumbnail . "</p>";
             $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
             $content .= "</div>";
 
