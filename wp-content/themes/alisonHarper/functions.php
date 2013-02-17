@@ -224,7 +224,7 @@ function getRecentPosts($numToShow = 3)
             $id = get_the_ID();
             $thumbnail = get_the_post_thumbnail($id, array(120,120) );
             
-            $content .= "<div class='clear'>";
+            $content .= "<div class='clear miniBlog'>";
             $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
             $content .= "<p class='blogSnipPic'>" . $thumbnail . "</p>";
             $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
