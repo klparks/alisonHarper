@@ -4,7 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,500,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+    
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

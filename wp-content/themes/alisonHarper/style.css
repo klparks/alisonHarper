@@ -14,16 +14,12 @@ License URI:
 This theme was built on Bootstrap responsive theme
 */
 body { 
-	 font-family:Arial, Helvetica, sans-serif;
 	  padding:0;
+	  font-family: 'Raleway', sans-serif;
 }
 
 /* reset styles */
-img {
-	width:auto;
-	height:auto;
-	max-width:inherit !important;
-}
+
 
 body a {
 	text-decoration:none;
@@ -31,10 +27,32 @@ body a {
 
 
 h1, h2, h3, h4, h5, h6 {
-	margin:0 !important;
+	margin:0;
 
 }
 /* end reset styles */
+
+
+/* headers */
+.city h2 {
+    border-bottom: 1px solid;
+    color: #8E367B;
+    font-family: Raleway;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.city h3 {
+    color: #8E367B;
+    font-family: Raleway;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 0.5em;
+}
 
 
 /*this moves the logo text off screen, but usable by search engines*/
@@ -89,6 +107,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /*end floats */
 
+/*global formatting */
+.bold {
+	font-weight:500;
+}
+.bodyContent p.sideNote {
+    color: #999999;
+    font-size: 0.7em;
+    font-style: italic;
+    line-height: 1.2em;
+    margin: 0;
+    position: relative;
+    top: -11px;
+}
 
 /*landing page styles */
 
@@ -441,6 +472,26 @@ footer .socialMedia li a {
 	width:78%;
 }
 
+.bodyContent .intro {
+    color: #4B4B4B;
+    font-family: Droid Serif;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4em;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.featuredText .intro {
+    color: #818080;
+    font-family: Droid Serif;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.4em;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
 .featuredImage {
 	overflow:hidden;
 }
@@ -456,24 +507,19 @@ footer .socialMedia li a {
 
 .column {
 	float:left;
-	width:50%;
+	width:48%;
 	padding-top:10px;
 }
 
-.column.leftSide > * {
+article.leftSide {
 	padding-right:2em;
 }
 
-.intro {
-	font-size:1.3em;
-    color: #8E367B;
-	padding-top:5px;
 
-}
 /* blog area of homepage */
 .excerpt {
 	float:left;
-	width:64%;
+	width:70%;
 }
 
 .blogSnipPic {
@@ -485,11 +531,44 @@ footer .socialMedia li a {
     font-size: 0.9em;
     line-height: auto;
 }
+.miniBlog {
+	padding-bottom:10px;
+}
 
 .miniBlog h3 a {
-    color: #8E367B;
+    color: #818080;
+    font-family: Droid Serif;
+    font-size: 0.7em;
     font-weight: 100;
-    letter-spacing: 0.03em;
+}
+
+/* services */
+
+.services ul {
+	clear:both;
+	margin-left:0;
+}
+.services li {
+	list-style-type:none;
+	display:inline;
+}
+.services .right {
+	padding-left:15px;
+}
+
+#weddingServices .services {
+	width:25%;
+}
+#hoursContainer {
+	padding-left:45px;
+}
+
+#salonServicesContainer article, #weddingServices article {
+	padding-bottom:25px;
+}
+#salonHours {
+	background-color:#f3f2f2;
+	padding:10px;
 }
 
 @media screen and (max-width: 980px) {

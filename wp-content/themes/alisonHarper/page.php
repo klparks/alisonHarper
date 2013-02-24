@@ -1,3 +1,4 @@
+
 <div class="container city">
 <?php get_header(); ?>
 <div class="bodyContent">
@@ -16,17 +17,21 @@
     <!-- PAGE CONTENT -->
     <div class="content left">
     <div class="featuredImage"><figure class="mainHome"></figure></div>
-    <article class="column leftSide">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+    <section class="featuredText"><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <?php the_content(); ?>
     <?php endwhile; else: ?> 
         <p>Sorry, this page does not exist.</p> 
-    <?php endif; ?>
+    <?php endif; ?></section>
+    <article class="column leftSide">
+    <h2>Featured Artist</h2>
+    <?php echo gcb(22);?>
     </article>
-    <article class="column RightSide">
-    <?php getRecentPosts(3);?>
-    </article>
-
+    <?php if(getCityHomepage()->ID == $post->ID){ ?>
+    	<article class="column RightSide">
+        <h2>From the Blog</h2>
+    	<?php getRecentPosts(3);?>
+    	</article>
+<?php }?>
     </div>
     </div>
 	</div>
