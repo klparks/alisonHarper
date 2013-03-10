@@ -3,14 +3,7 @@
 <div class="bodyContent">
     <!-- SIDE NAVIGATION -->
     <aside class="uppercase left">
-        <ul>
-            <li><?php getLocationOpenAnchor(PORTFOLIO_PAGE_SLUG, PORTFOLIO_PAGE_ID)?>View our portfolio</a></li>
-            <li><?php getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID)?>Drop us a note</a></li>
-            <li><?php getLocationOpenAnchor(TEAM_PAGE_SLUG, TEAM_PAGE_ID)?>Meet the team</a></li>
-            <?php if(isLocationHiring()){ ?>
-                <li><?php getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID)?>We're hiring!</a></li>
-            <?php } ?>
-        </ul>
+        <?php listLocationNav() ?>
     </aside>
     
     <!-- PAGE CONTENT -->
@@ -23,9 +16,11 @@
         <p>Sorry, this page does not exist.</p> 
     <?php endif; ?>
     </article>
-    <article class="column">
-    <?php getRecentPosts(3);?>
-    </article>
+    <?php if(getCityHomepage()->ID == $post->ID){ ?>
+        <article class="column">
+        <?php getRecentPosts(3);?>
+        </article>
+    <?php } ?>
     </div>
     </div>
 	</div>

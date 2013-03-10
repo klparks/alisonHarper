@@ -10,7 +10,7 @@ define("ADMIN_USER_ID", "1");
 define("HIRING_CAT_ID", "19");
 define("LOCATION_ROOT_ID", "2");
 define("NEW_CAT_ID", "18");
-//Page Ids
+//Non-Location Page Ids
 define("BLOG_PAGE_ID", "19");
 define("CAREERS_PAGE_ID", "81");
 define("CONTACT_PAGE_ID", "16");
@@ -20,7 +20,7 @@ define("TEAM_PAGE_ID", "81");
 define("CAREERS_PAGE_SLUG", "careers");
 define("CONTACT_PAGE_SLUG", "contact-us");
 define("PORTFOLIO_PAGE_SLUG", "portfolio");
-define("TEAM_PAGE_SLUG", "careers");
+define("TEAM_PAGE_SLUG", "team");
 
  add_theme_support( 'post-thumbnails' );
  
@@ -154,6 +154,7 @@ function getCityHomePage($cityId = "") {
     if(!$cityId){
         $cityId = getCurrentCity("cat_ID");
     }
+    
     $locationPages = get_posts('numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page');
 
     foreach ($locationPages as $page) {
@@ -166,8 +167,11 @@ function getCityHomePage($cityId = "") {
 function listCityChildrenPages() {
     //Args for home
     $locationHomePage = getCityHomePage();
+    if(getLocationPage(CAREERS_PAGE_SLUG)){
+        $excludes = getLocationPage(CAREERS_PAGE_SLUG)->ID;
+    }
     $homeArgs = array('title_li' =>'', 'depth' => '1', 'include'=>$locationHomePage->ID);
-    $cityArgs = array('title_li' =>'', 'depth' => '1', 'child_of'=>$locationHomePage->ID);
+    $cityArgs = array('title_li' =>'', 'depth' => '1', 'child_of'=>$locationHomePage->ID, 'exclude'=>$excludes);
     $blogArgs = array('title_li' =>'', 'depth' => '1', 'include'=>BLOG_PAGE_ID);
     wp_list_pages($homeArgs);
     wp_list_pages($cityArgs);
@@ -178,6 +182,19 @@ function getLocationHomeOpenAnchor(){
         echo '<a class="brand" href="' . get_page_link(getCityHomepage()->ID) . '">';
     } else {
         echo '<a class="brand" href="' . site_url() . '">';
+    }
+}
+function getLocationPage($slug){
+    if(getCurrentCity("cat_name")){
+    //Get the contact page id
+        $cityPage = getCityHomepage();
+        $query = new WP_Query();
+        $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
+        foreach ($contactPage as $page){
+            if($page->post_name == $slug){
+                return $page;
+            }
+        }
     }
 }
 function getLocationOpenAnchor($slug, $defaultId){
@@ -236,4 +253,38 @@ function getRecentPosts($numToShow = 3)
 
     endif;
     echo $content;   // For use as widget
+}
+function listLocationNav(){
+    $currentPage = get_page(get_the_ID());
+    $rootPage = $currentPage;
+    //Args for home
+    echo '<ul>';
+    if($rootPage->ID == getCityHomePage()->ID){
+        if(getLocationPage(PORTFOLIO_PAGE_SLUG)){
+           echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(PORTFOLIO_PAGE_SLUG)->ID) . '">View our portfolio</a></li>';
+        }
+        if(getLocationPage(CONTACT_PAGE_SLUG)){
+           echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(CONTACT_PAGE_SLUG)->ID) . '">Drop us a note</a></li>';
+        }
+        if(getLocationPage(TEAM_PAGE_SLUG)){
+           echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(TEAM_PAGE_SLUG)->ID) . '">Meet the team</a></li>';
+        }
+        if(isLocationHiring() && getLocationPage(CAREERS_PAGE_SLUG)){
+            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(CAREERS_PAGE_SLUG)->ID) . '">We\'re Hiring</a></li>';
+        }
+    } else {
+        //make sure we're at the top level page
+        while(!in_category(LOCATION_ROOT_ID, $rootPage->post_parent)){
+            $rootPage = get_page($rootPage->post_parent);
+        }
+        if($currentPage->post_name == CONTACT_PAGE_SLUG){ //contact page is special too
+            //list contact info
+            echo '<li><a href="mailto:' . get_userdata(ADMIN_USER_ID)->user_email . '">' . get_userdata(ADMIN_USER_ID)->user_email . '</a></li>';
+            echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta(ADMIN_USER_ID, 'phone', true) . '">' . get_user_meta(ADMIN_USER_ID, 'phone', true) . '</a></li>';
+        } else {
+            $childArgs = array('title_li' =>'', 'depth' => '1', 'child_of'=>$rootPage->ID);
+            wp_list_pages($childArgs);
+        }
+    }
+    echo '</ul>';
 }
