@@ -26,6 +26,12 @@ define("TEAM_PAGE_SLUG", "team");
  
 //Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
+add_action( 'genesis_meta', 'wpb_add_google_fonts', 5);	 
+function wpb_add_google_fonts() {
+        echo '<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,300,600,700,800" rel="stylesheet" type="text/css">';
+                echo '<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic" rel="stylesheet" type="text/css">';
+
+}
 function enqueueScripts() {
     // Register the script like this for a theme:
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
@@ -50,6 +56,7 @@ add_action('wp_enqueue_scripts', 'enqueueStyles');
 function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
+	wp_enqueue_style('ahLocal', get_template_directory_uri() . '/style.css');
     //TODO: REMOVE ON PROD
 //    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
 //    wp_enqueue_style('baResponsiveLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');
@@ -241,7 +248,7 @@ function getRecentPosts($numToShow = 3)
             $id = get_the_ID();
             $thumbnail = get_the_post_thumbnail($id, array(120,120) );
             
-            $content .= "<div class='clear miniBlog'>";
+            $content .= "<div class='clear miniBlog clearfix'>";
             $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
             $content .= "<p class='blogSnipPic'>" . $thumbnail . "</p>";
             $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
