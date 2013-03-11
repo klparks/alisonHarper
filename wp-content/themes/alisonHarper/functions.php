@@ -174,6 +174,7 @@ function getCityHomePage($cityId = "") {
 function listCityChildrenPages() {
     //Args for home
     $locationHomePage = getCityHomePage();
+    $excludes = '';
     if(getLocationPage(CAREERS_PAGE_SLUG)){
         $excludes = getLocationPage(CAREERS_PAGE_SLUG)->ID;
     }
