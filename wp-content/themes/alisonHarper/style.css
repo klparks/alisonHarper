@@ -142,29 +142,30 @@ img {
 
 /*landing page styles */
 
-.landingBody {
+body {
 	background: #fcfcfc; /* Old browsers */
 
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWY4ZmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 
-background: -moz-linear-gradient(left,  #fcfcfc 0%, #f1f8fa 100%); /* FF3.6+ */
+background: -moz-linear-gradient(left,  #fcfcfc 30%, #F3F8FA 100%); /* FF3.6+ */
 
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfcfc), color-stop(100%,#f1f8fa)); /* Chrome,Safari4+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(30%,#fcfcfc), color-stop(100%,#F3F8FA)); /* Chrome,Safari4+ */
 
-background: -webkit-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* Chrome10+,Safari5.1+ */
+background: -webkit-linear-gradient(left,  #fcfcfc 30%,#F3F8FA 100%); /* Chrome10+,Safari5.1+ */
 
-background: -o-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* Opera 11.10+ */
+background: -o-linear-gradient(left,  #fcfcfc 30%,#F3F8FA 100%); /* Opera 11.10+ */
 
-background: -ms-linear-gradient(left,  #fcfcfc 0%,#f1f8fa 100%); /* IE10+ */
+background: -ms-linear-gradient(left,  #fcfcfc 30%,#F3F8FA 100%); /* IE10+ */
 
-background: linear-gradient(to right,  #fcfcfc 0%,#f1f8fa 100%); /* W3C */
+background: linear-gradient(to right,  #fcfcfc 30%,#F3F8FA 100%); /* W3C */
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f8fa',GradientType=1 ); /* IE6-8 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#F3F8FA',GradientType=1 ); /* IE6-8 */
 height:300px;
 
 }
+
 
 
 .landingBody .container {
@@ -231,8 +232,6 @@ height:300px;
 
 .landingBody .subline {
     color: #5E5E5E;
-    font-weight: 100;
-    letter-spacing: 0.07em;
 }
 
 /* end headline and subline */
@@ -406,6 +405,11 @@ footer section li a.noLinkStyle:hover {
 }
 
 /*header*/
+.city #logo {
+	position:relative;
+	top:-1px;
+}
+
 .brand {
 	width:22%;
 }
@@ -492,6 +496,7 @@ footer section li a.noLinkStyle:hover {
 /* begin content */
 .bodyContent .content {
 	width:78%;
+	margin-top:10px;
 }
 
 .bodyContent .intro {
@@ -505,20 +510,46 @@ footer section li a.noLinkStyle:hover {
 }
 
 .featuredText .intro {
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 5px 5px;
     color: #6D6D6D;
     font-family: Raleway;
     font-size: 1em;
     font-style: normal;
     line-height: 1.4em;
-    margin-top: 3px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     padding-top: 15px;
     text-align: center;
+}
+
+.intro .emphasize {
+	font-size: 1.5em;
+	color:#8E367B;
 }
 .featuredImage {
 	overflow:hidden;
 }
+
+/*featured link on city homepage */
+.featuredLinks {
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.featuredLinks div {
+    background-color: #FFFFFF;
+    border: 2px solid #CEDADF;
+    border-radius: 5px 5px 5px 5px;
+    color: #8E367B;
+    padding: 10px;
+    text-align: center;
+    width: 30.3%;
+}
+
+.featuredLinks .center {
+	margin-left:5px;
+	margin-right:5px;
+}
+/*end featured links*/
 	
 .mainHome {
     background-image: url("/wp-content/themes/alisonHarper/images/homepage/bride.jpg");

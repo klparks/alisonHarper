@@ -16,16 +16,22 @@
         <p>Sorry, this page does not exist.</p> 
     <?php endif; ?>
     </section>
-    <article class="column leftSide">
+    
+    <section class="featuredLinks">
+    	<div class="left">Make me pretty!</div>
+        <div class="center left">Read our Reviews</div>
+        <div class="left">Check out our Services</div>
+    </section>
+    
+    <article class="column leftSide clear">
        
     <?php if(getCityHomepage()->ID == $post->ID){ ?>
         <!-- This stuff only shows on the homepage -->
-        <h2>Featured Artist</h2>
         <?php echo gcb(22);?>
         </article>
     
     	<article class="column RightSide">
-        <h2>From the Blog</h2>
+        <h2>From the Blog </h2>
     	<?php getRecentPosts(3);?>
     	</article>
 <?php }?>
