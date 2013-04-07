@@ -1,12 +1,27 @@
+<div class="container city">
 <?php get_header(); ?>
 
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
+<div class="bodyContent clear">
+    <!-- SIDE NAVIGATION -->
+    <aside class="uppercase left">
+        <ul>
+            <li><?php getLocationOpenAnchor(PORTFOLIO_PAGE_SLUG, PORTFOLIO_PAGE_ID)?>View our portfolio</a></li>
+            <li><?php getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID)?>Drop us a note</a></li>
+            <li><?php getLocationOpenAnchor(TEAM_PAGE_SLUG, TEAM_PAGE_ID)?>Meet the team</a></li>
+            <?php if(isLocationHiring()){ ?>
+                <li><?php getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID)?>We're hiring!</a></li>
+            <?php } ?>
+        </ul>
+    </aside>
+
+
+    <div class="content left">
+		
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">Search Results for: <span><?php echo get_search_query(); ?></span></h1>
+			<header>
+				<h2 >Search Results for: <span><?php echo get_search_query(); ?></span></h2>
 			</header>
 
 			<?php /* Start the Loop */ ?>
@@ -17,17 +32,20 @@
 		<?php else : ?>
 
 			<article id="post-0" class="post no-results not-found">
-				<header class="entry-header">
-					<h1 class="entry-title">Nothing Found</h1>
+				<header>
+					<h2>Nothing Found</h2>
 				</header>
 				<div class="entry-content">
 					<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
 					<?php get_search_form(); ?>
-				</div>
+				
 			</article>
 
 		<?php endif; ?>
 
 		</div>
-	</section>
+	</div>
+ </div>
+ </div>
+    
 <?php get_footer(); ?>
