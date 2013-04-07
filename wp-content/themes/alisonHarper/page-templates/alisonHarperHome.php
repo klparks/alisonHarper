@@ -42,7 +42,7 @@
                 <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>
             </hgroup>
             <aside>
-            	<p class="lowercase headline">Hello Friend!</p>
+            	<p class="lowercase headline ">Hello Friend!</p>
             	<p class="lowercase subline">Please select your closest location.</p>
             </aside>
         </header>

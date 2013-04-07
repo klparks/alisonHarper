@@ -57,6 +57,7 @@ function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
 	wp_enqueue_style('ahLocal', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
     //TODO: REMOVE ON PROD
 //    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
 //    wp_enqueue_style('baResponsiveLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');

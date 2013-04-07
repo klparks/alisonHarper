@@ -13,9 +13,25 @@ License URI:
 
 This theme was built on Bootstrap responsive theme
 */
+/* fonts */
+
+.HessGothicRoundNF { 
+	font-family: HessGothicRoundNF;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing:0.05em;
+}
+.HessGothicRoundNF-Thin { 
+	font-family: HessGothicRoundNF-Thin;
+	font-weight: normal;
+	font-style: normal;
+    letter-spacing:0.05em;
+}
+
 body { 
 	  padding:0;
-	  font-family: 'Raleway', sans-serif;
+	  font-family: Raleway;
+
 }
 
 /* reset styles */
@@ -29,6 +45,10 @@ body a {
 h1, h2, h3, h4, h5, h6 {
 	margin:0;
 
+}
+
+img {
+	max-width:auto;
 }
 /* end reset styles */
 
@@ -58,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*this moves the logo text off screen, but usable by search engines*/
-.container #logo span {
+.container #logo span, .container #tagline {
 	left: -5000px;
     position: absolute;
 }
@@ -88,9 +108,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform:lowercase;
 }
 	
-
-/* fonts */
-
 
 
 /* floats */
@@ -192,39 +209,30 @@ height:300px;
 	padding:0;
 	margin:0;
 }
-
-
-#tagline {
-	color: #FFFFFF;
-    font-size: 0.75em;
-    font-weight: normal;
-    left: 14px;
-    position: relative;
-    top: -60px;
-	}
 	
 
 /* headlines and subline */
 .landingBody aside {
 	float: left;
     margin-left: 10px;
-    margin-top: 71px;
+    margin-top: 50px;
 }
 .landingContainer p {
 	margin:0;
 }
 
 .landingBody .headline {
-	color: #8f367b;
+    color: #8F367B;
     font-size: 2em;
     font-weight: 100;
-	letter-spacing:.05em;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
 }
 
 .landingBody .subline {
-	color: #5E5E5E;
+    color: #5E5E5E;
     font-weight: 100;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.07em;
 }
 
 /* end headline and subline */
@@ -381,21 +389,6 @@ footer section li a.noLinkStyle:hover {
 	color:#B6B6B6;
 }
 
-/*social media icons */
-footer .socialMedia li {
-	float: left;
-    padding-bottom: 15px;
-    padding-right: 10px;
-    padding-top: 5px;
-}
-
-footer .socialMedia li a {
-	display:block;
-	background-repeat:no-repeat;
-	width:32px;
-	height:32px;
-
-}
 
 /*end footer*/
 
@@ -418,16 +411,32 @@ footer .socialMedia li a {
 }
 
 .brand hgroup{
-	height:151px;
+	height:100px;
 }
 
 .location {
-	float:right;
-	text-align:right;
+    float: right;
+    font-size: 0.7em;
+    margin-right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.location a {
+	color:#aaa;
+	padding-left:5px;
 }
 
 .location a {
 	clear:both;
+}
+
+.search form {
+	margin:0;
+}
+
+.socialMedia li {
+	display:inline;
 }
 
 .global {
@@ -435,7 +444,7 @@ footer .socialMedia li a {
 }
 
 .global nav {
-	margin-top:136px;
+	margin-top:76px;
 }
 
 .city header nav {
@@ -445,6 +454,11 @@ footer .socialMedia li a {
 .city header nav li {
     float: left;
     margin-right: 60px;
+}
+
+.city header nav li a {
+	color:black;
+	font-family:Raleway;
 }
 
 .city header nav li.current_page_item {
@@ -463,10 +477,16 @@ footer .socialMedia li a {
 .city aside ul {
 	margin:0;
 	padding:0;
+	margin-top:10px;
 }
 
 .city aside li {
 	list-style-type:none;
+}
+
+.city aside li a{
+	color:black;
+	font-family:Raleway;
 }
 
 /* begin content */
@@ -485,13 +505,15 @@ footer .socialMedia li a {
 }
 
 .featuredText .intro {
-    color: #818080;
-    font-family: Droid Serif;
-    font-size: 1.4em;
-    font-style: italic;
+    border-radius: 0 0 8px 8px;
+    color: #6D6D6D;
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
     line-height: 1.4em;
-    margin-top: 10px;
-    padding-top: 5px;
+    margin-top: 3px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     text-align: center;
 }
 .featuredImage {
@@ -535,6 +557,10 @@ article.leftSide {
 }
 .miniBlog {
 	padding-bottom:10px;
+}
+
+.miniBlog h3 a {
+	font-style:italic;
 }
 
 

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
+    
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,500,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
@@ -29,22 +30,31 @@
                         </hgroup>
                     </a>
                     </div>
+                   
                     <div class="global left">
-                    
-                    
-                    <div class="search right">
+ 					<div class="search right">
                         <?php get_search_form(); ?>
                     </div>
+            
                     <?php
                     if (getCurrentCity("cat_name")) {
                         echo "<div class='location'>";
                         echo "Welcome to " . getCurrentCity("cat_name");
-                        echo "<a href='" . site_url() . "'>not right?</a>";
+                        echo "<a href='" . site_url() . "'>[not right?]</a>";
                     }
                     ?>
-              
+
                 </form>
                 </div>
+                              
+                
+               <div class="clear"> <ul class="socialMedia right">
+                    <li><a target="_blank" href="http://facebook.com/<?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?>" class="facebook" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"><img src="/wp-content/themes/alisonHarper/images/facebook.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'facebook', true); ?> on Facebook"/></a></li>
+                    <li><a target="_blank" href="https://twitter.com/intent/follow?screen_name=<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?>" class="twitter" title="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"><img src="/wp-content/themes/alisonHarper/images/twitter.png" alt="Follow @<?php echo get_user_meta(ADMIN_USER_ID, 'twitter', true); ?> on Twitter"/></a></li>
+                    <li><a target="_blank" href="http://pinterest.com/<?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?>" class="pinterest" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"><img src="/wp-content/themes/alisonHarper/images/pinterest.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"/></a></li>
+                    <li><a target="_blank" href="http://www.youtube.com/subscription_center?add_user=<?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?>" class="youtube" title="Subscribe to <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"><img src="/wp-content/themes/alisonHarper/images/youTube.png" alt="Subscribe <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"/></a></li>
+                </li></ul></div>
+                
                 <nav class="nav-collapse collapse clear">
                     <ul class="nav uppercase">
                         <?php
