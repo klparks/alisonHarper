@@ -235,7 +235,7 @@ function getLocationOpenAnchor($slug, $defaultId){
 function isLocationHiring(){
     //if location has the category
     $currentCityPage = getCityHomePage();
-    if(in_category(HIRING_CAT_ID, $currentCityPage->ID) || in_category(HIRING_CAT_ID, $currentCityPage->post_parent)){
+    if($currentCityPage && (in_category(HIRING_CAT_ID, $currentCityPage->ID) || in_category(HIRING_CAT_ID, $currentCityPage->post_parent))){
         return true;
     } else {
         return false;
