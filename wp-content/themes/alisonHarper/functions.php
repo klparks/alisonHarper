@@ -91,7 +91,7 @@ if (function_exists('register_sidebar')) {
 }
 
 //This adds more user contact methods to the admin page
-add_filter('user_contactmethods', 'coustomContactMethods');
+add_filter('user_contactmethods', 'customContactMethods');
 
 function customContactMethods($user_contactmethods) {
 
@@ -145,6 +145,7 @@ function getLocations() {
 
         foreach ($cityPages as $page) {
             if (in_category(LOCATION_ROOT_ID, $page) && in_category($currentRegionId, $page)) {
+                $city = null;
                 $city->url = get_page_link($page->ID);
                 $city->name = $page->post_title;
                 $cities[] = $city;
