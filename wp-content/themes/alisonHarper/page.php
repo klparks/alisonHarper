@@ -10,7 +10,8 @@
     <!-- PAGE CONTENT -->
     <div class="content left">
     <div class="featuredImage"><figure class="mainHome"></figure></div>
-    <section class="featuredText"><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+    <section class="featuredText">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <?php the_content(); ?>
     <?php endwhile; else: ?> 
         <p>Sorry, this page does not exist.</p> 

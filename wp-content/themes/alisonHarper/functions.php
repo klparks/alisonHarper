@@ -12,10 +12,10 @@ define("LOCATION_ROOT_ID", "2");
 define("NEW_CAT_ID", "18");
 //Non-Location Page Ids
 define("BLOG_PAGE_ID", "19");
-define("CAREERS_PAGE_ID", "81");
+define("CAREERS_PAGE_ID", "245");
 define("CONTACT_PAGE_ID", "16");
-define("PORTFOLIO_PAGE_ID", "81");
-define("TEAM_PAGE_ID", "81");
+define("PORTFOLIO_PAGE_ID", "95");
+define("TEAM_PAGE_ID", "252");
 //Page Slugs
 define("CAREERS_PAGE_SLUG", "careers");
 define("CONTACT_PAGE_SLUG", "contact-us");
@@ -176,6 +176,9 @@ function getCityHomePage($cityId = "") {
 function listCityChildrenPages() {
     //Args for home
     $locationHomePage = getCityHomePage();
+    if(!$locationHomePage){
+        return;
+    }
     $excludes = '';
     if(getLocationPage(CAREERS_PAGE_SLUG)){
         $excludes = getLocationPage(CAREERS_PAGE_SLUG)->ID;
@@ -198,6 +201,9 @@ function getLocationPage($slug){
     if(getCurrentCity("cat_name")){
     //Get the contact page id
         $cityPage = getCityHomepage();
+        if(!$cityPage){
+            return null;
+        }
         $query = new WP_Query();
         $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
         foreach ($contactPage as $page){
@@ -215,6 +221,7 @@ function getLocationOpenAnchor($slug, $defaultId){
         $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
         foreach ($contactPage as $page){
             if($page->post_name == $slug){
+                
                 echo '<a class="uppercase" href="' . get_page_link($page->ID) . '">';
                 break;
             } else {
