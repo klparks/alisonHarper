@@ -11,7 +11,7 @@
     <div class="content left">
     <?php if ( has_post_thumbnail() ) {?>
         <div class="featuredImage"><figure class="mainHome">
-	<?php the_post_thumbnail();?>
+	<?php the_post_thumbnail('full');?>
         </figure></div>
     <?php }?>
     <section class="featuredText">
