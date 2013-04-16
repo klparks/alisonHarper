@@ -36,7 +36,7 @@ function enqueueScripts() {
     // Register the script like this for a theme:
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
     wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
-    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core')); 
+    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'customselect')); 
     //TODO: REMOVE ON PROD
 //    wp_enqueue_script('bsLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
 //    wp_enqueue_script('csLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/js/plugins/customSelect/customSelect.js', array('jquery'));
@@ -56,8 +56,9 @@ add_action('wp_enqueue_scripts', 'enqueueStyles');
 function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
-	wp_enqueue_style('ahLocal', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
+    wp_enqueue_style('datepicker', 'http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css');
+    wp_enqueue_style('ahLocal', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
     //TODO: REMOVE ON PROD
 //    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
 //    wp_enqueue_style('baResponsiveLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');
