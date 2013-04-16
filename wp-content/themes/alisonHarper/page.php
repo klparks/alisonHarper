@@ -9,7 +9,11 @@
     
     <!-- PAGE CONTENT -->
     <div class="content left">
-    <div class="featuredImage"><figure class="mainHome"></figure></div>
+    <?php if ( has_post_thumbnail() ) {?>
+        <div class="featuredImage"><figure class="mainHome">
+	<?php the_post_thumbnail();?>
+        </figure></div>
+    <?php }?>
     <section class="featuredText">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <?php the_content(); ?>

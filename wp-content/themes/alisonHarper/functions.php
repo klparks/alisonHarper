@@ -72,7 +72,7 @@ function enqueueStyles() {
     wp_enqueue_style('ahLocal', 'http://kparks/wp-content/themes/alisonHarper/style.css');
 */
 }
-
+add_image_size( 'featured', 400, 900 );
 if (function_exists('register_sidebar')) {
     register_sidebar(array(
         'before_widget' => '',
