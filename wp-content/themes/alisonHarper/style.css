@@ -638,6 +638,14 @@ article.leftSide {
 	padding:10px;
 }
 
+/*blog */
+.blog h3 a {
+    color: #8E367B;
+    font-family: raleway;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
 @media screen and (max-width: 980px) {
 .landingBody {
 	padding:0;
@@ -665,16 +673,9 @@ article.leftSide {
 .locationsList h3 {
     text-indent: 0;
 }
-/*blog */
-.blog h3 a {
-    color: #8E367B;
-    font-family: raleway;
-    font-size: 1.5em;
-    font-style: normal;
-}
 
 
-}
+
 
 @media screen and (max-width: 650px) {
 .landingBody {
