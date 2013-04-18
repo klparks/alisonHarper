@@ -41,11 +41,10 @@
                         echo "<div class='location'>";
                         echo "Welcome to " . getCurrentCity("cat_name");
                         echo "<a href='" . site_url() . "'>[not right?]</a>";
+                        echo "</div>";
+                        
                     }
                     ?>
-
-                </form>
-                </div>
                               
                 
                <div class="clear"> <ul class="socialMedia right">
@@ -54,7 +53,9 @@
                     <li><a target="_blank" href="http://pinterest.com/<?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?>" class="pinterest" title="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"><img src="/wp-content/themes/alisonHarper/images/pinterest.png" alt="Follow <?php echo get_user_meta(ADMIN_USER_ID, 'pinterest', true); ?> on Pinterest"/></a></li>
                     <li><a target="_blank" href="http://www.youtube.com/subscription_center?add_user=<?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?>" class="youtube" title="Subscribe to <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"><img src="/wp-content/themes/alisonHarper/images/youTube.png" alt="Subscribe <?php echo get_user_meta(ADMIN_USER_ID, 'youtube', true); ?> on YouTube"/></a></li>
                 </li></ul></div>
-                
+        <?php 
+        
+        if(getSlug() != "blog"){ ?>
                 <nav class="nav-collapse collapse clear">
                     <ul class="nav uppercase">
                         <?php
@@ -69,8 +70,5 @@
                         ?>
                     </ul>
                 </nav><!--/.nav-collapse -->
-                </div>
-
-
+            <?php } ?>
 </header>
-</body>

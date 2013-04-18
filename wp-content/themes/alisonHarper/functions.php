@@ -306,3 +306,8 @@ function listLocationNav(){
     }
     echo '</ul>';
 }
+function getSlug(){
+    global $wp_query;
+    $post_obj = $wp_query->get_queried_object();
+    return $post_obj->post_name;
+}
