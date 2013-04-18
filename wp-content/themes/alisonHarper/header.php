@@ -69,8 +69,6 @@
                         ?>
                     </ul>
                 </nav><!--/.nav-collapse -->
-                </div>
 
 
 </header>
-</body>
