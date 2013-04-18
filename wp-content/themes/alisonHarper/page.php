@@ -30,8 +30,8 @@
     
     <article class="column leftSide clear">
        
+    <!-- This stuff only shows on the homepage -->
     <?php if(getCityHomepage()->ID == $post->ID){ ?>
-        <!-- This stuff only shows on the homepage -->
         <?php echo gcb(22);?>
         </article>
     
