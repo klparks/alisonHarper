@@ -392,6 +392,19 @@ footer section li a.noLinkStyle:hover {
 
 /*end footer*/
 
+/* form styles */
+.formGroup {
+	padding-top:20px;
+}
+
+input {
+	height:30px !important ;
+}
+
+#contact .formGroup input, #contact textarea {
+	width:400px
+}
+
 /*begin city template styles */
 /* home page*/
 
