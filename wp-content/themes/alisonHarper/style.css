@@ -644,6 +644,7 @@ article.leftSide {
     font-family: raleway;
     font-size: 1.5em;
     font-style: normal;
+	border-bottom:1px solid #aaa;
 }
 
 @media screen and (max-width: 980px) {

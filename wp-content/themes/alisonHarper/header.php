@@ -70,5 +70,7 @@
                         ?>
                     </ul>
                 </nav><!--/.nav-collapse -->
+
             <?php } ?>
+
 </header>
