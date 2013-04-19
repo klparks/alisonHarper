@@ -1,7 +1,7 @@
 <!-- Single blog post template -->
 
 <div class="container city">
-<?php get_header(); ?>
+<?php get_template_part("header", "noNav"); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
             <h1><?php the_title(); ?></h1> 
             <p><em><?php the_time('l, F jS, Y'); ?></em></p> 

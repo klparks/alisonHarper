@@ -1,5 +1,5 @@
 <div class="container city">
-<?php get_header(); ?>
+<?php get_template_part("header", "noNav"); ?>
 <div class="bodyContent blog">
     
     
