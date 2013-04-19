@@ -1,6 +1,9 @@
 <div class="container city">
+
 <?php get_template_part("header", "noNav"); ?>
-<div class="bodyContent blog">
+
+<div class="bodyContent blog clear">
+
     
     
     
@@ -9,12 +12,12 @@
     <div class="content left">
 	    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
-	<p class="timestamp"><?php the_time('l, F jS, Y'); ?><span># of comments</span></p>
+	<p class="timestamp"><?php the_time('l, F jS, Y'); ?><span class="right"># of comments</span></p>
     <p>put total blog content here</p>
     <p>put excerpts of the month's blogs below</p>
     <p>put the comment box here</p>
     <p>put the facebook "like" thing and "tweet" here</p>
-        <hr>
+        
     <?php endwhile; else: ?> 
         <p><?php _e('Sorry, there are no posts.'); ?></p> 
     <?php endif; ?>
@@ -22,7 +25,7 @@
     
     
     <aside class="right">
-    <section class="archives">
+    <section class="sidebar">
     <h3>Archives</h3>
     <ul>
     	<li>March 2013</li>
@@ -31,8 +34,8 @@
     </ul>
     </section>
     
-    <section class="categories">
-    <h3>Tags</h3>
+    <section class="sidebar">
+    <h3>Categories</h3>
     <ul>
 		<li>All</li>
 		<li>Alison Harper Style</li>

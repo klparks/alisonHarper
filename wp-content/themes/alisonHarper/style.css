@@ -426,6 +426,7 @@ input {
 
 .brand {
 	width:22%;
+	height:120px;
 }
 
 .brand hgroup{
@@ -644,8 +645,32 @@ article.leftSide {
     font-family: raleway;
     font-size: 1.5em;
     font-style: normal;
+}
+
+.blog .content h3 {
 	border-bottom:1px solid #aaa;
 }
+
+.blog section {
+	padding-bottom:20px;
+}
+
+.blog aside h3 {
+	font-style:italic;
+}
+
+.blog aside {
+	width:auto;
+}
+
+.blog .sidebar ul {
+	margin-top:0;
+}
+
+.timestamp {
+	padding-top:5px;
+}
+	
 
 @media screen and (max-width: 980px) {
 .landingBody {
