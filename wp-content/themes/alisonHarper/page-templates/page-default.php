@@ -1,4 +1,3 @@
-
 <div class="content left">
     <?php if (has_post_thumbnail()) { ?>
     <div class="featuredImage">
@@ -16,6 +15,4 @@
             <p>Sorry, this page does not exist.</p> 
         <?php endif; ?>
     </section>
-
-    <article class="column leftSide clear">
 </div>

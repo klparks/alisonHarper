@@ -3,7 +3,7 @@
   Template Name: Splash Page
  */
 ?>
-<?php get_template_part("header", "head"); ?>
+<?php get_template_part("page-templates/header", "head"); ?>
 <body class="landingBody gradient">
     <nav class="topHomeNav uppercase shadow"><ul>
             <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>

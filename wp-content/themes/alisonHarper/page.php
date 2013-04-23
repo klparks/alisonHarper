@@ -10,13 +10,13 @@
         <!-- PAGE CONTENT (context sensitive) -->
         <?php if (getCityHomepage()->ID == $post->ID) { ?>
             <!-- Home Page -->
-            <?php get_template_part("page", "cityHome"); ?>
+            <?php get_template_part("page-templates/page", "cityHome"); ?>
         <?php } else if (getSlug() == TEAM_PAGE_SLUG) { ?>
             <!-- Team Page -->
-            <?php get_template_part("page", "team"); ?>
+            <?php get_template_part("page-templates/page", "team"); ?>
         <?php } else { ?>
             <!-- Default Layout -->
-            <?php get_template_part("page", "default"); ?>
+            <?php get_template_part("page-templates/page", "default"); ?>
         <?php } ?>
     </div>
 </div>

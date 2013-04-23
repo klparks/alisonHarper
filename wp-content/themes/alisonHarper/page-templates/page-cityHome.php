@@ -1,4 +1,3 @@
-<!-- PAGE CONTENT -->
 <div class="content left">
     <?php if (has_post_thumbnail()) { ?>
         <div class="featuredImage">

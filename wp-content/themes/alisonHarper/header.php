@@ -1,4 +1,4 @@
-<?php get_template_part("header", "head"); ?>
+<?php get_template_part("page-templates/header", "head"); ?>
 <body>
 
     <header>

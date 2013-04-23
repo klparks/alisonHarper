@@ -313,6 +313,30 @@ function getSlug(){
 }
 
 function listTeamMembers(){
-    //get current location
-    echo "Hello fWorld";
+    echo "<ul class='teamMemberList'>";
+    // The Query
+    $city = getCurrentCity("cat_name");
+    $the_query = new WP_Query( array(
+        'post_type'=>'page', 
+        'post_parent'=>TEAM_PAGE_ID, 
+        'category_name'=>$city,
+        'posts_per_page'=>-1,
+        'orderby'=>'title',
+        'order'=>'ASC'));
+
+    // The Loop
+    while ( $the_query->have_posts() ) :
+            $the_query->the_post();
+            echo "<li class='teamMemberBio'>";
+            echo "<h4>" . get_the_title() . "</h4>";
+            echo "<p>" . get_the_content() . "</p>";
+            echo "</li>";
+    endwhile;
+
+    /* Restore original Post Data 
+     * NB: Because we are using new WP_Query we aren't stomping on the 
+     * original $wp_query and it does not need to be reset.
+    */
+    wp_reset_postdata();
+    echo "</ul>";
 }

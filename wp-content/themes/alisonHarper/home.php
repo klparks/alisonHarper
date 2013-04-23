@@ -1,6 +1,6 @@
 <div class="container city">
 
-<?php get_template_part("header", "noNav"); ?>
+<?php get_template_part("page-templates/header", "noNav"); ?>
 
 <div class="bodyContent blog clear">
 
