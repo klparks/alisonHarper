@@ -311,3 +311,8 @@ function getSlug(){
     $post_obj = $wp_query->get_queried_object();
     return $post_obj->post_name;
 }
+
+function listTeamMembers(){
+    //get current location
+    echo "Hello fWorld";
+}
