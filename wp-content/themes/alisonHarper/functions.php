@@ -329,7 +329,7 @@ function listTeamMembers(){
             $the_query->the_post();
             echo "<li class='teamMemberBio'>";
             echo "<h4>" . get_the_title() . "</h4>";
-            echo "<p>" . get_the_content() . "</p>";
+            echo "<p>" . do_shortcode(get_the_content()) . "</p>";
             echo "</li>";
     endwhile;
 
