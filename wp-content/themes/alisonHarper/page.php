@@ -1,6 +1,6 @@
 
 <div class="container city">
-    <?php get_header(); ?>
+    <?php get_header("nav"); ?>
     <div class="bodyContent">
         <!-- SIDE NAVIGATION -->
         <aside class="uppercase left">

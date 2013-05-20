@@ -1,16 +1,9 @@
-<div class="container city">
-
-<?php get_template_part("page-templates/header", "noNav"); ?>
+<?php get_header("noNav"); ?>
 
 <div class="bodyContent blog clear">
-
-    
-    
-    
-    
-    
     <div class="content left">
-	    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+        
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
 	<p class="timestamp"><?php the_time('l, F jS, Y'); ?><span class="right"># of comments</span></p>
     <p>put total blog content here</p>
