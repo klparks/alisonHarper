@@ -8,7 +8,7 @@
         </aside>
 
         <!-- PAGE CONTENT (context sensitive) -->
-        <?php if (getCityHomepage()->ID == $post->ID) { ?>
+        <?php if (getCityHomepage() && getCityHomepage()->ID == $post->ID) { ?>
             <!-- Home Page -->
             <?php get_template_part("page-templates/page", "cityHome"); ?>
         <?php } else if (getSlug() == TEAM_PAGE_SLUG) { ?>

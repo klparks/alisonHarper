@@ -277,7 +277,7 @@ function listLocationNav(){
     $rootPage = $currentPage;
     //Args for home
     echo '<ul>';
-    if($rootPage->ID == getCityHomePage()->ID){
+    if(getCityHomePage() && $rootPage->ID == getCityHomePage()->ID){
         if(getLocationPage(PORTFOLIO_PAGE_SLUG)){
            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(PORTFOLIO_PAGE_SLUG)->ID) . '">View our portfolio</a></li>';
         }
@@ -289,6 +289,12 @@ function listLocationNav(){
         }
         if(isLocationHiring() && getLocationPage(CAREERS_PAGE_SLUG)){
             echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(CAREERS_PAGE_SLUG)->ID) . '">We\'re Hiring</a></li>';
+        }
+    } else if (!getCityHomePage()){
+        if($currentPage->post_name == CONTACT_PAGE_SLUG){ //contact page is special too
+            //list contact info
+            echo '<li><a href="mailto:' . get_userdata(ADMIN_USER_ID)->user_email . '">' . get_userdata(ADMIN_USER_ID)->user_email . '</a></li>';
+            echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta(ADMIN_USER_ID, 'phone', true) . '">' . get_user_meta(ADMIN_USER_ID, 'phone', true) . '</a></li>';
         }
     } else {
         //make sure we're at the top level page
