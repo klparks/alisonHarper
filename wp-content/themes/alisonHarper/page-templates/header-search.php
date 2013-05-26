@@ -1,5 +1,4 @@
-<div class="global left">
-    <div class="search right">
+
+    <div class="search left">
         <?php get_search_form(); ?>
     </div>
-</div>

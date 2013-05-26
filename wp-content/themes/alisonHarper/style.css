@@ -15,17 +15,17 @@ This theme was built on Bootstrap responsive theme
 */
 /* fonts */
 
-.HessGothicRoundNF { 
-	font-family: HessGothicRoundNF;
-	font-weight: normal;
-	font-style: normal;
-	letter-spacing:0.05em;
-}
-.HessGothicRoundNF-Thin { 
-	font-family: HessGothicRoundNF-Thin;
-	font-weight: normal;
-	font-style: normal;
-    letter-spacing:0.05em;
+
+@font-face {
+    font-family: 'GreatVibesRegular';
+    src: url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.eot");
+    src: url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.woff") format('woff'),
+         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.ttf") format('truetype'),
+         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.svg#GreatVibesRegular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body { 
@@ -50,31 +50,54 @@ h1, h2, h3, h4, h5, h6 {
 img {
 	max-width:auto;
 }
+
+figure {
+	padding:0;
+	margin:0;
+}
 /* end reset styles */
 
 
 /* headers */
 .city h2 {
-    border-bottom: 1px solid;
+    border-bottom: 2px solid #CEDADF;
     color: #8E367B;
     font-family: Raleway;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.8em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
+	margin-bottom:10px;
+}
+
+.featuredText h2 {
+    color: #8E367B;
+    font-family: GreatVibesRegular;
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 1.8em;
+	border:0;
 }
 
 .city h3 {
     color: #818080;
-    font-family: Droid Serif;
-    font-size: 1.2em;
-    font-weight: 100;
+    font-family: Droid;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.8em;
+	font-style:italic;
 }
 
-.city h3 a {
-	color:#818080;
+.city h4 {
+    border-bottom: 2px solid #CEDADF;
+    color: #92AAB4;
+    font-family: Raleway;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
+
 
 
 /*this moves the logo text off screen, but usable by search engines*/
@@ -137,7 +160,7 @@ img {
     line-height: 1.2em;
     margin: 0;
     position: relative;
-    top: -11px;
+    top: -4px;
 }
 
 /*landing page styles */
@@ -180,6 +203,8 @@ height:300px;
 	background-color: white;
     text-align: right;
     width: 100%;
+	padding-bottom:10px;
+	padding-top:10px;
 }
 
 .topHomeNav ul {
@@ -190,7 +215,7 @@ height:300px;
 .topHomeNav li {
 	list-style-type:none;
 	display:inline;
-	padding-left:15px;
+	padding-left:5px;
 }
 
 .topHomeNav li a {
@@ -201,7 +226,7 @@ height:300px;
 .landingBody hgroup {
 	height: 151px;
     position: relative;
-    top: -23px;
+    top: -53px;
     width: 251px;
 	float:left;
 }
@@ -214,9 +239,9 @@ height:300px;
 
 /* headlines and subline */
 .landingBody aside {
-	float: left;
+    float: left;
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 34px;
 }
 .landingContainer p {
 	margin:0;
@@ -232,6 +257,8 @@ height:300px;
 
 .landingBody .subline {
     color: #5E5E5E;
+    font-size: 0.7em;
+    text-transform: uppercase;
 }
 
 /* end headline and subline */
@@ -245,7 +272,7 @@ height:300px;
 .locationsList {
     left: 400px;
     position: absolute;
-    top: 20px;
+    top: 40px;
 }
 
 .locationsList ul {
@@ -258,13 +285,16 @@ height:300px;
 }
 
 .locationsList h3 {
-	font-weight:400;
-	color:#8f367b;
-	text-indent:-1em;
-	font-size:1em;
-	margin: 35px 0 0;
-	line-height:1.5em;
+    color: #B3C6CE;
+    font-family: GreatVibesRegular;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 20px 0 0;
+    text-indent: -1em;
+    text-transform: none;
 }
+
 
 .locationsList li a {
 	font-weight: 100;
@@ -434,40 +464,44 @@ input {
 }
 
 .location {
+    color: #B3C6CE;
     float: right;
-    font-size: 0.7em;
-    margin-right: 10px;
+    font-family: GreatVibesRegular;
+    font-size: 1.4em;
     text-align: right;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
-.location a {
-	color:#aaa;
-	padding-left:5px;
-}
 
 .location a {
-	clear:both;
+    color: #AAAAAA;
+    font-family: Raleway;
+    font-size: 0.5em;
+    padding-left: 5px;
 }
 
 .search form {
 	margin:0;
 }
 
+.search form input {
+	font-family:Raleway;
+}
+
 .socialMedia li {
 	display:inline;
 }
 
-.global {
-    width: 78%;
+.city .headerContents {
+	width:78%;
+	padding-top:10px;
 }
 
-.global nav {
-	margin-top:76px;
+.city .headerContents .right {
+	height:74px;
 }
-
 .city header nav {
-	border-top: 1px solid black;
+	border-top: 1px solid #CEDADF;
 }
 
 .city header nav li {
@@ -480,8 +514,14 @@ input {
 	font-family:Raleway;
 }
 
-.city header nav li.current_page_item {
-    border-top: 4px solid black;
+.city header nav li a:hover {
+	color:#8E367B;
+	font-family:Raleway;
+	background-color:transparent;
+}
+
+.city header nav li.current_page_item, .city header nav li.current_page_parent {
+    border-top: 4px solid #CEDADF;
     margin-top: -4px;
 }
 
@@ -501,6 +541,11 @@ input {
 
 .city aside li {
 	list-style-type:none;
+	line-height:2.5em;
+}
+
+.city aside li.current_page_item a {
+	border-bottom:3px solid #CEDADF;
 }
 
 .city aside li a{
@@ -532,16 +577,30 @@ input {
     font-style: normal;
     line-height: 1.4em;
     padding-bottom: 5px;
-    padding-top: 15px;
+    padding-top: 25px;
     text-align: center;
 }
 
 .intro .emphasize {
-	font-size: 1.5em;
+	font-size: 3em;
 	color:#8E367B;
+	font-family:GreatVibesRegular;
 }
 .featuredImage {
 	overflow:hidden;
+}
+
+/*awards*/
+.awards {
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.awardsLogos {
+    background-image: url("/wp-content/themes/alisonHarper/images/homepage/awards.png");
+    background-repeat: no-repeat;
+    height: 104px;
+    width: 909px;
 }
 
 /*featured link on city homepage */
@@ -567,7 +626,6 @@ input {
 /*end featured links*/
 	
 .mainHome {
-    background-image: url("/wp-content/themes/alisonHarper/images/homepage/bride.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 400px;
@@ -575,13 +633,16 @@ input {
     width: auto;
 }
 
+.mainHome img {
+	width:915px;
+}
+
 .column {
 	float:left;
 	width:48%;
-	padding-top:10px;
 }
 
-article.leftSide {
+.leftSide {
 	padding-right:2em;
 }
 
@@ -589,7 +650,7 @@ article.leftSide {
 /* blog area of homepage */
 .excerpt {
 	float:left;
-	width:70%;
+	width:60%;
 }
 
 .blogSnipPic {
@@ -602,14 +663,33 @@ article.leftSide {
     line-height: auto;
 }
 .miniBlog {
-	padding-bottom:10px;
+    background-color: #FFFFFF;
+    border-radius: 10px 0 10px 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .miniBlog h3 a {
-	font-style:italic;
+	color:#818080;
 }
 
+/* team */
+li.teamMemberBio {
+	list-style-type:none;
+	padding-bottom:10px;
+	font-size:1em;
+}
 
+.featuredText ul {
+	margin:0;
+}
+
+/*faq*/
+.faq p {
+	margin-bottom:25px;
+}
 /* services */
 
 .services ul {

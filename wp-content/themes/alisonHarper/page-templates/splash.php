@@ -7,9 +7,10 @@
 <body class="landingBody gradient">
     <nav class="topHomeNav uppercase shadow">
         <ul>
-            <li><?php get_template_part("page-templates/header", "socialMedia"); ?></li>
+            
             <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
             <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
+            <li><?php get_template_part("page-templates/header", "socialMedia"); ?></li>
         </ul>
     </nav>
 

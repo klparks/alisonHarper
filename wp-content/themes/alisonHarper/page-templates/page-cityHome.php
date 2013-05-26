@@ -14,12 +14,14 @@
             <p>Sorry, this page does not exist.</p> 
         <?php endif; ?>
     </section>
-
-    <section class="featuredLinks">
+	
+        <section class="featuredLinks clearfix">
         <div class="left">Make me pretty!</div>
         <div class="center left">Read our Reviews</div>
         <div class="left">Check out our Services</div>
     </section>
+    <section class="awards"><h2>Recent Accolades</h2><div class="awardsLogos"></div></section>
+
 
     <article class="column leftSide clear">
         <?php echo gcb(22); ?>
