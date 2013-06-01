@@ -19,9 +19,9 @@
                     <?php
                     $regions = getLocations();
                     foreach ($regions as $r) {
-                        echo '<option value="" class="uppercase disabled" disabled="disabled">' . esc_attr(__($r->name)) . '</option> ';
+                        echo '<option value="" class="disabled" disabled="disabled">' . esc_attr(__($r->name)) . '</option> ';
                         foreach ($r->cities as $l) {
-                            $option = '<option class="uppercase indent" value="' . $l->url . '">';
+                            $option = '<option class="indent" value="' . $l->url . '">';
                             $option .= $l->name;
                             $option .= '</option>';
                             echo $option;
