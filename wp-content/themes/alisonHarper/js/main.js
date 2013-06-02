@@ -3,12 +3,10 @@ jQuery(document).ready(function($) {
     $("select").customSelect();
     $("input.date").datepicker();
     $("input[type=submit], button" ).button();
-    if(!$("aside.left .current_page_item")){
+    if($("aside.left .current_page_item").length == 0){
     var ancestors = $(".headerContents nav .current_page_ancestor");
     $.each(ancestors, function(idx, e){
-        if(!$(e).hasClass("current_page_parent")){
             $(e).addClass("noHighlight");
-        }
     });
 }
 });
