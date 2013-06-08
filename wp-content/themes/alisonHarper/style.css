@@ -308,11 +308,16 @@ height:300px;
 
 
 /*custom select */
-.customSelect {
+.customSelect, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
     border: 1px solid #8F367B;
     border-radius: 5px 5px 5px 5px;
     padding: 6px 10px;
+	font-family:Raleway;
+	color:#8A8B8B;
+	padding:6px 10px;
+	background-color:#fff;
 }
+
 
 .customSelectInner {
 	font-size: 15px;
@@ -442,6 +447,28 @@ input {
 	width:400px
 }
 
+label.radioGroup {
+	padding-left:5px;
+	margin-top:8px;
+	color:#8E367B;
+}
+
+input.ui-button {
+    background-color: #8E367B;
+    background-image: none;
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: Raleway;
+    padding: 5px 15px 10px;
+	margin-top:15px;
+
+}
+
+input.ui-button:hover {
+    background-color: #7a2c69;
+}
+	
+
 /*begin city template styles */
 /* home page*/
 
@@ -527,7 +554,7 @@ input {
 	background-color:transparent;
 }
 
-li.current_page_item, li.current_page_parent {
+nav .current_page_item, nav .current_page_parent {
     border-top: 4px solid #CEDADF;
     margin-top: -4px;
 }
@@ -580,16 +607,18 @@ li.noHighlight {
     text-align: center;
 }
 
+
+.intro .headline {
+	font-size:4em;
+	font-family:Raleway;
+	color:#B3C6CE;
+}
 .featuredText .intro {
-    border-radius: 0 0 5px 5px;
-    color: #6D6D6D;
+    color: black;
     font-family: Raleway;
     font-size: 1em;
     font-style: normal;
-    line-height: 1.4em;
-    padding-bottom: 5px;
-    padding-top: 25px;
-    text-align: center;
+	padding-top:30px;
 }
 
 .intro .emphasize {
@@ -661,7 +690,7 @@ li.noHighlight {
 /* blog area of homepage */
 .excerpt {
 	float:left;
-	width:60%;
+	width:68%;
 }
 
 .blogSnipPic {
@@ -684,6 +713,21 @@ li.noHighlight {
 
 .miniBlog h3 a {
 	color:#818080;
+}
+
+/*aboutAlison*/
+.meetAlison section {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.meetAlison .intro {
+    color: black;
+    font-family: Raleway;
+    font-size: 1.4em;
+    font-style: normal;
+    line-height: 2em;
+	padding-top:100px;
 }
 
 /* team */
