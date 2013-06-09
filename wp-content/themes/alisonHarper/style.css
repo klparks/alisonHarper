@@ -889,15 +889,16 @@ cite{
 }
 
 
-.comment-reply-link{
+.comment-reply-link, .post-edit-link{
     background-color: #8E367B;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     font-family: Raleway;
     padding: 8px 10px;
+	
 }
 
-.comment-reply-link:hover {
+.comment-reply-link:hover, .post-edit-link:hover {
 	text-decoration:none;
 	color:#fff;
 	background-color:#7a2c69;
@@ -914,6 +915,10 @@ ul.error {
 	line-height:3em;
 	padding-top:30px;}
 
+/* search results*/
+article.post {
+	padding-top:20px;
+}
 @media screen and (max-width: 980px) {
 .landingBody {
 	padding:0;
