@@ -39,6 +39,7 @@ body {
 
 body a {
 	text-decoration:none;
+	color:black;
 }
 
 
@@ -66,7 +67,6 @@ figure {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.8em;
-	margin-bottom:10px;
 }
 
 .featuredText h2 {
@@ -89,14 +89,13 @@ figure {
 }
 
 .city h4 {
-    border-bottom: 2px solid #CEDADF;
+    border-bottom: 1px solid #CEDADF;
     color: #92AAB4;
     font-family: Raleway;
     font-size: 1.2em;
     font-weight: 500;
     line-height: 1.3em;
     margin-bottom: 5px;
-    padding-bottom: 5px;
 }
 
 
@@ -723,6 +722,10 @@ li.noHighlight {
 	color:#818080;
 }
 
+.logged-in-as, .form-allowed-tags, .avatar {
+	display:none;
+}
+
 /*aboutAlison*/
 .meetAlison section {
     margin-bottom: 20px;
@@ -741,8 +744,14 @@ li.noHighlight {
 /* team */
 li.teamMemberBio {
 	list-style-type:none;
-	padding-bottom:10px;
+	padding-bottom:20px;
 	font-size:1em;
+	clear:both;
+}
+
+.teamMemberBio .wp-post-image {
+	float:left;
+	padding-right:10px;
 }
 
 .featuredText ul {
@@ -780,37 +789,120 @@ li.teamMemberBio {
 }
 
 /*blog */
-.blog h3 a {
+.blog h2 a {
     color: #8E367B;
-    font-family: raleway;
-    font-size: 1.5em;
-    font-style: normal;
 }
 
-.blog .content h3 {
-	border-bottom:1px solid #aaa;
+.blog h3 {
+    border-bottom: 1px solid #AAAAAA;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 1.3em;
+	color:black;
+}
+.blog h3 a:hover {
+	color:black;
+	text-decoration:none;
 }
 
 .blog section {
 	padding-bottom:20px;
 }
 
-.blog aside h3 {
-	font-style:italic;
-}
-
 .blog aside {
-	width:auto;
+    padding-right: 25px;
+    padding-top: 20px;
+    width: 230px;
+}
+.blog aside h3 {
+    color: #8E367B;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
 
 .blog .sidebar ul {
 	margin-top:0;
 }
 
-.timestamp {
-	padding-top:5px;
+
+.city .comments-title {
+	    background-color: #b3c4cb;
+    border-bottom: 1px solid #CEDADF;
+    border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin: -20px -20px 0;
+    padding: 10px 20px 5px 10px;
 }
-	
+
+.commentlist {
+	padding-top:15px;
+	margin:0;
+}
+.blog .comment-meta a,.blog .timestamp {
+    color: #818080;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+#comment {
+	width:400px;
+}
+.comments-area {
+    background-color: #FFFFFF;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0 5px 20px 0 #E3E3E3;
+    padding: 20px;
+	margin-bottom:30px;
+	margin-top:30px;
+}	
+
+cite{
+	font-weight:bold;
+	color:black;
+}
+
+#reply-title {
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    padding-top: 10px;
+}
+
+#commentform {
+	padding-top:20px;
+}
+
+.commentlist li {
+	padding-bottom:3em;
+	list-style-type:none;
+}
+
+.comment-meta {
+	line-height:.7em;
+	padding-bottom:10px;
+}
+
+
+.comment-reply-link{
+    background-color: #8E367B;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-family: Raleway;
+    padding: 8px 10px;
+}
+
+.comment-reply-link:hover {
+	text-decoration:none;
+	color:#fff;
+	background-color:#7a2c69;
+
+.reply {
+	margin-top:20px;
+}
 /* 404 page */
 ul.error {
 	margin:0;

@@ -333,10 +333,10 @@ function listTeamMembers(){
     // The Loop
     while ( $the_query->have_posts() ) :
             $the_query->the_post();
-            echo "<li class='teamMemberBio'>";
+            echo "<li class='teamMemberBio clearfix'>";
             echo "<h4>" . get_the_title() . "</h4>";
-            echo "<figure>" . the_post_thumbnail('thumbnail') . "</figure>";
-            echo "<p>" . do_shortcode(get_the_content()) . "</p>";
+            echo the_post_thumbnail('thumbnail');
+            echo  do_shortcode(get_the_content()) ;
             echo "</li>";
     endwhile;
 
