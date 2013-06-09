@@ -1,5 +1,5 @@
 <!-- Single blog post template -->
-
+<?php get_header("noNav"); ?>
 <div class="container city">
 <?php get_template_part("page-templates/header", "noNav"); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 

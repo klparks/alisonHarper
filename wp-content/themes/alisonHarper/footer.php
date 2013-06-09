@@ -13,22 +13,7 @@
     </section>
     <section class="right">
         <ul>
-            <li class="locationSelect"><select name="page-dropdown"
-                        onchange='if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;'> 
-                    <option value=""><?php echo esc_attr(__('Select location')); ?></option> 
-                    <?php
-                    $regions = getLocations();
-                    foreach ($regions as $r) {
-                        echo '<option value="" class="disabled" disabled="disabled">' . esc_attr(__($r->name)) . '</option> ';
-                        foreach ($r->cities as $l) {
-                            $option = '<option class="indent" value="' . $l->url . '">';
-                            $option .= $l->name;
-                            $option .= '</option>';
-                            echo $option;
-                        }
-                    }
-                    ?>
-                </select></li>
+            <li class="locationSelect"><?php get_template_part("page-templates/footer", "select"); ?></li>
             <li>All images and materials Copyright &copy; 2013</li>
             <li>Alison Harper and Company, LLC. All Rights Reserved</li>
             <li>Web design by <a href="http://elevenpeppers.com">eleven peppers studios</a></li>
