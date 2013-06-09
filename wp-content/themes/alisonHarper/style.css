@@ -839,7 +839,7 @@ li.teamMemberBio {
     padding: 10px 20px 5px 10px;
 }
 
-.commentlist {
+.blog ol {
 	padding-top:15px;
 	margin:0;
 }
@@ -878,8 +878,9 @@ cite{
 }
 
 .commentlist li {
-	padding-bottom:3em;
+	padding-bottom:1em;
 	list-style-type:none;
+	font-size:12px;
 }
 
 .comment-meta {
@@ -900,7 +901,7 @@ cite{
 	text-decoration:none;
 	color:#fff;
 	background-color:#7a2c69;
-
+}
 .reply {
 	margin-top:20px;
 }
