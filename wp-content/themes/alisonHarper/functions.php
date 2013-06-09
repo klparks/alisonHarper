@@ -335,6 +335,7 @@ function listTeamMembers(){
             $the_query->the_post();
             echo "<li class='teamMemberBio'>";
             echo "<h4>" . get_the_title() . "</h4>";
+            echo "<figure>" . the_post_thumbnail('thumbnail') . "</figure>";
             echo "<p>" . do_shortcode(get_the_content()) . "</p>";
             echo "</li>";
     endwhile;
