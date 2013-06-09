@@ -203,11 +203,18 @@ function getLocationPage($slug){
     //Get the contact page id
         $cityPage = getCityHomepage();
         if(!$cityPage){
+//            echo "City page not found";
             return null;
         }
+        //echo "City page found";
+        // Set up the objects needed
         $query = new WP_Query();
-        $contactPage = $query->query(array('post_type'=>'page', 'post_parent' =>$cityPage->ID));
-        foreach ($contactPage as $page){
+        $all_wp_pages = $query->query(array('post_type'=>'page', 'nopaging '=>true));
+//        echo "Looking for: " . $slug;
+//        var_dump($all_wp_pages);
+        // Filter through all pages and find Portfolio's children
+        $city_children = get_page_children( $cityPage->ID, $all_wp_pages );
+        foreach ($city_children as $page){
             if($page->post_name == $slug){
                 return $page;
             }
@@ -280,19 +287,23 @@ function listLocationNav(){
     if(getCityHomePage() && $rootPage->ID == getCityHomePage()->ID){
         if(getLocationPage(PORTFOLIO_PAGE_SLUG)){
            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(PORTFOLIO_PAGE_SLUG)->ID) . '">View our portfolio</a></li>';
-        } 
+        } else {
+             echo '<li class="page_item"><a href="#">View our portfolio</a></li>';
+        }
         if(getLocationPage(CONTACT_PAGE_SLUG)){
            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(CONTACT_PAGE_SLUG)->ID) . '">Drop us a note</a></li>';
         } else {
-            '<li class="page_item"><a href="#">Drop us a note</a></li>';
+             echo '<li class="page_item"><a href="#">Drop us a note</a></li>';
         }
         if(getLocationPage(TEAM_PAGE_SLUG)){
            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(TEAM_PAGE_SLUG)->ID) . '">Meet the team</a></li>';
         } else {
-            echo '<li class="page_item"><a href="#">Meet the team</a></li>';
+             echo '<li class="page_item"><a href="#">Meet the team</a></li>';
         }
         if(isLocationHiring() && getLocationPage(CAREERS_PAGE_SLUG)){
             echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(CAREERS_PAGE_SLUG)->ID) . '">We\'re Hiring</a></li>';
+        } else {
+             echo '<li class="page_item"><a href="#">We\'re Hiring</a></li>';
         }
     } else if (!getCityHomePage()){
         if($currentPage->post_name == CONTACT_PAGE_SLUG){ //contact page is special too
