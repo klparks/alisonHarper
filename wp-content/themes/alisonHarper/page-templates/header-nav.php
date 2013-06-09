@@ -6,7 +6,6 @@
             listCityChildrenPages();
         } else {//Otherwise link to the global pages
             $exclude = getAllLocationPageIds();
-            $exclude[] = CAREERS_PAGE_ID;
             wp_list_pages(array('title_li' => '', 'exclude' => implode(',', $exclude), 'depth' => '1'));
         }
         ?>
