@@ -1,4 +1,4 @@
-<?php get_header("noNav"); ?>
+<?php get_header("nav"); ?>
 
 <div class="bodyContent city blog clear">
 <aside class="left">
