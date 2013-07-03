@@ -135,10 +135,16 @@ function getAllLocationPageIds() {
     }
     return $ids;
 }
-
+function cmpCats($a, $b){
+    return $a->name > $b->name;
+}
 function getLocations() {
     $allLocations = array();
     $regions = get_categories(array('child_of' => LOCATION_ROOT_ID, 'parent' => LOCATION_ROOT_ID, 'hide_empty' => 0));
+    
+    //It's really stupid that I couldn't get the parameters on get_categories to work.  TODO: fix
+    uasort($regions, 'cmpCats');
+    
     foreach ($regions as $region) {
         $cities = array();
         $currentRegionId = $region->cat_ID;
@@ -238,6 +244,8 @@ function getLocationOpenAnchor($slug, $defaultId){
     }
 }
 function isLocationHiring(){
+    //customer request: all locations always hiring.  See ticket #70
+    return true;
     //if location has the category
     $currentCityPage = getCityHomePage();
     if($currentCityPage && (in_category(HIRING_CAT_ID, $currentCityPage->ID) || in_category(HIRING_CAT_ID, $currentCityPage->post_parent))){

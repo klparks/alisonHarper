@@ -8,8 +8,12 @@
          <div class="headerContents left">   
             <div class="right">
             <?php get_template_part("page-templates/header", "search"); ?>
-
-            <div class="socialMedia left"><ul><?php get_template_part("page-templates/header", "socialMedia"); ?></ul></div>
+            
+        <ul>
+            
+            <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
+            <li><div class="socialMedia left"><?php get_template_part("page-templates/header", "socialMedia"); ?></div></li>
+        </ul>
             </div>
             
                         <?php

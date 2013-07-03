@@ -4,9 +4,10 @@ jQuery(document).ready(function($) {
     $("input.date").datepicker();
     $("input[type=submit], button" ).button();
     if($("aside.left .current_page_item").length == 0){
-    var ancestors = $(".headerContents nav .current_page_ancestor");
-    $.each(ancestors, function(idx, e){
-            $(e).addClass("noHighlight");
-    });
-}
+        var ancestors = $(".headerContents nav .current_page_ancestor");
+        $.each(ancestors, function(idx, e){
+                $(e).addClass("noHighlight");
+        });
+    }
+    $('body').on('contextmenu', 'img', function(e){ return false; });
 });
