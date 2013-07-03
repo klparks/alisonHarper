@@ -164,6 +164,7 @@ figure {
     top: -4px;
 }
 
+
 /*landing page styles */
 
 body {
@@ -734,12 +735,22 @@ li.noHighlight {
 }
 
 .meetAlison .intro {
-    color: black;
+    color: #8E367B;
     font-family: Raleway;
     font-size: 1.4em;
     font-style: normal;
     line-height: 2em;
-	padding-top:100px;
+}
+
+.caption-right p {
+	text-align:right;
+}
+.caption-left p{
+	text-align:left;
+}
+
+.left.column img:first-child {
+	margin-bottom:10px;
 }
 
 /* team */
@@ -851,6 +862,7 @@ li.teamMemberBio {
 
 #comment {
 	width:400px;
+	height:75px;
 }
 .comments-area {
     background-color: #FFFFFF;
