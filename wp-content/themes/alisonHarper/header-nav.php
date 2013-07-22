@@ -9,23 +9,27 @@
             <div class="right">
             <?php get_template_part("page-templates/header", "search"); ?>
             
-        <ul>
+        	<ul class="left">
             
-            <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
-            <li><div class="socialMedia left"><?php get_template_part("page-templates/header", "socialMedia"); ?></div></li>
-        </ul>
-            </div>
+            	
+            	<li><div class="socialMedia left"><?php get_template_part("page-templates/header", "socialMedia"); ?></div></li>
+        	</ul>
             
+            
+          
+          <?php get_template_part("page-templates/header", "nav"); ?>
                         <?php
                 //Welcome to city link
                 if (getCurrentCity("cat_name")) {
-                    echo "<div class='location clear'>";
+                    echo "<div class='location'>";
                     echo "Welcome to " . getCurrentCity("cat_name");
                     echo "<a href='" . site_url() . "'>not right?</a>";
                     echo "</div>";
                 }
             ?>
-            <?php get_template_part("page-templates/header", "nav"); ?>
-            </div>
+           
+           
+         	</div>
+         </div>
         </header>
         
