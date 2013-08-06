@@ -27,6 +27,10 @@ define("TEAM_PAGE_SLUG", "team");
 //Load necessary scripts on page load
 add_action('wp_enqueue_scripts', 'enqueueScripts');
 add_action( 'genesis_meta', 'wpb_add_google_fonts', 5);	 
+add_filter('comment_post_redirect', 'redirect_after_comment');
+function redirect_after_comment($location){
+    return $_SERVER["HTTP_REFERER"];
+}
 function wpb_add_google_fonts() {
         echo '<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,300,600,700,800" rel="stylesheet" type="text/css">';
                 echo '<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic" rel="stylesheet" type="text/css">';

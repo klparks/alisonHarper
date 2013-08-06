@@ -24,6 +24,11 @@
     </aside>
 <div class="content left">
 <?php get_template_part("page-templates/header", "noNav"); ?>
+    <nav class="nav-single">
+            <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link') . '</span> %title' ); ?></span>
+            <span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link') . '</span>' ); ?></span>
+    </nav><!-- .nav-single -->
+
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
             <h3><?php the_title(); ?></h3> 
             <p class="timestamp"><?php the_time('l, F jS, Y'); ?></p> 
