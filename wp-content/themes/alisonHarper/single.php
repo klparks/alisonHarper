@@ -1,33 +1,27 @@
 <!-- Single blog post template -->
 <?php get_header("nav"); ?>
+<div class="container city">
+    <div class="bodyContent clear">
+<div class="content left">
 <div class="bodyContent city blog clear">
+<section class="featuredText">
+<h2>The Harper Blog</h2>
 <aside class="left">
     <section class="sidebar">
     <h3>Archives</h3>
     <ul>
-    	<li>March 2013</li>
-        <li>February 2013</li>
-        <li>January 2013</li>
+    	<?php wp_get_archives('type=monthly'); ?>
     </ul>
     </section>
     
-    <section class="sidebar">
+<!--    <section class="sidebar">
     <h3>Categories</h3>
     <ul>
-		<li>All</li>
-		<li>Alison Harper Style</li>
-		<li>Business</li>
-		<li>Personal</li>
-		<li>Photo Shoot</li>
-		<li>Real Wedding</li>
-		<li>Video Q & A</li>
-		<li>Wedding Inspiration</li>
+	<?php wp_list_categories(); ?>
     </ul>
-    </section>
+    </section>-->
     
     </aside>
-<section class="featuredText">
-<h2>The Harper Blog</h2>
 <div class="content left">
 <?php get_template_part("page-templates/header", "noNav"); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
@@ -41,5 +35,7 @@
     <?php endif; ?>
     </div>
 </section>
+</div>
+</div>
 </div>
 <?php get_footer(); ?>
