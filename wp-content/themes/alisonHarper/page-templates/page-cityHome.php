@@ -16,9 +16,7 @@
     </section>
 	
         <section class="featuredLinks clearfix">
-        <div class="left">Make me pretty!</div>
-        <div class="center left">Read our Reviews</div>
-        <div class="left">Check out our Services</div>
+        <?php echo gcb(34); ?>
     </section>
     <section class="awards"><h2>Recent Accolades</h2><div class="awardsLogos"></div></section>
 

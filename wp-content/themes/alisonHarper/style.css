@@ -478,6 +478,13 @@ input.ui-button:hover {
     background-color: #7a2c69;
 }
 	
+	
+.formGroup span {
+    float: left;
+    left: -10px;
+    position: relative;
+    top: -22px;
+}
 
 /*begin city template styles */
 /* home page*/
@@ -600,7 +607,7 @@ li.noHighlight {
 .city aside li {
 	list-style-type:none;
 	line-height:2.5em;
-	font-size:.75em;
+	font-size:.8em;
 }
 
 .city aside li.current_page_item a {
@@ -641,6 +648,7 @@ li.noHighlight {
     font-size: 1em;
     font-style: normal;
 	padding-top:30px;
+	padding-bottom:20px;
 }
 
 .intro .emphasize {
@@ -654,7 +662,7 @@ li.noHighlight {
 
 /*awards*/
 .awards {
-	margin-bottom:20px;
+	margin-bottom:40px;
 	margin-top:20px;
 }
 
@@ -675,10 +683,21 @@ li.noHighlight {
     background-color: #FFFFFF;
     border: 2px solid #CEDADF;
     border-radius: 5px 5px 5px 5px;
-    color: #8E367B;
     padding: 10px;
     text-align: center;
     width: 30.3%;
+}
+
+.featuredLinks div:hover {
+	background-color:#eef5f8;
+}
+
+.featuredLinks a {
+	color: #8E367B;
+}
+
+.featuredLinks a:hover {
+	text-decoration: none;
 }
 
 .featuredLinks .center {
@@ -814,6 +833,8 @@ li.teamMemberBio {
 }
 
 /*blog */
+
+
 .blog h2 a {
     color: #8E367B;
 }
@@ -830,9 +851,6 @@ li.teamMemberBio {
 	text-decoration:none;
 }
 
-.blog section {
-	padding-bottom:20px;
-}
 
 .blog aside {
     padding-right: 25px;
@@ -931,6 +949,36 @@ cite{
 .reply {
 	margin-top:20px;
 }
+
+.nav-single {
+	padding-bottom:15px;
+
+}
+.nav-single a {
+	color:#A0B6BF;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.meta-nav {
+	position:relative;
+	top:-1px;
+}
+
+.nav-next {
+	float:right;
+}
+
+.blog .socialMedia li {
+	list-style-type:none;
+	display:inline-block;
+}
+
+/* portfolio */
+.slideshow_pagination ul li {
+	display:none !important;
+}
+
 /* 404 page */
 ul.error {
 	margin:0;

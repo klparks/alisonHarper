@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://alisonHarper.dev/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.5.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="July 21, 2013 4:19 pm" -->
+<!-- generated-on="August 15, 2013 5:50 am" -->
 <!-- Debug: Total comment count: 6 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://alisonHarper.dev/</loc>
@@ -10,20 +10,302 @@
 	</url>
 <!-- Debug: Start Postings -->
 	<url>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:50:27+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/laurel/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:50:06+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/bethesda/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:49:49+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/frederick/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:49:25+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/baltimore/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:49:06+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/virginiabeach/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:48:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/alexandria/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:47:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/williamsburg/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:47:36+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/richmond/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:47:16+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:46:48+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:46:30+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/arlington/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:46:13+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/annapolis/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:44:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/portfolio/beforeafter/</loc>
-		<lastmod>2013-07-21T16:19:04+00:00</lastmod>
+		<lastmod>2013-08-15T05:43:56+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/laurel/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:40:03+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/laurel/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:40:03+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:39:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:39:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/frederick/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:39:08+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/frederick/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:39:08+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/bethesda/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:38:43+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/bethesda/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:38:43+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/baltimore/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:38:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/baltimore/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:38:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/annapolis/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:37:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/annapolis/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:37:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/williamsburg/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:37:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/williamsburg/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:37:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/virginiabeach/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:36:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/virginiabeach/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:36:57+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:36:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:36:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/richmond/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:35:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/richmond/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:35:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:35:24+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:35:24+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/charlottesville/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:34:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/charlottesville/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:34:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/charlottesville/portfolio/before-after/</loc>
+		<lastmod>2013-08-15T05:34:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/arlington/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:34:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/arlington/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:34:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/alexandria/portfolio/glamour/</loc>
+		<lastmod>2013-08-15T05:33:15+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/alexandria/portfolio/weddings/</loc>
+		<lastmod>2013-08-15T05:32:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/portfolio/glamour/</loc>
-		<lastmod>2013-07-21T16:17:54+00:00</lastmod>
+		<lastmod>2013-08-15T05:26:33+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/frederick/</loc>
+		<lastmod>2013-08-15T04:56:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/laurel/</loc>
+		<lastmod>2013-08-15T04:56:50+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/</loc>
+		<lastmod>2013-08-15T04:56:44+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/bethesda/</loc>
+		<lastmod>2013-08-15T04:56:32+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/maryland/annapolis/</loc>
+		<lastmod>2013-08-15T04:56:22+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/portfolio/weddings/</loc>
-		<lastmod>2013-07-21T16:17:53+00:00</lastmod>
+		<lastmod>2013-08-15T03:52:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -150,7 +432,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/portfolio/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/portfolio/</loc>
 		<lastmod>2013-06-08T21:18:01+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -180,19 +462,13 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/northcarolina/manteo/about/alison/</loc>
+		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/northcarolina/manteo/portfolio/</loc>
-		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/northcarolina/manteo/services/</loc>
-		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/northcarolina/manteo/about/team/</loc>
 		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -204,7 +480,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/northcarolina/manteo/about/alison/</loc>
+		<loc>http://alisonHarper.dev/northcarolina/manteo/services/</loc>
 		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -222,6 +498,12 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/northcarolina/manteo/about/team/</loc>
+		<lastmod>2013-04-13T05:35:35+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/northcarolina/outerbanks/services/</loc>
 		<lastmod>2013-04-13T05:34:29+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -234,19 +516,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/team/</loc>
-		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/alison/</loc>
-		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/northcarolina/outerbanks/portfolio/</loc>
+		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/</loc>
 		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -258,7 +528,19 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/</loc>
+		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/alison/</loc>
+		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/northcarolina/outerbanks/about/team/</loc>
+		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/northcarolina/outerbanks/portfolio/</loc>
 		<lastmod>2013-04-13T05:33:20+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -330,6 +612,12 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/virginia/charlottesville/about/alison/</loc>
+		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/virginia/charlottesville/contact-us/</loc>
 		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -342,25 +630,31 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/charlottesville/about/team/</loc>
-		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/charlottesville/about/alison/</loc>
-		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/virginia/charlottesville/portfolio/</loc>
 		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/virginia/charlottesville/about/team/</loc>
+		<lastmod>2013-04-13T05:25:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/williamsburg/about/team/</loc>
+		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/virginia/williamsburg/contact-us/</loc>
+		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/williamsburg/about/</loc>
 		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -372,19 +666,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/williamsburg/about/team/</loc>
-		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/virginia/williamsburg/about/alison/</loc>
-		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/williamsburg/about/</loc>
 		<lastmod>2013-04-13T05:24:41+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -414,18 +696,6 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/richmond/about/team/</loc>
-		<lastmod>2013-04-13T05:21:50+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/richmond/contact-us/</loc>
-		<lastmod>2013-04-13T05:21:50+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/virginia/richmond/portfolio/</loc>
 		<lastmod>2013-04-13T05:21:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -444,37 +714,19 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/tysonscorner/services/</loc>
-		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<loc>http://alisonHarper.dev/virginia/richmond/contact-us/</loc>
+		<lastmod>2013-04-13T05:21:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/alison/</loc>
-		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/team/</loc>
-		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<loc>http://alisonHarper.dev/virginia/richmond/about/team/</loc>
+		<lastmod>2013-04-13T05:21:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/faq/</loc>
-		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/</loc>
-		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/tysonscorner/portfolio/</loc>
 		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -486,37 +738,49 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/</loc>
+		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/team/</loc>
+		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/about/alison/</loc>
+		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/portfolio/</loc>
+		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/tysonscorner/services/</loc>
+		<lastmod>2013-04-13T05:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/virginia/tysonscorner/</loc>
 		<lastmod>2013-04-13T05:19:08+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/leesburg/services/</loc>
-		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/leesburg/portfolio/</loc>
-		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/leesburg/about/alison/</loc>
-		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/leesburg/about/team/</loc>
-		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/virginia/leesburg/about/faq/</loc>
+		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/services/</loc>
 		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -528,7 +792,25 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/about/team/</loc>
+		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/about/alison/</loc>
+		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/virginia/leesburg/contact-us/</loc>
+		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/leesburg/portfolio/</loc>
 		<lastmod>2013-04-13T05:17:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -540,13 +822,25 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>http://alisonHarper.dev/virginia/arlington/contact-us/</loc>
+		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>http://alisonHarper.dev/virginia/arlington/about/team/</loc>
 		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/arlington/contact-us/</loc>
+		<loc>http://alisonHarper.dev/virginia/arlington/about/alison/</loc>
+		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/virginia/arlington/portfolio/</loc>
 		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -564,18 +858,6 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/virginia/arlington/portfolio/</loc>
-		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/virginia/arlington/about/alison/</loc>
-		<lastmod>2013-04-13T05:15:12+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/virginia/arlington/</loc>
 		<lastmod>2013-04-13T05:14:41+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -584,24 +866,6 @@
 	<url>
 		<loc>http://alisonHarper.dev/virginia/alexandria/</loc>
 		<lastmod>2013-04-13T05:13:04+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/</loc>
-		<lastmod>2013-04-13T05:11:28+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/</loc>
-		<lastmod>2013-04-13T05:11:20+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/</loc>
-		<lastmod>2013-04-13T05:11:09+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -654,19 +918,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/alison/</loc>
-		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/</loc>
-		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/faq/</loc>
 		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -678,13 +930,19 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/team/</loc>
+		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/services/</loc>
 		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/services/</loc>
+		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/faq/</loc>
+		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/team/</loc>
 		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -696,217 +954,211 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/</loc>
-		<lastmod>2013-04-13T05:00:32+00:00</lastmod>
+		<loc>http://alisonHarper.dev/district-of-columbia/washingtondc/about/alison/</loc>
+		<lastmod>2013-04-13T05:06:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/</loc>
-		<lastmod>2013-04-13T05:00:22+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/about/faq/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/portfolio/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/contact-us/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/about/alison/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/portfolio/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/contact-us/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/about/alison/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/about/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/services/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/services/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/about/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/about/team/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/gaithersburg-3/about/team/</loc>
+		<loc>http://alisonHarper.dev/maryland/gaithersburg/about/faq/</loc>
 		<lastmod>2013-04-13T04:58:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/about/faq/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/portfolio/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/services/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/contact-us/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/about/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/services/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/portfolio/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/about/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/about/alison/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/about/alison/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/about/team/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/about/faq/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/laurel-2/contact-us/</loc>
+		<loc>http://alisonHarper.dev/maryland/laurel/about/team/</loc>
 		<lastmod>2013-04-13T04:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/contact-us/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/portfolio/</loc>
 		<lastmod>2013-04-13T04:56:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/services/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/contact-us/</loc>
 		<lastmod>2013-04-13T04:56:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/portfolio/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/services/</loc>
 		<lastmod>2013-04-13T04:56:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/about/alison/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/about/alison/</loc>
 		<lastmod>2013-04-13T04:56:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/about/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/about/team/</loc>
 		<lastmod>2013-04-13T04:56:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/about/team/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/about/faq/</loc>
 		<lastmod>2013-04-13T04:56:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/bethesda-3/about/faq/</loc>
+		<loc>http://alisonHarper.dev/maryland/bethesda/about/</loc>
 		<lastmod>2013-04-13T04:56:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/about/faq/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/about/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/services/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/portfolio/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/contact-us/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/about/alison/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/about/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/about/faq/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/about/team/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/services/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/portfolio/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/about/team/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/frederick-4/about/alison/</loc>
+		<loc>http://alisonHarper.dev/maryland/frederick/contact-us/</loc>
 		<lastmod>2013-04-13T04:55:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/contact-us/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/contact-us/</loc>
 		<lastmod>2013-04-13T04:50:57+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/services/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/services/</loc>
 		<lastmod>2013-04-13T04:50:40+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/about/faq/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/about/faq/</loc>
 		<lastmod>2013-04-13T04:50:34+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/about/alison/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/about/alison/</loc>
 		<lastmod>2013-04-13T04:50:28+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/about/team/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/about/team/</loc>
 		<lastmod>2013-04-13T04:50:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/annapolis-2-2/about/</loc>
+		<loc>http://alisonHarper.dev/maryland/annapolis/about/</loc>
 		<lastmod>2013-04-13T04:50:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -936,13 +1188,13 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/maryland/</loc>
+		<loc>http://alisonHarper.dev/blog/</loc>
 		<lastmod>2013-04-13T03:15:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://alisonHarper.dev/blog/</loc>
+		<loc>http://alisonHarper.dev/maryland/</loc>
 		<lastmod>2013-04-13T03:15:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
