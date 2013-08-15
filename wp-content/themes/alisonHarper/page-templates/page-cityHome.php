@@ -23,7 +23,8 @@
 
     <article class="column leftSide clear">
         <?php echo gcb(22); ?>
-    </article>
+<!--      <?php get_pins_feed_list('alisonharperco', 'hair-inspiration', 10, 1, 'newwindow', 'yes', 125, 125, 'large'); ?> 
+ -->    </article>
 
     <article class="column RightSide">
         <h2>From the Blog </h2>
