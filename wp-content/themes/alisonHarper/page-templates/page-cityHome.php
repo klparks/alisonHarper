@@ -19,6 +19,9 @@
         <?php echo gcb(34); ?>
     </section>
     <section class="awards"><h2>Recent Accolades</h2><div class="awardsLogos"></div></section>
+    
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Pinterest Widget Area') ) : ?>  
+      <?php endif; ?>  
 
 
     <article class="column leftSide clear">

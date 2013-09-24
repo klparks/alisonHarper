@@ -78,21 +78,15 @@ function enqueueStyles() {
 }
 add_image_size( 'featured', 400, 900 );
 if (function_exists('register_sidebar')) {
-    register_sidebar(array(
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-    register_sidebar(array(
-        'name' => 'City Homepage Featured Blog Posts',
-        'id'=>"city-home-featured",
-        'description' => 'This is where featured blog posts are chosen',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title' => '<h4>',
-        'after_title' => '</h4>',
-    ));
+    register_sidebar( array(
+        'name' => 'Pinterest Widget Area',
+        'id' => 'pinterestWidgetArea',
+        'description' => 'Place the Pinterest RSS feed plugin here',  
+        'before_widget' => '<div id="one" class="two">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h2>',  
+        'after_title'   => '</h2>'  
+     ));  
 }
 
 //This adds more user contact methods to the admin page
