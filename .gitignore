@@ -165,6 +165,9 @@ pip-log.txt
 
 #Alison Harper Files
 .htaccess
+**/.htaccess
 wp-config.php
+**/wp-config.php
 wp-content/plugins/**/*
-/nbproject
+**/nbproject/**/*
+/wp-content/themes/twentytwelve/nbproject/private/

@@ -10,4 +10,15 @@ jQuery(document).ready(function($) {
         });
     }
     $('body').on('contextmenu', 'img', function(e){ return false; });
+    $(".comments-title").click(function(e){
+        $(e.target).toggleClass("collapsed")
+  $(e.target).siblings(".collapsable").toggle( "blind" );
+        $(e.target).siblings(".collapsable").toggleClass("collapsed")
+        
+//        if($(e.target).siblings(".collapsable.collapsed").length > 0){
+//            $(e.target).siblings(".collapsable").hide('blind', 400)
+//        } else {
+//            $(e.target).siblings(".collapsable").show('blind', 400)
+//        }
+    })
 });

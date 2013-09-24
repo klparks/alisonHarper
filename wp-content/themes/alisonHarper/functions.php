@@ -40,7 +40,7 @@ function enqueueScripts() {
     // Register the script like this for a theme:
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
     wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
-    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'customselect')); 
+    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'jquery-effects-core', 'jquery-effects-blind', 'customselect')); 
     //TODO: REMOVE ON PROD
 //    wp_enqueue_script('bsLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
 //    wp_enqueue_script('csLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/js/plugins/customSelect/customSelect.js', array('jquery'));

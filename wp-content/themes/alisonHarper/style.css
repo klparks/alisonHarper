@@ -28,6 +28,16 @@ This theme was built on Bootstrap responsive theme
 
 }
 
+.collapsed{
+    display: none;
+}
+h4.collapsed{
+    display: block;
+}
+h4 .collapseState{
+}
+h4.collapsed .collapseState{
+}
 body { 
 	  padding:0;
 	  font-family: Raleway;
