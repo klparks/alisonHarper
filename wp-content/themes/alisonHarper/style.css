@@ -166,9 +166,9 @@ figure {
 }
 .bodyContent p.sideNote {
     color: #999999;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-style: italic;
-    line-height: 1.2em;
+    line-height: 1.5em;
     margin: 0;
     position: relative;
     top: -4px;
@@ -504,9 +504,6 @@ input.ui-button:hover {
 	/*min-height:800px;*/
 }
 
-.city li {
-	font-size:.9em;
-}
 
 .city nav li {
 	font-size:.75em;
@@ -750,8 +747,8 @@ li.noHighlight {
 	padding-right:10px;
 }
 .bodyContent p{
-    font-size: 0.9em;
-    line-height: auto;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 .miniBlog {
     background-color: #FFFFFF;
