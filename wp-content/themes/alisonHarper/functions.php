@@ -331,7 +331,6 @@ function getSlug(){
 }
 
 function listTeamMembers(){
-    echo "<ul class='teamMemberList'>";
     // The Query
     $city = getCurrentCity("cat_name");
     $the_query = new WP_Query( array(
@@ -343,19 +342,24 @@ function listTeamMembers(){
         'order'=>'ASC'));
 
     // The Loop
-    while ( $the_query->have_posts() ) :
-            $the_query->the_post();
-            echo "<li class='teamMemberBio clearfix'>";
-            echo "<h4>" . get_the_title() . "</h4>";
-            echo the_post_thumbnail('thumbnail');
-            echo  do_shortcode(get_the_content()) ;
-            echo "</li>";
-    endwhile;
-
+    if($the_query->have_posts()){
+        echo "<ul class='teamMemberList'>";
+        while ( $the_query->have_posts() ) :
+                $the_query->the_post();
+                echo "<li class='teamMemberBio clearfix'>";
+                echo "<h4>" . get_the_title() . "</h4>";
+                echo the_post_thumbnail('thumbnail');
+                echo  do_shortcode(get_the_content()) ;
+                echo "</li>";
+        endwhile;
+        echo "</ul>";
+    } else {
+        echo "<div class='noBios'>Artist's bios coming soon!</div>";        
+    }
+    
     /* Restore original Post Data 
      * NB: Because we are using new WP_Query we aren't stomping on the 
      * original $wp_query and it does not need to be reset.
     */
     wp_reset_postdata();
-    echo "</ul>";
 }
