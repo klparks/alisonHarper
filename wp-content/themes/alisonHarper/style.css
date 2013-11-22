@@ -15,6 +15,7 @@ This theme was built on Bootstrap responsive theme
 */
 /* fonts */
 
+@import url("//hello.myfonts.net/count/2896e4");
 
 @font-face {
     font-family: 'GreatVibesRegular';
@@ -27,6 +28,10 @@ This theme was built on Bootstrap responsive theme
     font-style: normal;
 
 }
+
+@font-face {font-family: 'BellucciaPro';src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.svg#wf") format('svg');}
+
+@font-face {font-family: 'Hess';src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.svg#wf") format('svg');}
 
 .collapsed{
     display: none;
@@ -654,18 +659,30 @@ li.noHighlight {
 	color:#B3C6CE;
 }
 .featuredText .intro {
-    color: black;
+    color: #000000;
     font-family: Raleway;
     font-size: 1em;
     font-style: normal;
-	padding-top:30px;
-	padding-bottom:20px;
+    margin-top: -100px;
+    padding-bottom: 20px;
+}
+.intro .emphasize {
+    color: #000000;
+    font-family: BellucciaPro;
+    font-size: 11em;
+    height: 127px;
 }
 
-.intro .emphasize {
-	font-size: 3em;
-	color:#8E367B;
-	font-family:GreatVibesRegular;
+.intro .barText {
+    background-color: #D19F98;
+    color: #FFFFFF;
+    font-family: Hess;
+    font-size: 1.4em;
+    letter-spacing: 0.5em;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    text-transform: uppercase;
+    width: 100%;
 }
 .featuredImage {
 	overflow:hidden;
@@ -691,25 +708,14 @@ li.noHighlight {
 }
 
 .featuredLinks div {
-    background-color: #FFFFFF;
-    border: 2px solid #CEDADF;
-    border-radius: 5px 5px 5px 5px;
-    padding: 10px;
     text-align: center;
-    width: 30.3%;
+    width: 32.9%;
 }
 
 .featuredLinks div:hover {
 	background-color:#eef5f8;
 }
 
-.featuredLinks a {
-	color: #8E367B;
-}
-
-.featuredLinks a:hover {
-	text-decoration: none;
-}
 
 .featuredLinks .center {
 	margin-left:5px;

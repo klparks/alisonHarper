@@ -1,0 +1,55 @@
+/* @license
+ * MyFonts Webfont Build ID 2660068, 2013-10-08T00:33:46-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Belluccia by Correspondence Ink
+ * URL: http://www.myfonts.com/fonts/correspondence-ink/belluccia/regular/
+ * Copyright: Copyright (c) 2011 by Debi Sementelli &amp; Brian J. Bonislawsky. All rights reserved.
+ * 
+ * Webfont: Belluccia Stylistic by Correspondence Ink
+ * URL: http://www.myfonts.com/fonts/correspondence-ink/belluccia/stylistic/
+ * Copyright: Copyright (c) 2011 by Debi Sementelli &amp; Brian J. Bonislawsky. All rights reserved.
+ * 
+ * Webfont: Belluccia Swashes by Correspondence Ink
+ * URL: http://www.myfonts.com/fonts/correspondence-ink/belluccia/swashes/
+ * Copyright: Copyright (c) 2011 by Debi Sementelli &amp; Brian J. Bonislawsky. All rights reserved.
+ * 
+ * Webfont: Belluccia Pro by Correspondence Ink
+ * URL: http://www.myfonts.com/fonts/correspondence-ink/belluccia/pro/
+ * Copyright: Copyright (c) 2011-2012 by Debi Sementelli &amp; Brian J. Bonislawsky. All rights reserved.
+ * 
+ * Webfont: Belluccia Contextual by Correspondence Ink
+ * URL: http://www.myfonts.com/fonts/correspondence-ink/belluccia/contextual/
+ * Copyright: Copyright (c) 2011 by Debi Sementelli &amp; Brian J. Bonislawsky. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2660068
+ * Licensed pageviews: 20,000
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2896e4");
+
+  
+@font-face {font-family: 'Belluccia';src: url('webfonts/2896E4_0_0.eot');src: url('webfonts/2896E4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2896E4_0_0.woff') format('woff'),url('webfonts/2896E4_0_0.ttf') format('truetype'),url('webfonts/2896E4_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'BellucciaStylistic';src: url('webfonts/2896E4_1_0.eot');src: url('webfonts/2896E4_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2896E4_1_0.woff') format('woff'),url('webfonts/2896E4_1_0.ttf') format('truetype'),url('webfonts/2896E4_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'BellucciaSwashes';src: url('webfonts/2896E4_2_0.eot');src: url('webfonts/2896E4_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2896E4_2_0.woff') format('woff'),url('webfonts/2896E4_2_0.ttf') format('truetype'),url('webfonts/2896E4_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'BellucciaPro';src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.svg#wf") format('svg');}
+ 
+  
+@font-face {font-family: 'BellucciaContextual';src: url('webfonts/2896E4_4_0.eot');src: url('webfonts/2896E4_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2896E4_4_0.woff') format('woff'),url('webfonts/2896E4_4_0.ttf') format('truetype'),url('webfonts/2896E4_4_0.svg#wf') format('svg');}
+ 

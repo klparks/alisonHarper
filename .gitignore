@@ -171,3 +171,5 @@ wp-config.php
 wp-content/plugins/**/*
 **/nbproject/**/*
 /wp-content/themes/twentytwelve/nbproject/private/
+sitemap.xml
+sitemap.gz.xml
