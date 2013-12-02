@@ -5,30 +5,34 @@
 ?>
 <?php get_template_part("page-templates/header", "head"); ?>
 <body class="landingBody gradient">
-    <nav class="topHomeNav uppercase shadow">
+    
+	<div class="goldRule"></div>
+
+    <div class="container">
+
+            <hgroup>
+                <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
+                <h2 id="tagline" class="uppercase"> <?php echo get_bloginfo('description'); ?></h2>
+            </hgroup>
+            <nav class="topHomeNav uppercase">
         <ul>
             
             <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
             <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
             <li><?php get_template_part("page-templates/header", "socialMedia"); ?></li>
         </ul>
-    </nav>
+    		</nav>
 
-
-    <div class="container">
-        <header>
-            <hgroup>
-                <h1 id="logo"><img src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
-                <h2 id="tagline" class="lowercase"> <?php echo get_bloginfo('description'); ?></h2>
-            </hgroup>
-            <aside>
-                <p class="lowercase headline ">Hello Friend!</p>
+     <div>
+     		<figure id="ladies" class="left"></figure>
+            <aside class="left">
+            <div class="helloFriend">
+                <p class="headline ">Hello Friend!</p>
                 <p class="lowercase subline">Please select your closest location.</p>
-            </aside>
-        </header>
-    </div>
-
-    <nav class="locationsList uppercase"><ul>
+            </div>
+            
+                <nav class="locationsList uppercase clear"><ul>
+            
             <?php
             $regions = getLocations();
             foreach ($regions as $r) {
@@ -38,7 +42,13 @@
                 }
             }
             ?>
+            <br><li> Don't see your location? <a href="#">Contact us.</a></li>
         </ul>
     </nav>
+            </aside>
+   
+
+    </div>
+     </div>
     <?php get_footer(); ?>
 </body>

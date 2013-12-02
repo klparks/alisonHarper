@@ -16,20 +16,7 @@ This theme was built on Bootstrap responsive theme
 /* fonts */
 
 @import url("//hello.myfonts.net/count/2896e4");
-
-@font-face {
-    font-family: 'GreatVibesRegular';
-    src: url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.eot");
-    src: url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.eot?#iefix") format('embedded-opentype'),
-         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.woff") format('woff'),
-         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.ttf") format('truetype'),
-         url("/wp-content/themes/alisonHarper/webfonts/GreatVibes-Regular-webfont.svg#GreatVibesRegular") format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {font-family: 'BellucciaPro';src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_3_0.svg#wf") format('svg');}
+ 
 
 @font-face {font-family: 'Hess';src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.svg#wf") format('svg');}
 
@@ -76,8 +63,8 @@ figure {
 
 /* headers */
 .city h2 {
-    border-bottom: 2px solid #CEDADF;
-    color: #8E367B;
+    border-bottom: 2px solid #D19F98;
+    color: #000000;
     font-family: Raleway;
     font-size: 1.5em;
     font-weight: 300;
@@ -86,13 +73,13 @@ figure {
 }
 
 .featuredText h2 {
-    color: #8E367B;
-    font-family: GreatVibesRegular;
-    font-size: 2.5em;
+    border: 0 none;
+    color: #000000;
+    font-family: Belluccia;
+    font-size: 4.4em;
     font-weight: 300;
     line-height: 1.8em;
-	border:0;
-	margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .city h3 {
@@ -105,8 +92,7 @@ figure {
 }
 
 .city h4 {
-    border-bottom: 1px solid #CEDADF;
-    color: #92AAB4;
+    color: #D19F98;
     font-family: Raleway;
     font-size: 1.2em;
     font-weight: 500;
@@ -115,13 +101,23 @@ figure {
 }
 
 
-
 /*this moves the logo text off screen, but usable by search engines*/
-.container #logo span, .container #tagline {
+.container #logo span {
 	left: -5000px;
     position: absolute;
 }
 
+#tagline {
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 1.6em;
+	 border:0;
+}
+
+hgroup h2:hover {
+	border:0;
+	text-decoration:none;
+}
 /*drop shadow */
 .shadow {
 	-moz-box-shadow: 0 10px 25px #EDEEEE;
@@ -211,21 +207,24 @@ height:300px;
 }
 
 
-
-.landingBody .container {
-    margin: 0 auto;
-	background-image: url("/wp-content/themes/alisonHarper/images/map.png");
-    background-position: left top;
-    background-repeat: no-repeat;
-	min-height:630px;
+.landingBody  {
+	border-top:50px solid #fff;
 }
 
+.landingBody .container {
+	margin-top:-50px;
+}
+#ladies {
+    background-image: url("/wp-content/themes/alisonHarper/images/map.png");
+    height: 592px;
+    width: 704px;
+}
 .topHomeNav {
-	background-color: white;
+    padding-top: 10px;
+    position: relative;
     text-align: right;
+    top: -98px;
     width: 100%;
-	padding-bottom:10px;
-	padding-top:10px;
 }
 
 .topHomeNav ul {
@@ -245,41 +244,47 @@ height:300px;
 }
 
 .landingBody hgroup {
-	height: 151px;
     position: relative;
-    top: -53px;
+    top: -5px;
     width: 251px;
-	float:left;
 }
 
 #logo {
 	padding:0;
 	margin:0;
 }
+
+.goldRule {
+	background-image:url(images/goldRule.png);
+	background-repeat:repeat-x;
+	height:5px;
+}
 	
 
 /* headlines and subline */
-.landingBody aside {
-    float: left;
-    margin-left: 10px;
-    margin-top: 34px;
-}
+
 .landingContainer p {
 	margin:0;
 }
 
 .landingBody .headline {
-    color: #8F367B;
-    font-size: 2em;
+    color: #000000;
+    font-family: Belluccia;
+    font-size: 5.5em;
     font-weight: 100;
-    letter-spacing: 0.04em;
-    margin-bottom: 0;
+    margin-bottom: 0.1em;
 }
-
 .landingBody .subline {
     color: #5E5E5E;
-    font-size: 0.7em;
-    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 100;
+    margin-left: 100px;
+}
+
+.landingBody .helloFriend {
+	position:relative;
+	left:-77px;
+	top:-20px;
 }
 
 /* end headline and subline */
@@ -290,38 +295,29 @@ height:300px;
 
 /*list of locations */
 	
-.locationsList {
-    left: 400px;
-    position: absolute;
-    top: 40px;
-}
-
-.locationsList ul {
-	padding-left:80%;
-}
 
 .locationsList li {
 	list-style-type:none;
-	line-height:1.5em;
+	line-height:1.3em;
 }
 
 .locationsList h3 {
-    color: #B3C6CE;
-    font-family: GreatVibesRegular;
+    color: #D19F98;
+    font-family: Hess;
     font-size: 2em;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin: 20px 0 0;
-    text-indent: -1em;
-    text-transform: none;
+    font-weight: normal;
+    line-height: 0.8em;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 20px;
 }
-
 
 .locationsList li a {
 	font-weight: 100;
     letter-spacing: 0.04em;
 	color:#5E5E5E;
 	font-size:.8em;
+	margin-left:10px;
 }
 
 
@@ -330,7 +326,7 @@ height:300px;
 
 /*custom select */
 .customSelect, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
-    border: 1px solid #8F367B;
+    border: 1px solid #000000;
     border-radius: 5px 5px 5px 5px;
     padding: 6px 10px;
 	font-family:Raleway;
@@ -354,7 +350,7 @@ height:300px;
 	background-image:url(/wp-content/themes/alisonHarper/images/carot.png);
 	background-repeat:no-repeat;
 	background-position:right;
-	color: #8A8B8B;
+	color: #000000;
 	text-align:left;
 }
 
@@ -367,7 +363,7 @@ select .indent {
 }
 
 select .disabled {
-	color:#8F367B;
+	color:#D19F98;
 	font-weight:300;
 }
 
@@ -389,7 +385,7 @@ option {
 }
 
 li .customSelect option:hover, li .customSelect option:focus {
-	background-color:#8F367B;
+	background-color:#000000;
 	color:#fff;
 }
 
@@ -482,7 +478,7 @@ label.radioGroup {
 }
 
 input.ui-button {
-    background-color: #8E367B;
+    background-color: #000000;
     background-image: none;
     border: 0 none;
     color: #FFFFFF;
@@ -494,7 +490,7 @@ input.ui-button {
 }
 
 input.ui-button:hover {
-    background-color: #7a2c69;
+    background-color: #000000;
 }
 	
 	
@@ -525,10 +521,10 @@ input.ui-button:hover {
 }
 
 .brand {
-	width:22%;
-	height:120px;
+    height: 120px;
+    padding-right: 18px;
+    width: auto;
 }
-
 .brand hgroup{
 	height:100px;
 }
@@ -536,19 +532,18 @@ input.ui-button:hover {
 .location {
     color: #B3C6CE;
     float: right;
-    font-family: GreatVibesRegular;
-    font-size: 1.4em;
+    font-family: raleway;
+    font-size: 0.8em;
+    position: relative;
     text-align: right;
-    text-transform: none;
-	position:relative;
-	top:-20px;
+    top: -24px;
 }
 
 
 .location a {
     color: #AAAAAA;
     font-family: Raleway;
-    font-size: 0.5em;
+    font-size: 0.7em;
     padding-left: 5px;
 }
 
@@ -577,13 +572,23 @@ input.ui-button:hover {
 
 
 .city header nav {
-	border-bottom: 1px solid #CEDADF;
-	padding-top:43px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
+	-webkit-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
+	-o-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 30px;
+	border-left:0;
 }
-
 .city header nav li {
     float: left;
     margin-right: 60px;
+	border-left:0;
 }
 
 .city header nav li a {
@@ -592,13 +597,17 @@ input.ui-button:hover {
 }
 
 .city header nav li a:hover {
-	color:#8E367B;
+	color:#4F4C4C;
 	font-family:Raleway;
 	background-color:transparent;
 }
 
 nav .current_page_item, nav .current_page_parent {
-    border-bottom: 4px solid #CEDADF;
+    border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
+	-webkit-border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
+	-o-border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
+    border-style: solid;
+    border-width: 3px;
     margin-top: 0;
 }
 
@@ -617,13 +626,13 @@ li.noHighlight {
 .city aside ul {
 	margin:0;
 	padding:0;
-	margin-top:10px;
 }
 
 .city aside li {
-	list-style-type:none;
-	line-height:2.5em;
-	font-size:.8em;
+    font-size: 0.8em;
+    line-height: 1em;
+    list-style-type: none;
+    padding-bottom: 1em;
 }
 
 .city aside li.current_page_item a {
@@ -638,7 +647,6 @@ li.noHighlight {
 /* begin content */
 .bodyContent .content {
 	width:78%;
-	margin-top:10px;
 	padding-bottom:15px;
 }
 
@@ -668,7 +676,7 @@ li.noHighlight {
 }
 .intro .emphasize {
     color: #000000;
-    font-family: BellucciaPro;
+    font-family: Belluccia;
     font-size: 11em;
     height: 127px;
 }
@@ -683,15 +691,16 @@ li.noHighlight {
     padding-top: 7px;
     text-transform: uppercase;
     width: 100%;
+	margin-bottom:26px;
 }
 .featuredImage {
-	overflow:hidden;
+    background-image: url("images/goldBackground.png");
+    height: 400px;
+    width: auto;
 }
-
 /*awards*/
-.awards {
-	margin-bottom:40px;
-	margin-top:20px;
+.awards, #one {
+	margin-bottom:100px;
 }
 
 .awardsLogos {
@@ -703,8 +712,8 @@ li.noHighlight {
 
 /*featured link on city homepage */
 .featuredLinks {
-	margin-top:5px;
-	margin-bottom:10px;
+	margin-bottom: 20px;
+	margin-top:20px;
 }
 
 .featuredLinks div {
@@ -726,13 +735,15 @@ li.noHighlight {
 .mainHome {
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height: 400px;
     margin: 0;
-    width: auto;
+    padding-left: 7px;
+    padding-top: 6px;
+    width: 98.5%;
 }
 
 .mainHome img {
-	width:915px;
+    height: 97%;
+    width: 100%;
 }
 
 .column {
@@ -875,18 +886,18 @@ li.teamMemberBio {
     width: 230px;
 }
 .blog aside h3 {
-    color: #8E367B;
+    color: #000000;
     font-size: 0.9em;
     text-transform: uppercase;
 }
 
 .blog .sidebar ul {
-	margin-top:0;
+	margin-top:10px;
 }
 
 
 .city .comments-title {
-	    background-color: #b3c4cb;
+	background-color: #b3c4cb;
     border-bottom: 1px solid #CEDADF;
     border-radius: 10px 10px 0 0;
     color: #FFFFFF;
@@ -950,7 +961,7 @@ cite{
 
 
 .comment-reply-link, .post-edit-link{
-    background-color: #8E367B;
+    background-color: #aaaaaa;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     font-family: Raleway;

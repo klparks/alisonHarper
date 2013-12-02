@@ -49,10 +49,10 @@ function enqueueScripts() {
 	//TODO: REMOVE ON PROD
 	//uncomment the following for device development, comment it for local
 	
-    /*wp_enqueue_script('bsLocalJs','http://kparks/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
+    wp_enqueue_script('bsLocalJs','http://kparks/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
     wp_enqueue_script('csLocalJs','http://kparks/wp-content/themes/alisonHarper/js/plugins/customSelect/customSelect.js', array('jquery'));
     wp_enqueue_script('mainLocalJs', 'http://kparks/wp-content/themes/alisonHarper/js/main.js', array('jquery', 'jquery-ui-core')); 
-*/
+
 }
 
 //Load necessary styles on page load
@@ -71,10 +71,10 @@ function enqueueStyles() {
 	//TODO: REMOVE ON PROD
     //uncomment the following for device development, comment it for local
 	
-	/*wp_enqueue_style('bsLocal', 'http://kparks/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
+	wp_enqueue_style('bsLocal', 'http://kparks/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('baResponsiveLocal', 'http://kparks/wp-content/themes/alisonHarper/bootstrap/css/bootstrap-responsive.min.css');
     wp_enqueue_style('ahLocal', 'http://kparks/wp-content/themes/alisonHarper/style.css');
-*/
+
 }
 add_image_size( 'featured', 400, 900 );
 if (function_exists('register_sidebar')) {
