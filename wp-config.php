@@ -22,7 +22,7 @@ define('DB_NAME', 'alisonharper');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'c00lR00t!');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
