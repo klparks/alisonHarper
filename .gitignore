@@ -169,12 +169,7 @@ pip-log.txt
 wp-config.php
 **/wp-config.php
 wp-content/plugins/**/*
-<<<<<<< HEAD
 **/nbproject/**/*
 /wp-content/themes/twentytwelve/nbproject/private/
 sitemap.xml
 sitemap.gz.xml
-=======
-/nbproject
-/wp-content/themes/alisonHarper/nbproject/**/*
->>>>>>> updates for git
