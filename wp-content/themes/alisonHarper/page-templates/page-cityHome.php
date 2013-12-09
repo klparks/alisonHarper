@@ -18,7 +18,7 @@
         <section class="featuredLinks clearfix">
         <?php echo gcb(34); ?>
     </section>
-    <section class="awards"><h2>Recent Accolades</h2><div class="awardsLogos"></div></section>
+    <section class="awards"><?php echo gcb(36); ?></section>
     
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Pinterest Widget Area') ) : ?>  
       <?php endif; ?>  

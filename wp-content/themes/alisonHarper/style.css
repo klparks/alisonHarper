@@ -19,7 +19,8 @@ This theme was built on Bootstrap responsive theme
  
 @font-face {font-family: 'Belluccia';src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Bellucia/webfonts/2896E4_0_0.svg#wf") format('svg');}
 
-@font-face {font-family: 'Hess';src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.svg#wf") format('svg');}
+@font-face {font-family: 'Hess';src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.svg#wf") format('svg');
+;}
 
 .collapsed{
     display: none;
@@ -99,6 +100,13 @@ figure {
     font-weight: 500;
     line-height: 1.3em;
     margin-bottom: 5px;
+}
+
+.city h5 {
+	font-family:Hess;
+	font-weight:normal;
+	font-size:2.4em;
+	color:#828282;
 }
 
 
@@ -682,7 +690,7 @@ li.noHighlight {
     height: 127px;
 }
 
-.intro .barText {
+.barText {
     background-color: #D19F98;
     color: #FFFFFF;
     font-family: Hess;
@@ -1007,6 +1015,8 @@ cite{
 .slideshow_pagination ul li {
 	display:none !important;
 }
+
+
 
 /* 404 page */
 ul.error {
