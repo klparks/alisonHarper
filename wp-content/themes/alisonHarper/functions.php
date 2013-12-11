@@ -329,13 +329,36 @@ function getSlug(){
     $post_obj = $wp_query->get_queried_object();
     return $post_obj->post_name;
 }
+function getPortfolioPages(){
+        // The Query
+    $the_query = new WP_Query( array(
+        'post_type'=>'page', 
+        'post_parent'=>get_the_ID(), 
+        'posts_per_page'=>-1));
+    $pages = array();
+    // The Loop
+    while ( $the_query->have_posts() ) :
+            $the_query->the_post();
+            $page = null;
+            $page->title = get_the_title();
+            $page->slug = basename(get_permalink());
+            $page->link = get_permalink();
+            $pages[] = $page;
+    endwhile;
 
+    /* Restore original Post Data 
+     * NB: Because we are using new WP_Query we aren't stomping on the 
+     * original $wp_query and it does not need to be reset.
+    */
+    wp_reset_postdata();
+    return $pages;
+}
 function listTeamMembers(){
     echo "<ul class='teamMemberList'>";
     // The Query
     $city = getCurrentCity("cat_name");
     $the_query = new WP_Query( array(
-        'post_type'=>'page', 
+        'post_type'=>'page',
         'post_parent'=>TEAM_PAGE_ID, 
         'category_name'=>$city,
         'posts_per_page'=>-1,
