@@ -619,7 +619,7 @@ input.ui-button:hover {
 	background-color:transparent;
 }
 
-nav .current_page_item {
+nav .current_page_item, nav .current_page_parent{
     border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
 	-webkit-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
 	-o-border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
@@ -627,6 +627,11 @@ nav .current_page_item {
     border-width: 3px;
     margin-top: 0;
 }
+
+.noHighlight.current_page_parent {
+	border:none !important;
+}
+	
 
 .current_page_item a {
 	position:relative;
@@ -788,7 +793,8 @@ li.noHighlight {
 }
 
 a.more-link {
-	font-style:italic;
+    color: #AAAAAA;
+    font-style: italic;
 }
 
 .blogSnipPic {
@@ -905,7 +911,7 @@ li.teamMemberBio {
 }
 
 .blog h3 {
-    border-bottom: 1px solid #AAAAAA;
+    border-bottom: 1px solid #D19F98;
     font-family: Raleway;
     font-style: normal;
     line-height: 1.3em;
@@ -934,7 +940,7 @@ li.teamMemberBio {
 
 
 .city .comments-title {
-	background-color: #b3c4cb;
+    background-color: #D19F98;
     border-bottom: 1px solid #CEDADF;
     border-radius: 10px 10px 0 0;
     color: #FFFFFF;
@@ -945,7 +951,6 @@ li.teamMemberBio {
     margin: -20px -20px 0;
     padding: 10px 20px 5px 10px;
 }
-
 .blog ol {
 	padding-top:15px;
 	margin:0;
