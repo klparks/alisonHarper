@@ -42,7 +42,7 @@
                 }
             }
             ?>
-            <br><li> Don't see your location? <a href="#">Contact us.</a></li>
+            <br><li> Don't see your location? <a href="http://alisonharper.dev/contact-us/">Contact us.</a></li>
         </ul>
     </nav>
             </aside>

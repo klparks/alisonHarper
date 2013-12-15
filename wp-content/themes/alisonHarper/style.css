@@ -80,8 +80,12 @@ figure {
     font-family: Belluccia;
     font-size: 4.4em;
     font-weight: 300;
-    line-height: 1.8em;
+    line-height: 1.2em;
     margin-bottom: 0;
+}
+
+.content header h2 {
+	padding-top:20px;
 }
 
 .city h3 {
@@ -345,7 +349,7 @@ height:300px;
 }
 
 .formGroup textarea, .formGroup input[type="text"]{
-    width:300px;
+    width:400px;
 }
 
 .locationSelect {
@@ -534,6 +538,10 @@ input.ui-button:hover {
     padding-right: 18px;
     width: auto;
 }
+
+.brand .brand:hover {
+	text-decoration:none;
+}
 .brand hgroup{
 	height:100px;
 }
@@ -611,13 +619,18 @@ input.ui-button:hover {
 	background-color:transparent;
 }
 
-nav .current_page_item, nav .current_page_parent {
+nav .current_page_item {
     border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
 	-webkit-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
 	-o-border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
     border-style: solid;
     border-width: 3px;
     margin-top: 0;
+}
+
+.current_page_item a {
+	position:relative;
+	top:-2px;
 }
 
 li.noHighlight {
@@ -700,7 +713,10 @@ li.noHighlight {
     padding-top: 7px;
     text-transform: uppercase;
     width: 100%;
-	margin-bottom:26px;
+}
+
+.intro .barText {
+	font-size:1.3em;
 }
 .featuredImage {
     background-image: url("images/goldBackground.png");
@@ -803,14 +819,22 @@ li.noHighlight {
     margin-top: 0;
 }
 
-.meetAlison .intro {
-    color: #8E367B;
-    font-family: Raleway;
-    font-size: 1.4em;
-    font-style: normal;
-    line-height: 2em;
+.meetAlison h2 {
+	font-size:6.4em;
 }
-
+.meetAlison .barText {
+	position:relative;
+	top:-40px;
+	z-index:-1;
+}
+.meetAlison .uppercase {
+    color: #727272;
+    font-family: Hess;
+    font-size: 1.87em;
+    letter-spacing: 0.1em;
+    position: relative;
+    top: -48px;
+}
 .caption-right p {
 	text-align:right;
 }

@@ -22,7 +22,7 @@
     
     </aside>
 <div class="content left">
-<h2>The Harper Blog</h2>
+<header><h2>The Harper Blog</h2></header>
 <?php get_template_part("page-templates/header", "noNav"); ?>
     <nav class="nav-single">
             <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '<<', 'Previous post link') . '</span> %title' ); ?></span>

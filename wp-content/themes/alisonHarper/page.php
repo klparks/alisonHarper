@@ -3,7 +3,7 @@
     <div class="bodyContent clear">
         <!-- SIDE NAVIGATION -->
         <aside class="uppercase left">
-            <?php listLocationNav(); ?>
+           &nbsp; <?php listLocationNav(); ?>
         </aside>
 
         <!-- PAGE CONTENT (context sensitive) -->

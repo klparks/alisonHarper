@@ -19,7 +19,7 @@
     
     </aside>
     <div class="content left">
-    <h2>The Harper Blog</h2>
+   <header> <h2>The Harper Blog</h2></header>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
             <p class="timestamp"><?php the_time('l, F jS, Y'); ?><span class="right"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?>.</span></p>
