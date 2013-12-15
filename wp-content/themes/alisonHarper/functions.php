@@ -30,6 +30,15 @@ define("SERVICES_PAGE_SLUG", "services");
 add_action('wp_enqueue_scripts', 'enqueueScripts');
 add_action( 'genesis_meta', 'wpb_add_google_fonts', 5);	 
 add_filter('comment_post_redirect', 'redirect_after_comment');
+
+// Modify the WordPress read more link
+add_filter( 'excerpt_more', 'more_link' );
+add_filter( 'the_content_more_link', 'more_link' );
+function more_link() {
+	return ' <a class="more-link" href="' . get_permalink() . '"> read more</a>';
+}
+
+
 function redirect_after_comment($location){
     return $_SERVER["HTTP_REFERER"];
 }
@@ -151,7 +160,8 @@ function getLocations() {
         $cities = array();
         $currentRegionId = $region->cat_ID;
         $cityPages = get_posts('numberposts=-1&category=' . $currentRegionId . '&orderby=title&order=ASC&post_type=page');
-
+        
+        //get the region page and check that it's not in draft
         foreach ($cityPages as $page) {
             if (in_category(LOCATION_ROOT_ID, $page) && in_category($currentRegionId, $page)) {
                 $city = null;
