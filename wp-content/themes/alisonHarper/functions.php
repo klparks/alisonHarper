@@ -21,6 +21,8 @@ define("CAREERS_PAGE_SLUG", "careers");
 define("CONTACT_PAGE_SLUG", "contact-us");
 define("PORTFOLIO_PAGE_SLUG", "portfolio");
 define("TEAM_PAGE_SLUG", "team");
+define("ABOUT_ALISON_PAGE_SLUG", "alison");
+define("SERVICES_PAGE_SLUG", "services");
 
  add_theme_support( 'post-thumbnails' );
  
@@ -99,6 +101,8 @@ function customContactMethods($user_contactmethods) {
     $user_contactmethods['twitter'] = 'Twitter Username';
     $user_contactmethods['pinterest'] = 'Pinterest Username';
     $user_contactmethods['youtube'] = 'YouTube Username';
+    $user_contactmethods['instagram'] = 'Instagram Username'; 
+    $user_contactmethods['gplus'] = 'Google+ URL';
 
     return $user_contactmethods;
 }
@@ -354,7 +358,7 @@ function getPortfolioPages(){
     return $pages;
 }
 function listTeamMembers(){
-    echo "<ul class='teamMemberList'>";
+    
     // The Query
     $city = getCurrentCity("cat_name");
     $the_query = new WP_Query( array(
@@ -364,21 +368,25 @@ function listTeamMembers(){
         'posts_per_page'=>-1,
         'orderby'=>'title',
         'order'=>'ASC'));
-
-    // The Loop
-    while ( $the_query->have_posts() ) :
-            $the_query->the_post();
-            echo "<li class='teamMemberBio clearfix'>";
-            echo "<h4>" . get_the_title() . "</h4>";
-            echo the_post_thumbnail('thumbnail');
-            echo  do_shortcode(get_the_content()) ;
-            echo "</li>";
-    endwhile;
+    if($the_query->have_posts()){
+        echo "<ul class='teamMemberList'>";
+        // The Loop
+        while ( $the_query->have_posts() ) :
+                $the_query->the_post();
+                echo "<li class='teamMemberBio clearfix'>";
+                echo "<h4>" . get_the_title() . "</h4>";
+                echo the_post_thumbnail('thumbnail');
+                echo  do_shortcode(get_the_content()) ;
+                echo "</li>";
+        endwhile;
+        echo "</ul>";
+    } else {
+        echo "Team bios coming soon!";
+    }    
 
     /* Restore original Post Data 
      * NB: Because we are using new WP_Query we aren't stomping on the 
      * original $wp_query and it does not need to be reset.
     */
     wp_reset_postdata();
-    echo "</ul>";
 }

@@ -5,7 +5,7 @@
             <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
             <li><?php echo getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID); ?>Contact Us</a></li>
             
-            <li><div class="uppercase" id="subscribeNewsletter">Subscribe to our newsletter:</div></li>
+<!--            <li><div class="uppercase" id="subscribeNewsletter">Subscribe to our newsletter:</div></li>-->
             <li><a href="mailto:<?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?>"><?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?></a></li>
             <li><a class="noLinkStyle" href="tel:<?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?>"><?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?></a></li>
         </ul>
