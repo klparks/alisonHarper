@@ -13,9 +13,6 @@
         <?php } else if (getSlug() == TEAM_PAGE_SLUG) { ?>
             <!-- Team Page -->
             <?php get_template_part("page-templates/page", "team"); ?>
-        <?php } else if (getSlug() == PORTFOLIO_PAGE_SLUG) { ?>
-            <!-- Portfolio Page -->
-            <?php get_template_part("page-templates/page", "portfolio"); ?>
         <?php } else { ?>
             <!-- Default Layout -->
             <?php get_template_part("page-templates/page", "default"); ?>
