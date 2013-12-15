@@ -787,6 +787,10 @@ li.noHighlight {
 	width:68%;
 }
 
+a.more-link {
+	font-style:italic;
+}
+
 .blogSnipPic {
 	width:auto;
 	float:left;
