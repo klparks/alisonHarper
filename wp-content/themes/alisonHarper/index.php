@@ -1,29 +1,27 @@
 <?php get_header("nav"); ?>
-<?php if(have_posts()) { ?>
-        
-            <section class="sidebar">
-                <h3>Archives</h3>
-            <ul>
-                <?php wp_get_archives('type=monthly'); ?>
-            </ul>
-            </section>
-            <header> <h2>The Harper Blog</h2></header> 
+<?php if(have_posts()) { ?><div class="container city">
+    <div class="bodyContent blog featuredText clear">
+	<aside class="left">
+    	<section class="sidebar">
+    	<h3>Archives</h3>
+    <ul>
+    	<?php wp_get_archives('type=monthly'); ?>
+    </ul>
+    </section>
+    
+<!--    <section class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+	<?php wp_list_categories(); ?>
+    </ul>
+    </section>-->
+    
+    </aside>
         <?php } ?>
 
 <div class="container city">
-    <div class="bodyContent blog featuredText clear">
-	<aside class="left">
-   
-    </aside>
     <div class="content left">
         <?php if(have_posts()) { ?>
-        
-            <section class="sidebar">
-                <h3>Archives</h3>
-            <ul>
-                <?php wp_get_archives('type=monthly'); ?>
-            </ul>
-            </section>
             <header> <h2>The Harper Blog</h2></header> 
         <?php } ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
