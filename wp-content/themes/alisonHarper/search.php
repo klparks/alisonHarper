@@ -11,7 +11,9 @@
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <p class="timestamp"><?php the_time('l, F jS, Y'); ?></p>
+                                <p><?php the_excerpt(); ?></p>
 			<?php endwhile; ?>
 
 		<?php else : ?>
