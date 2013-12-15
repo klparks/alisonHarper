@@ -31,7 +31,7 @@
     <article class="column leftSide clear">
         <div><!--about alison !-->
             <?php echo gcb(22); ?>
-            <a title="Read On" href="<?php echo get_page_link(getLocationPage(ABOUT_ALISON_PAGE_SLUG)->ID)?>">read on</a>.
+            <a class="more-link" title="read more" href="about/alison">read more</a>.
         </div>
         <!--<?php get_pins_feed_list('alisonharperco', 'hair-inspiration', 10, 1, 'newwindow', 'yes', 125, 125, 'large'); ?> -->
     </article>

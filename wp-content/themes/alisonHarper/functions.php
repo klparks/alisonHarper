@@ -38,6 +38,10 @@ function more_link() {
 	return ' <a class="more-link" href="' . get_permalink() . '"> read more</a>';
 }
 
+function custom_excerpt_length( $length ) {
+	return 40;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function redirect_after_comment($location){
     return $_SERVER["HTTP_REFERER"];
@@ -46,6 +50,13 @@ function wpb_add_google_fonts() {
         echo '<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,300,600,700,800" rel="stylesheet" type="text/css">';
                 echo '<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic" rel="stylesheet" type="text/css">';
 
+}
+add_filter('comment_form_default_fields', 'url_filtered');
+function url_filtered($fields)
+{
+  if(isset($fields['url']))
+   unset($fields['url']);
+  return $fields;
 }
 function enqueueScripts() {
     // Register the script like this for a theme:
