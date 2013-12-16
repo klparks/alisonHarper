@@ -685,11 +685,6 @@ li.noHighlight {
 }
 
 
-.intro .headline {
-	font-size:4em;
-	font-family:Raleway;
-	color:#B3C6CE;
-}
 .featuredText .intro {
     color: #000000;
     font-family: Raleway;
@@ -831,6 +826,10 @@ a.more-link {
 	font-size:6.4em;
 }
 
+.meetAlison header {
+	position:relative;
+	top:20px;
+}
 
 .meetAlison .barText {
 	position:relative;
@@ -969,7 +968,7 @@ h4.collapsed .collapseState {
 	cursor:pointer;
 }
 
-h4.collapsed .expandedState {
+h4 .collapseState {
     background-image: url("/wp-content/themes/alisonHarper/images/expanded.png");
     display: inline-block;
     height: 13px;
@@ -1097,8 +1096,15 @@ ul.error {
 	padding:0;}
 
 .error {
-	line-height:3em;
-	padding-top:30px;}
+    line-height: 3em;
+    padding-top: 53.6px;
+}
+
+.error .headline {
+    color: #000000;
+    font-family: Belluccia;
+    font-size: 5.8em;
+}
 
 /* search results*/
 article.post {
