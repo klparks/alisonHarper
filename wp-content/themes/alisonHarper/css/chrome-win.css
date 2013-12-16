@@ -1,5 +1,4 @@
 
 .landingBody .headline, .intro .emphasize {line-height:.9em;}
-
-
-
+.featuredText h2 {margin-bottom: 15px}
+.content header h2 {margin-bottom: 0px}
