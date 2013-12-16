@@ -37,6 +37,18 @@ add_filter( 'the_content_more_link', 'more_link' );
 function more_link() {
 	return '&hellip; <a class="more-link" href="' . get_permalink() . '"> read more</a>';
 }
+function theme_get_archives_link ( $link_html ) {
+    global $wp;
+    static $current_url;
+    if ( empty( $current_url ) ) {
+        $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
+    }
+    if ( stristr( $link_html, $current_url ) !== false ) {
+        $link_html = preg_replace( '/(<[^\s>]+)/', '\1 class="current_page_item"', $link_html, 1 );
+    }
+    return $link_html;
+}
+add_filter('get_archives_link', 'theme_get_archives_link');
 
 function custom_excerpt_length( $length ) {
 	return 40;
