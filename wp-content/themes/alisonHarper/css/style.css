@@ -81,9 +81,7 @@ figure {
 	padding-top:20px;
 }
 
-   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .content header h2 {padding-top:0; padding-bottom:20px;}
-}
+
 
 .city h3 {
     color: #818080;
@@ -265,7 +263,7 @@ height:300px;
 }
 
 .goldRule {
-	background-image:url(images/goldRule.png);
+	background-image:url(../images/goldRule.png);
 	background-repeat:repeat-x;
 	height:5px;
 }
@@ -285,9 +283,7 @@ height:300px;
     margin-bottom: 0.1em;
 }
 
-   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .landingBody .headline {line-height:.9em;}
-}
+
 .landingBody .subline {
     color: #5E5E5E;
     font-size: 1.1em;
@@ -546,9 +542,7 @@ input.ui-button:hover {
 .brand hgroup{
 	height:100px;
 }
-   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .brand hgroup{position:relative; top:-19px;}
-}
+
 
 .location {
     color: #B3C6CE;
@@ -598,9 +592,9 @@ input.ui-button:hover {
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     border-color: rgba(0, 0, 0, 0);
-    border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
-	-webkit-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
-	-o-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
+    border-image: url("../images/goldRule.png") 0 0 10 0 repeat repeat;
+	-webkit-border-image: url("../images/goldRule.png") 0 0 10 0 repeat repeat;
+	-o-border-image: url("../images/goldRule.png") 0 0 10 0 repeat repeat;
     border-style: solid;
     border-width: 1px;
     padding-top: 30px;
@@ -624,17 +618,14 @@ input.ui-button:hover {
 }
 
 nav .current_page_item, nav .current_page_parent{
-    border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
-	-webkit-border-image: url("images/goldRule.png") 0 0 10 0 repeat repeat;
-	-o-border-image: url("images/goldRule.png") 0 0 3 0 repeat repeat;
+    border-image: url("../images/goldRule.png") 0 0 3 0 repeat repeat;
+	-webkit-border-image: url("../images/goldRule.png") 0 0 10 0 repeat repeat;
+	-o-border-image: url("../images/goldRule.png") 0 0 3 0 repeat repeat;
     border-style: solid;
     border-width: 3px;
     margin-top: 0;
 }
 
-.noHighlight.current_page_parent {
-	border:none !important;
-}
 	
 
 .current_page_item a {
@@ -711,9 +702,7 @@ li.noHighlight {
     font-size: 11em;
     height: 127px;
 }
-   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .intro .emphasize{line-height:.9em;}
-}
+
 
 .barText {
     background-color: #D19F98;
@@ -731,7 +720,7 @@ li.noHighlight {
 	font-size:1.3em;
 }
 .featuredImage {
-    background-image: url("images/goldBackground.png");
+    background-image: url("../images/goldBackground.png");
     height: 400px;
     width: auto;
 }
@@ -840,9 +829,7 @@ a.more-link {
 	font-size:6.4em;
 }
 
-   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .content .meetAlison h2 {padding-bottom:27px;}
-}
+
 .meetAlison .barText {
 	position:relative;
 	top:-40px;
