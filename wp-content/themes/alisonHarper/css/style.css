@@ -183,7 +183,7 @@ hgroup h2:hover {
     top: -4px;
 }
 
-.wp-caption-text {
+.content .wp-caption-text {
 	color:#9F9F9F;
 	font-size:.8em;
 }
@@ -835,6 +835,7 @@ a.more-link {
 	position:relative;
 	top:-40px;
 	z-index:-1;
+	font-size:1.4em;
 }
 .meetAlison .uppercase {
     color: #727272;
@@ -851,9 +852,6 @@ a.more-link {
 	text-align:left;
 }
 
-.left.column img:first-child {
-	margin-bottom:10px;
-}
 
 /* team */
 li.teamMemberBio {
@@ -1110,14 +1108,19 @@ ul.error {
 article.post {
 	padding-top:20px;
 }
+
+/* this removes markup only for mobile*/
+.desktop-hidden {
+	display:none !important;
+}
 @media screen and (max-width: 980px) {
 .landingBody {
 	padding:0;
 	width:100%;
 }
-.landingBody .container {
+#ladies {
     margin: 0 auto;
-	background-image: url("/wp-content/themes/alisonHarper/images/map980.png");
+	background-image: url("/wp-content/themes/alisonHarper/images/map.png");
     background-position: left top;
     background-repeat: no-repeat;
 	height:544px;
@@ -1142,23 +1145,48 @@ article.post {
 
 
 @media screen and (max-width: 650px) {
+.desktop-hidden {
+		display:inline-block !important;
+}
+.mobile-hidden {
+	display:none !important;
+}
+
+ul.desktop-hidden.topHomeNav {
+	margin:0 0 10px;
+}
+
+.desktop-hidden li {
+    border: 1px solid;
+    border-radius: 4px;
+    display: inline-block;
+    list-style: none outside none;
+    padding: 5px 10px;
+    text-align: center;
+	margin-right:10px;
+}
 .landingBody {
 	padding:0;
 	width:100%;
+	border-top:0;
 }
 .landingBody hgroup {
-    height: 90px;
+    height: 60px;
     top: 0;
     width: 100%;
 }
 
+.landingBody .container {
+    margin-top: 0;
+}
 
-#logo img {
-	display:none;
+.topHomeNav {
+    text-align: center;
+    top: 0;
 }
 
 #logo {
-    background-color: #8E367A;
+    background-color: #000000;
     background-image: url("/wp-content/themes/alisonHarper/images/logo650.png");
     background-position: center top 10px;
     background-repeat: no-repeat;
@@ -1171,10 +1199,11 @@ article.post {
 #tagline {
     clear: both;
     left: 0;
-    margin: 25px 0 0;
+    margin: -20px 0 0;
     padding: 0;
     position: inherit;
     text-align: center;
+	color:#fff;
 }
 
 .landingBody aside {
@@ -1185,17 +1214,13 @@ article.post {
     width: 100%;
 }
 
-.locationsList {
-	display:none;
-}
 
-.landingBody .container {
+#ladies {
     background-image: url("/wp-content/themes/alisonHarper/images/map650.png");
-    background-position: left top 130px;
     background-repeat: no-repeat;
     height: 485px;
-    margin: 0 auto;
     min-height: 485px;
+    width: 482px;
 }
 
 
