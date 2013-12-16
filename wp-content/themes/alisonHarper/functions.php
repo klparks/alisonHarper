@@ -63,7 +63,8 @@ function enqueueScripts() {
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
     wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'jquery-effects-core', 'jquery-effects-blind', 'customselect')); 
-    //TODO: REMOVE ON PROD
+    
+//TODO: REMOVE ON PROD
 //    wp_enqueue_script('bsLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/js/bootstrap.js', array('jquery'));
 //    wp_enqueue_script('csLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/js/plugins/customSelect/customSelect.js', array('jquery'));
 //    wp_enqueue_script('mainLocalJs', 'http://josie-pc/wp-content/themes/alisonHarper/js/main.js', array('jquery', 'jquery-ui-core')); 
@@ -83,7 +84,20 @@ function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
     wp_enqueue_style('datepicker', 'http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css');
-    wp_enqueue_style('ahLocal', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('ahLocal', get_template_directory_uri() . '/css/style.css');
+    $ua=getBrowser();
+    if($ua['name'] == "Internet Explorer"){
+        wp_enqueue_style('msie', get_template_directory_uri() . '/css/msie.css');
+    }
+    if($ua['name'] == "Mozilla Firefox"){
+        wp_enqueue_style('ff', get_template_directory_uri() . '/css/ff.css');
+    }
+    if($ua['name'] == "Google Chrome"){
+        wp_enqueue_style('chrome', get_template_directory_uri() . '/css/chrome.css');
+    }
+    if($ua['platform'] == "windows" && $ua['name'] == "Google Chrome"){
+        wp_enqueue_style('winchrome', get_template_directory_uri() . '/css/chrome-win.css');
+    }
     //wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
     //TODO: REMOVE ON PROD
 //    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');
@@ -98,6 +112,98 @@ function enqueueStyles() {
    // wp_enqueue_style('ahLocal', 'http://kparks/wp-content/themes/alisonHarper/style.css');
 
 }
+function getBrowser() 
+{ 
+    $u_agent = $_SERVER['HTTP_USER_AGENT']; 
+    $bname = 'Unknown';
+    $platform = 'Unknown';
+    $version= "";
+
+    //First get the platform?
+    if (preg_match('/linux/i', $u_agent)) {
+        $platform = 'linux';
+    }
+    elseif (preg_match('/macintosh|mac os x/i', $u_agent)) {
+        $platform = 'mac';
+    }
+    elseif (preg_match('/windows|win32/i', $u_agent)) {
+        $platform = 'windows';
+    }
+    // Next get the name of the useragent yes seperately and for good reason
+    if(preg_match('/MSIE/i',$u_agent) && !preg_match('/Opera/i',$u_agent) || preg_match('/Trident/i',$u_agent)) 
+    { 
+        $bname = 'Internet Explorer'; 
+        $ub = "MSIE"; 
+    } 
+    elseif(preg_match('/Firefox/i',$u_agent)) 
+    { 
+        $bname = 'Mozilla Firefox'; 
+        $ub = "Firefox"; 
+    } 
+    elseif(preg_match('/Chrome/i',$u_agent)) 
+    { 
+        $bname = 'Google Chrome'; 
+        $ub = "Chrome"; 
+    } 
+    elseif(preg_match('/Safari/i',$u_agent)) 
+    { 
+        $bname = 'Apple Safari'; 
+        $ub = "Safari"; 
+    } 
+    elseif(preg_match('/Opera/i',$u_agent)) 
+    { 
+        $bname = 'Opera'; 
+        $ub = "Opera"; 
+    } 
+    elseif(preg_match('/Netscape/i',$u_agent)) 
+    { 
+        $bname = 'Netscape'; 
+        $ub = "Netscape"; 
+    } 
+    
+    // finally get the correct version number
+    $known = array('Version', $ub, 'other');
+    $pattern = '#(?<browser>' . join('|', $known) .
+    ')[/ ]+(?<version>[0-9.|a-zA-Z.]*)#';
+    if (!preg_match_all($pattern, $u_agent, $matches)) {
+        // we have no matching number just continue
+    }
+    
+    // see how many we have
+    $i = count($matches['browser']);
+    if ($i != 1) {
+        //we will have two since we are not using 'other' argument yet
+        //see if version is before or after the name
+        if (strripos($u_agent,"Version") < strripos($u_agent,$ub)){
+            if(sizeof($matches['version']) > 0){
+                $version= $matches['version'][0];
+            }
+        }
+        else {
+            if(sizeof($matches['version']) > 1){
+                $version= $matches['version'][1];
+            }
+        }
+    }
+    else {
+        
+        if(sizeof($matches['version']) > 0){
+            $version= $matches['version'][0];
+        }
+    }
+    
+    // check if we have a number
+    if ($version==null || $version=="") {$version="?";}
+    
+    return array(
+        'userAgent' => $u_agent,
+        'name'      => $bname,
+        'version'   => $version,
+        'platform'  => $platform,
+        'pattern'    => $pattern
+    );
+} 
+
 add_image_size( 'featured', 400, 900 );
 if (function_exists('register_sidebar')) {
     register_sidebar( array(
