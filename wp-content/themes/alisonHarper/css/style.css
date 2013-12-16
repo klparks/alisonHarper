@@ -22,16 +22,8 @@ This theme was built on Bootstrap responsive theme
 @font-face {font-family: 'Hess';src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot");src: url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.eot?#iefix") format('embedded-opentype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.woff") format('woff'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.ttf") format('truetype'),url("/wp-content/themes/alisonHarper/webfonts/Hess/webfonts/290D5F_0_0.svg#wf") format('svg');
 ;}
 
-.collapsed{
-    display: none;
-}
-h4.collapsed{
-    display: block;
-}
-h4 .collapseState{
-}
-h4.collapsed .collapseState{
-}
+
+
 body { 
 	  padding:0;
 	  font-family: Raleway;
@@ -970,6 +962,34 @@ li.teamMemberBio {
     margin: -20px -20px 0;
     padding: 10px 20px 5px 10px;
 }
+
+/* expand collapse */
+
+.collapsed{
+    display: none;
+}
+h4.collapsed{
+    display: block;
+}
+
+h4.collapsed .collapseState {
+    background-image: url("/wp-content/themes/alisonHarper/images/collapsed.png");
+    display: inline-block;
+    height: 13px;
+    width: 11px;
+	cursor:pointer;
+}
+
+h4.collapsed .expandedState {
+    background-image: url("/wp-content/themes/alisonHarper/images/expanded.png");
+    display: inline-block;
+    height: 13px;
+    width: 11px;
+	cursor:pointer;
+}
+
+/* end expand collapse */
+
 .blog ol {
 	padding-top:15px;
 	margin:0;
@@ -1068,6 +1088,18 @@ cite{
 	display:none !important;
 }
 
+.slideshow_previous {
+	background-image: url("/wp-content/themes/alisonHarper/images/portfolio/arrowLeft.png") !important;
+	width: 51px !important;
+	height:56px !important;
+}
+
+.slideshow_next {
+	background-image: url("/wp-content/themes/alisonHarper/images/portfolio/arrowRight.png") !important;
+	width: 51px !important;
+	height:56px !important;
+	background-position:0 !important;
+}
 
 
 /* 404 page */
