@@ -10,15 +10,15 @@ jQuery(document).ready(function($) {
         });
     }
     $('body').on('contextmenu', 'img', function(e){ return false; });
+    var toggleCollapse = function(target){
+        $(target).toggleClass("collapsed")
+        $(target).siblings(".collapsable").toggle( "blind" );
+        $(target).siblings(".collapsable").toggleClass("collapsed")
+    }
     $(".comments-title").click(function(e){
-        $(e.target).toggleClass("collapsed")
-  $(e.target).siblings(".collapsable").toggle( "blind" );
-        $(e.target).siblings(".collapsable").toggleClass("collapsed")
-        
-//        if($(e.target).siblings(".collapsable.collapsed").length > 0){
-//            $(e.target).siblings(".collapsable").hide('blind', 400)
-//        } else {
-//            $(e.target).siblings(".collapsable").show('blind', 400)
-//        }
+        toggleCollapse(e.target)
+    })
+    $(".collapseState").click(function(e){
+        toggleCollapse(e.target.parentNode)
     })
 });
