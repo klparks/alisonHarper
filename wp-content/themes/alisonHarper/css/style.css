@@ -626,7 +626,9 @@ nav .current_page_item, nav .current_page_parent{
     margin-top: 0;
 }
 
-	
+.noHighlight.current_page_parent {
+	border:0 !important;
+}
 
 .current_page_item a {
 	position:relative;
