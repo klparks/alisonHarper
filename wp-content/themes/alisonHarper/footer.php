@@ -11,7 +11,7 @@
         </ul>
        
     </section>
-    <section class="right">
+    <section class="right mobile-hidden">
         <ul>
             <li class="locationSelect"><?php get_template_part("page-templates/footer", "select"); ?></li>
             <li>All images and materials Copyright &copy; 2013</li>

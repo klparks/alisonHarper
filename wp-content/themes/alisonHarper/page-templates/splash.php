@@ -28,14 +28,24 @@
             <li><?php get_template_part("page-templates/header", "socialMedia"); ?></li>
         </ul>
     		</nav>
+            
+    <div class="helloFriend desktop-hidden">
+           <p class="headline ">Hello Friend!</p>
+           <p class="lowercase subline">Please select your closest location.</p>
+    </div>
+    <section class="desktop-hidden">
+        <div><?php get_template_part("page-templates/footer", "select"); ?></div>
+     </section>
+
 
      <div>
      		<figure id="ladies" class="left"></figure>
             <aside class="left">
-            <div class="helloFriend">
+           <div class="helloFriend mobile-hidden">
                 <p class="headline ">Hello Friend!</p>
                 <p class="lowercase subline">Please select your closest location.</p>
-            </div>
+           </div>
+
             
                 <nav class="locationsList mobile-hidden uppercase clear"><ul>
             
