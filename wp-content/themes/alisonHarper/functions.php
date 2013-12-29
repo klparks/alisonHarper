@@ -299,10 +299,12 @@ function getLocations() {
                 $cities[] = $city;
             }
         }
-        $newRegion = null;
-        $newRegion->name = $region->name;
-        $newRegion->cities = $cities;
-        $allLocations[] = $newRegion;
+        if(count($cities) > 0){
+            $newRegion = null;
+            $newRegion->name = $region->name;
+            $newRegion->cities = $cities;
+            $allLocations[] = $newRegion;  
+        }
     }
     return $allLocations;
 }
