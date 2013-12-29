@@ -43,14 +43,6 @@
             <?php get_template_part("page-templates/index", "notFound"); ?>
         <?php endif; ?>
     </div>
-    
-    
-    
-    
-    
-
-
-
  </div>
  </div>
  </div>
