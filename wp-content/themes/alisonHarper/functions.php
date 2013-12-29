@@ -399,8 +399,11 @@ function isLocationHiring(){
 }
 function getRecentPosts($numToShow = 3)
 {
-    $args = array( "showposts" => $numToShow, "post__in"=>get_option('sticky_posts') );                  
-    query_posts($args);
+    $sticky = get_option( 'sticky_posts' );
+    rsort( $sticky );
+    $sticky = array_slice( $sticky, 0, $numToShow );
+
+    query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
 
     $content = "";
 
