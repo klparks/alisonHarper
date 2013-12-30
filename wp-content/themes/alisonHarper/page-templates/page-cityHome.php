@@ -16,9 +16,9 @@
     </section>
 	
     <section class="featuredLinks clearfix">
-        <div class="left"><a href="about/alison"><img src="http://alisonHarper.dev/wp-content/uploads/2013/11/meetAlisonHarper.png" alt="meetAlisonHarper" width="369" height="215" class="alignleft size-full wp-image-1404" /></a></a></div>
-        <div class="center left"><a href="services"><a href="<?php echo get_page_link(getLocationPage(SERVICES_PAGE_SLUG)->ID) ?>"><img src="http://alisonHarper.dev/wp-content/uploads/2013/11/reviewOurServices.png" alt="reviewOurServices" width="235" height="211" class="alignleft size-full wp-image-1406" /></a></a></div>
-        <div class="left"><a href="/blog/"><a href="/blog/"><img src="http://alisonHarper.dev/wp-content/uploads/2013/11/readTheBlog.png" alt="readTheBlog" width="292" height="204" class="alignleft size-full wp-image-1405" /></a></a></div>
+        <div id="aboutAlison" class="left"><a href="about/alison"><p class="desktop-hidden">About Alison Harper</p></a></a></div>
+        <div id="reviewServices" class="center left"><a href="services"><a href="<?php echo get_page_link(getLocationPage(SERVICES_PAGE_SLUG)->ID) ?>"><p class="desktop-hidden">Review Our Services</p></a></a></div>
+        <div id="readBlog" class="left"><a href="/blog/"><a href="/blog/"><p class="desktop-hidden">Read the Blog</p></a></a></div>
     </section>
     <section class="awards"><?php echo gcb(36); ?></section>
     
@@ -29,7 +29,7 @@
     <article class="column leftSide clear">
         <div><!--about alison !-->
             <?php echo gcb(22); ?>
-            <a class="more-link" title="read more" href="about/alison">read more</a>.
+            <a class="more-link mobile-button" title="read more" href="about/alison">read more</a>.
         </div>
         <!--<?php get_pins_feed_list('alisonharperco', 'hair-inspiration', 10, 1, 'newwindow', 'yes', 125, 125, 'large'); ?> -->
     </article>

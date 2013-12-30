@@ -8,43 +8,42 @@
     
      	<ul class="desktop-hidden uppercase topHomeNav">
              
-            <li><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
-            <li><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
+            <li class="mobile-button"><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
+            <li class="mobile-button"><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
      	</ul>
    
 	<div class="goldRule"></div>
 
     <div class="container">
-
+		<div class="brand">
             <hgroup>
                 <h1 id="logo"><img class="mobile-hidden" src="/wp-content/themes/alisonHarper/images/logo.jpg" alt="Alison Harper and Company"/><span>Alison Harper and Company</span></h1>
                 <h2 id="tagline" class="uppercase"> <?php echo get_bloginfo('description'); ?></h2>
             </hgroup>
-            <nav class="topHomeNav uppercase">
+        </div>
+        <nav class="topHomeNav">
         <ul>
             
-            <li class="mobile-hidden"><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
-            <li class="mobile-hidden"><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
-            <li><?php get_template_part("page-templates/header", "socialMedia"); ?></li>
+            <li class="mobile-hidden uppercase"><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
+            <li class="mobile-hidden uppercase"><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
+            <?php get_template_part("page-templates/header", "socialMedia"); ?>
         </ul>
-    		</nav>
-            
-    <div class="helloFriend desktop-hidden">
-           <p class="headline ">Hello Friend!</p>
-           <p class="lowercase subline">Please select your closest location.</p>
-    </div>
-    <section class="desktop-hidden">
-        <div><?php get_template_part("page-templates/footer", "select"); ?></div>
-     </section>
-
+        <ul class="desktop-hidden locationSelect">
+            <li class="headline clearfix">Hello Friend!</li>
+            <li class="subline">Please select your closest location</li>
+            <li><?php get_template_part("page-templates/footer", "select"); ?></li>
+            <li id="ladies"></li>
+        </ul>
+        
+    </nav>
 
      <div>
-     		<figure id="ladies" class="left"></figure>
+     		<figure id="ladies" class="left mobile-hidden"></figure>
             <aside class="left">
-           <div class="helloFriend mobile-hidden">
+     <div class="helloFriend mobile-hidden">
                 <p class="headline ">Hello Friend!</p>
                 <p class="lowercase subline">Please select your closest location.</p>
-           </div>
+     </div>
 
             
                 <nav class="locationsList mobile-hidden uppercase clear"><ul>

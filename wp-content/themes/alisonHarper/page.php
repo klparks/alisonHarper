@@ -2,7 +2,7 @@
 <div class="container city">
     <div class="bodyContent clear">
         <!-- SIDE NAVIGATION -->
-        <aside class="uppercase left">
+        <aside class="uppercase left mobile-hidden">
            &nbsp; <?php listLocationNav(); ?>
         </aside>
 

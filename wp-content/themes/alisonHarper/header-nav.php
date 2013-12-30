@@ -9,11 +9,17 @@
             <div class="right">
             <?php get_template_part("page-templates/header", "search"); ?>
             
-        	<ul class="left">
+        	<ul class="left mobile-hidden">
             
             	
             	<li><div class="socialMedia left"><?php get_template_part("page-templates/header", "socialMedia"); ?></div></li>
         	</ul>
+            
+        <nav class="topHomeNav desktop-hidden">
+        <ul>
+            <?php get_template_part("page-templates/header", "socialMedia"); ?>
+        </ul>
+        </nav>
             
             
           
