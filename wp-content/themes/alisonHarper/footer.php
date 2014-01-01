@@ -7,7 +7,7 @@
             
 <!--            <li><div class="uppercase" id="subscribeNewsletter">Subscribe to our newsletter:</div></li>-->
             <li><a href="mailto:<?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?>"><?php $admin = get_userdata(ADMIN_USER_ID); echo $admin->user_email ?></a></li>
-            <li><a class="noLinkStyle" href="tel:<?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?>"><?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?></a></li>
+            <li><a href="tel:301-477-2170" class="noLinkStyle" href="tel:<?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?>"><?php echo get_user_meta(ADMIN_USER_ID, 'phone', true); ?></a></li>
         </ul>
        
     </section>
