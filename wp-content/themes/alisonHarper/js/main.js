@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
   // Code using $ as usual goes here.
     $("select").customSelect();
-    $("input.date").pickadate();
-    $("input.time").pickatime();
+    //$("input.date").pickadate();
+    //$("input.time").pickatime();
     $("input[type=submit], button" ).button();
     if($("aside.left .current_page_item").length == 0){
         var ancestors = $(".headerContents nav .current_page_parent");

@@ -19,5 +19,5 @@
         <?php } ?>
     </div>
 </div>
-<div class="desktop-hidden" style="width:100%;"><?php get_template_part("page-templates/header", "nav"); ?></div>
+<div class="desktop-hidden headerContents" style="width:100%;"><?php get_template_part("page-templates/header", "nav"); ?></div>
 <?php get_footer(); ?>

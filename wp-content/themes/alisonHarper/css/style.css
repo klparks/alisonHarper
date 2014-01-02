@@ -1540,6 +1540,14 @@ nav .current_page_item, nav .current_page_parent {
 	border:0;
 }
 
+.noHighlight.current_page_parent {
+	background-color:transparent;
+	border-bottom:1px solid #AAAAAA !important;
+}
+
+.headerContents .nav li {
+	display:block;
+}
 /* end global navigation*/
 .topHomeNav {
     text-align: center;
