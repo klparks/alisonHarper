@@ -97,6 +97,9 @@ function enqueueStyles() {
     if($ua['platform'] == "windows"){
         wp_enqueue_style('win', get_template_directory_uri() . '/css/win.css');
     }
+    if($ua['platform'] == "mac"){
+        wp_enqueue_style('mac', get_template_directory_uri() . '/css/mac.css');
+    }
     if($ua['name'] == "Internet Explorer"){
         wp_enqueue_style('msie', get_template_directory_uri() . '/css/msie.css');
     }
