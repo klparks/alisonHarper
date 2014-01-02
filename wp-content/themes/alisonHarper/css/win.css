@@ -2,6 +2,10 @@
 .landingBody .headline, .intro .emphasize {line-height:.9em;}
 .featuredText h2 {margin-bottom: 15px}
 
+.landingBody .brand {position:relative; top:14px;}
+.landingBody aside {position:relative; top:-32px}
+.landingBody .landingLocations {position:relative; top:33px;}
+
 /* chrome only hacks */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
 .brand hgroup{position:relative; top:-19px;}
@@ -18,10 +22,3 @@
     margin-top:-20px;
 }
 }
-
-
-
-
-.landingBody .brand {position:relative; top:14px;}
-.landingBody aside {position:relative; top:-32px}
-.landingBody .landingLocations {position:relative; top:33px;}
