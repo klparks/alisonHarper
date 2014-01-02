@@ -523,7 +523,7 @@ function listTeamMembers(){
         endwhile;
         echo "</ul>";
     } else {
-        echo "Team bios coming soon!";
+        echo "<p class='comingSoon'>Team bios coming soon!</p>";
     }    
 
     /* Restore original Post Data 

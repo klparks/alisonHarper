@@ -15,7 +15,7 @@
             	<li><div class="socialMedia left"><?php get_template_part("page-templates/header", "socialMedia"); ?></div></li>
         	</ul>
             
-        <nav class="topHomeNav desktop-hidden">
+        <nav class="topHomeNav desktop-hidden socialMedia">
         <ul>
             <?php get_template_part("page-templates/header", "socialMedia"); ?>
         </ul>
@@ -23,7 +23,7 @@
             
             
           
-          <div class="mobile-hidden"><?php get_template_part("page-templates/header", "nav"); ?></div>
+          <div class="mobile-hidden globalNav"><?php get_template_part("page-templates/header", "nav"); ?></div>
                         <?php
                 //Welcome to city link
                 if (getCurrentCity("cat_name")) {

@@ -2,7 +2,7 @@
 <div class="container city">
     <div class="bodyContent clear">
         <!-- SIDE NAVIGATION -->
-        <aside class="uppercase left mobile-hidden">
+        <aside class="uppercase left">
            &nbsp; <?php listLocationNav(); ?>
         </aside>
 
@@ -19,5 +19,10 @@
         <?php } ?>
     </div>
 </div>
-<div class="desktop-hidden headerContents" style="width:100%;"><?php get_template_part("page-templates/header", "nav"); ?></div>
+<div class="desktop-hidden tablet-hidden headerContents" style="width:100%;"><?php get_template_part("page-templates/header", "nav"); ?></div>
+
+<aside class="uppercase left desktop-hidden mobile-hidden">
+    &nbsp; <?php listLocationNav(); ?>
+</aside>
+
 <?php get_footer(); ?>

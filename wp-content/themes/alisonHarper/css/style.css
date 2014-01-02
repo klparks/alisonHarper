@@ -541,7 +541,7 @@ input.ui-button:hover {
 
 
 .location {
-    color: #B3C6CE;
+    color: #D19F98;
     float: right;
     font-family: raleway;
     font-size: 0.8em;
@@ -839,7 +839,14 @@ a.more-link {
 .logged-in-as, .form-allowed-tags, .avatar {
 	display:none;
 }
+/* about landing page */
+.headline {
+	padding-top:20px;
+}
 
+#aboutLanding .clear {
+	width:50%;
+}
 /*aboutAlison*/
 .meetAlison section {
     margin-bottom: 20px;
@@ -1150,6 +1157,10 @@ article.post {
 	display:none !important;
 }
 
+body {
+	overflow-x:hidden;
+}
+
 
 /* landingPage*/
 
@@ -1203,6 +1214,14 @@ nav .current_page_item, nav .current_page_parent {
 	border:0;
 }
 
+.headerContents .nav li {
+    display: block;
+}
+
+.noHighlight.current_page_parent {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #AAAAAA !important;
+}
 /* end global navigation*/
 
 .topHomeNav {
@@ -1216,6 +1235,11 @@ nav .current_page_item, nav .current_page_parent {
 
 .topHomeNav li {
 	padding-left:0;
+}
+
+.landingBody .topHomeNav li.mobile-button {
+	border-radius:4px;
+	border:1px solid #aaa;
 }
 
 #logo {
@@ -1322,11 +1346,12 @@ footer .right, footer .left {
 }
 
 .location {
-	font-size:1em;
-	text-align:center;
-	float:none;
-	color:#000000;
-	padding-top:35px;
+    color: #000000;
+    float: none;
+    font-size: 1em;
+    padding-top: 15px;
+    text-align: center;
+    top: 0;
 }
 
 .location a {
@@ -1356,7 +1381,6 @@ footer .right, footer .left {
 .bodyContent {
 	margin-left:10px;
 	margin-right:10px;
-	margin-top:20px;
 }
 	
 .bodyContent .content {
@@ -1368,12 +1392,12 @@ footer .right, footer .left {
 	width:100%;
 }
 /* featured */
-.city {
+.container {
+	height:194px;
 
 }
 .featuredImage {
 	height: auto;
-	margin-top:40px;
 }
 
 .mainHome {
@@ -1450,6 +1474,10 @@ footer .right, footer .left {
     display:none;
 }
 
+.city h3 {
+	line-height: 1.4em;
+}
+
 .miniBlog {
 	padding:0;
 }
@@ -1470,19 +1498,52 @@ footer .right, footer .left {
 }
 
 .content header h2 {
-    padding-top: 50px;
+    padding-top: 0px;
 }
 /* end sub pages */
 
 /* begin forms */
-/*begin sub pages */
+#comment {
+	width:100%;
+}
+
 .formGroup textarea, .formGroup input[type="text"] {
     width: 100%;
 }
-	
+
+/*begin sub pages */
+.comingSoon {
+	text-align:center;
+}
+/* portfolio landing */
+#portfolioLanding .size-full{
+	display:none;
 	
 }
 
+/*about landing */ 
+#aboutLanding figure {
+	display:none;
+}
+
+#aboutLanding h2 {
+	font-size:2.8em;
+}
+
+#aboutLanding .clear {
+    width: 100%;
+	padding-top:15px;
+}
+
+.headline {
+    padding-top: 0;
+}
+
+#aboutLanding p {
+	padding-bottom:0;
+	margin-bottom:0;
+}
+}
 @media screen and (min-width:501px) and (max-width:700px) {
 .desktop-hidden {
 		display:inline-block !important;
@@ -1491,6 +1552,9 @@ footer .right, footer .left {
 	display:none !important;
 }
 
+body {
+	overflow-x: hidden;
+}
 
 /* landingPage*/
 
@@ -1528,16 +1592,24 @@ nav .nav {
 	border-top:1px solid #aaa;
 }
 
-nav .nav li {
+nav .nav li, .city aside li {
 	text-align:center;
 	border-bottom:1px solid #aaa;
 	padding-top:10px;
 	padding-bottom:10px;
 }
-nav .current_page_item, nav .current_page_parent {
+nav .current_page_item, nav .current_page_parent, aside li.current_page_item, aside li.current_page_parent {
 	border-image:none;
 	background-color:#eee;
 	border:0;
+}
+
+aside li.current_page_item, aside li.current_page_parent {
+	border-bottom:1px solid #aaa;
+}
+
+.city aside li.current_page_item a, .city aside li.current_page_parent a {
+	border-bottom:0;
 }
 
 .noHighlight.current_page_parent {
@@ -1666,11 +1738,12 @@ footer .right, footer .left {
 }
 
 .location {
-	font-size:1em;
-	text-align:center;
-	float:none;
-	color:#000000;
-	padding-top:35px;
+    color: #000000;
+    float: none;
+    font-size: 1em;
+    padding-top: 15px;
+    text-align: center;
+    top: 0;
 }
 
 .location a {
@@ -1680,6 +1753,7 @@ footer .right, footer .left {
 
 .notRight {
     margin-left: 10px;
+	border:0;
 }
 
 .headerContents .right, .headerContents .left {
@@ -1694,10 +1768,14 @@ footer .right, footer .left {
 /*end header content*/
 
 /*sidebar*/
-
 .city aside {
-    display:none;
+	width:100%;
 }
+
+aside ul {
+	border-top:1px solid #aaa;
+}
+
 
 /* end sidebar */
 
@@ -1707,22 +1785,24 @@ footer .right, footer .left {
 	margin-right:10px;
 }
 	
-.bodyContent .content {
+.noSidebar .content {
     overflow: hidden;
     width: 100%;
-	margin-top:20px;
 }
 
 .column {
 	width:100%;
 }
-/* featured */
-.city {
 
+.leftSide {
+	padding:0;
+}
+/* featured */
+.container {
+	height:194px;
 }
 .featuredImage {
 	height: auto;
-	margin-top:40px;
 }
 
 .mainHome {
@@ -1744,14 +1824,6 @@ footer .right, footer .left {
 .intro .barText {
     font-size: 1.7em;
     padding-top: 0;
-}
-.barText {
-    color: #D19F98;
-    font-size: 1.4em;
-    letter-spacing: 0.07em;
-    padding-bottom: 7px;
-    width: 100%;
-	background-color:transparent;
 }
 
 .blurb {
@@ -1837,6 +1909,24 @@ footer .right, footer .left {
 	text-align:center;
 }
 
+/*portfolio landing */
+
+#portfolioLanding div {
+    margin: auto;
+    padding: 0;
+    width: 33%;
+}
+
+#aboutLanding .clear {
+    width: 100%;
+	padding-top:15px;
+}
+
+.headline {
+    padding-top: 0;
+}
+
+
 /* end sub pages */
 	
 }
@@ -1849,6 +1939,9 @@ footer .right, footer .left {
 	display:none !important;
 }
 
+body {
+	overflow-x:hidden;
+}
 
 /* landingPage*/
 
@@ -1880,6 +1973,36 @@ ul.desktop-hidden.topHomeNav {
 .landingBody .container {
     margin-top: 0;
 }
+
+/* global navigation */
+.globalNavFooter {
+	display:inline !important;
+}
+nav .nav {
+	border-top:1px solid #aaa;
+}
+
+nav .nav li{
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+nav .current_page_item, nav .current_page_parent {
+	border-image:none;
+	background-color:#eee;
+	border:0;
+}
+
+.noHighlight.current_page_parent {
+	background-color:transparent;
+	border-bottom:1px solid #AAAAAA !important;
+}
+
+.headerContents .nav li {
+	display:block;
+}
+/* end global navigation*/
 
 .topHomeNav {
     text-align: center;
@@ -1962,6 +2085,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: 100%;
+	border-top:0;
 }
 
 
@@ -1997,13 +2121,19 @@ footer .right, footer .left {
 }
 
 .location {
-	font-size:1em;
-	text-align:center;
-	float:none;
-	color:#000000;
-	padding-top:35px;
+    color: #000000;
+    float: none;
+    font-size: 1em;
+    padding-top: 15px;
+    text-align: center;
+    top: 0;
 }
 
+.location a {
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
 
 .headerContents .right, .headerContents .left {
 	float:none;
@@ -2018,8 +2148,8 @@ footer .right, footer .left {
 
 /*sidebar*/
 
-.city aside {
-    display:none;
+.city aside li {
+	padding-bottom:1.5em;
 }
 
 /* end sidebar */
@@ -2030,7 +2160,7 @@ footer .right, footer .left {
 	margin-right:10px;
 }
 	
-.bodyContent .content {
+.noSidebar .content {
     overflow: hidden;
     width: 100%;
 }
@@ -2039,12 +2169,11 @@ footer .right, footer .left {
 	width:100%;
 }
 /* featured */
-.city {
-
+.container {
+	height:194px;
 }
 .featuredImage {
 	height: auto;
-	margin-top:40px;
 }
 
 .mainHome {
@@ -2163,9 +2292,53 @@ footer .right, footer .left {
 
 /*begin sub pages */
 
-.content header h2 {
-	padding-top:72px;
+/*about landing page image */
+left.leftSide .wp-caption {
+	width:443px;
+	
 }
+
+/*stacking the about landing page columns */
+
+#aboutLanding .column {
+	clear:both;
+	width:100%;
+}
+
+#aboutLanding p {
+	text-align:center;
+}
+
+#aboutLanding .clear {
+    width: 100%;
+	padding-top:15px;
+}
+
+/*meet Alison, clear floats */
+.meetAlison section {
+	clear:both !important;
+	width:100%;
+}
+
+.meetAlison .column {
+	width:100%;
+}
+
+/* faq removing image */
+.faq .left.leftSide {
+	display:none;
+}
+
+.faq .left {
+	width:100% !important;
+}
+
+
+/*services*/
+#weddingServices .column {
+	width:100%;
+}
+
 
 /* end sub pages */
 }
@@ -2178,17 +2351,13 @@ footer .right, footer .left {
 	display:none !important;
 }
 
+.tablet-hidden {
+	display:none !important;
+}
+
 
 /* landingPage*/
 
-.mobile-button {
-    border: 1px solid;
-    border-radius: 4px;
-    list-style: none outside none;
-    margin-right: 10px;
-    padding: 5px 10px !important;
-    text-align: center;
-}
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
 }
@@ -2208,6 +2377,7 @@ ul.desktop-hidden.topHomeNav {
 .landingBody .container {
     margin-top: 0;
 }
+
 
 .topHomeNav {
     text-align: center;
@@ -2291,6 +2461,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: 100%;
+	border-top:0;
 }
 
 
@@ -2325,38 +2496,38 @@ footer .right, footer .left {
 	border-bottom:0;
 }
 
-.location {
-	font-size:1em;
-	text-align:center;
-	float:none;
-	color:#000000;
-	padding-top:35px;
+.city header .socialMedia li {
+	margin-right:30px;
 }
 
+.socialMedia ul {
+	width:37%;
+	margin:auto;
+}
+
+.globalNav {
+	display:inline !important;
+}
 
 .headerContents .right, .headerContents .left {
 	float:none;
-}
-
-.city header nav li {
-	float:none;
-	margin-right:0;
 }
 
 .city header nav li a {
 	display:inline;
 }
 
-.nav {
-	margin-bottom:-2px;
-}
 
 /*end header content*/
 
 /*sidebar*/
 
-.city aside {
-    display:none;
+.city .noSidebar aside {
+	display:none;
+}
+
+.city .noSidebar .content.left {
+	width:100%;
 }
 
 /* end sidebar */
@@ -2369,19 +2540,18 @@ footer .right, footer .left {
 	
 .bodyContent .content {
     overflow: hidden;
-    width: 100%;
+    width: 72%;
 }
 
 .column {
 	width:100%;
 }
 /* featured */
-.city {
-
+.container {
+	height:208px;
 }
 .featuredImage {
 	height: auto;
-	margin-top:40px;
 }
 
 .mainHome {
@@ -2425,11 +2595,6 @@ footer .right, footer .left {
 	display:block;
 	clear:both;
 }
-
-.city header nav li {
-    margin-right: 20px;
-}
-
 
 .mainHome img {
     height: auto;
@@ -2477,12 +2642,68 @@ footer .right, footer .left {
     margin-top: -70px;
 }
 
-/* begin sub pages */ 
-.content header h2 {
-	padding-top:72px;
+/*begin sub pages */
+
+/*about landing page image */
+.left.leftSide .wp-caption {
+	width:282px !important;
+	
 }
 
-/* end subpages */
+/*stacking the about landing page columns */
+.bodyContent .content.left {
+	width:72%;
+}
+
+#aboutLanding .left.column {
+	width:55%;
+}
+
+#aboutLanding figure {
+	padding-right:0;
+	width:45% !important;
+}
+
+#aboutLanding h2{
+	font-size:3.5em;
+}
+
+.headline {
+	padding-bottom:25px;
+	padding-top:0;
+}
+	
+
+/*meet Alison, clear floats */
+.meetAlison section {
+	clear:both !important;
+	width:100%;
+}
+
+.meetAlison .column {
+	width:100%;
+}
+
+/* faq removing image */
+.faq .left.leftSide {
+	display:none;
+}
+
+.faq .left {
+	width:100% !important;
+}
+
+/*services*/
+#weddingServices .column {
+	width:100%;
+}
+
+.services ul  {
+	border-bottom:1px solid #D8D8D8;
+}
+	
+
+/* end sub pages */
 }
 
 
