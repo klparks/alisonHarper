@@ -389,35 +389,33 @@ function isLocationHiring(){
 function getRecentPosts($numToShow = 3)
 {
     $sticky = get_option( 'sticky_posts' );
-    rsort( $sticky );
-    $sticky = array_slice( $sticky, 0, $numToShow );
+    $args = array(
+	'posts_per_page' => $numToShow,
+	'post__in'  => $sticky,
+	'ignore_sticky_posts' => 1
+    );
+    $the_query = new WP_Query( $args );
+    if ( $sticky && $sticky[0] ) {
+        $content = "";
+            while ( $the_query->have_posts() ) :
+                $the_query->the_post();
+        
+                $link = get_permalink();
+                $title = get_the_title();
+                $id = get_the_ID();
+                $thumbnail = get_the_post_thumbnail($id, array(120,120) );
 
-    query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
+                $content .= "<div class='clear miniBlog clearfix'>";
+                $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
+                $content .= "<p class='blogSnipPic'>" . $thumbnail . "</p>";
+                $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
+                $content .= "</div>";
 
-    $content = "";
-
-    if( have_posts() ) : 
-
-        while( have_posts() ) :
-
-            the_post();
-            $link = get_permalink();
-            $title = get_the_title();
-            $id = get_the_ID();
-            $thumbnail = get_the_post_thumbnail($id, array(120,120) );
-            
-            $content .= "<div class='clear miniBlog clearfix'>";
-            $content .= "<h3><a href='$link' target='_top'>$title</a></h3>\n";
-            $content .= "<p class='blogSnipPic'>" . $thumbnail . "</p>";
-            $content .= "<p class='excerpt'>" . get_the_excerpt() . "</p>";
-            $content .= "</div>";
-
-        endwhile;
-
-        wp_reset_query();
-
-    endif;
-    echo $content;   // For use as widget
+            endwhile;
+        echo $content;   // For use as widget
+    } else {
+        echo "<div>Hello friend! We don't have anything fresh excerpts for you here, but feel free to head over to the <a href='" . get_permalink( BLOG_PAGE_ID ) . "'>blog</a> to see what's new.";
+    }
 }
 function listLocationNav(){
     $currentPage = get_page(get_the_ID());
