@@ -8,7 +8,7 @@
 
 /* chrome only hacks */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-.brand hgroup{position:relative; top:-19px;}
+
 
 .content .meetAlison h2 {padding-bottom:27px;}
 
@@ -18,7 +18,4 @@
 .landingBody aside {position:relative; top:-65px}
 .landingBody .landingLocations {position:relative; top:63px;}
 
-.bodyContent {
-    margin-top:-20px;
-}
 }

@@ -1,3 +1,5 @@
+
+/* chrome only */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
 .landingBody .landingLocations {
 	position: relative;
