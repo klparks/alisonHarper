@@ -74,6 +74,10 @@ function enqueueScripts() {
     if (!is_admin()) {
         //wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery', 'jquery-ui-core','jquery-ui-button', 'jquery-effects-core', 'jquery-ui-widget'));
         wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
+        wp_enqueue_script('pickadate', get_template_directory_uri() . '/js/plugins/pickadate/picker.js', array('jquery'));
+        wp_enqueue_script('pickadateDate', get_template_directory_uri() . '/js/plugins/pickadate/picker.date.js', array('jquery'));
+        wp_enqueue_script('pickadateTime', get_template_directory_uri() . '/js/plugins/pickadate/picker.time.js', array('jquery'));
+        wp_enqueue_script('legacy', get_template_directory_uri() . '/js/plugins/pickadate/legacy.js', array('jquery'));
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'jquery-effects-core', 'jquery-effects-blind', 'customselect')); 
     
     }
@@ -84,7 +88,11 @@ add_action('wp_enqueue_scripts', 'enqueueStyles');
 function enqueueStyles() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css');
-    wp_enqueue_style('datepicker', 'http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css');
+    //wp_enqueue_style('datepicker', 'http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css');
+    wp_enqueue_style('pickadateDefault', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.css');
+    wp_enqueue_style('pickdateDefaultDate', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.date.css');
+    wp_enqueue_style('pickadateDefaultTime', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.time.css');
+    wp_enqueue_style('pickadateRTL', get_template_directory_uri() . '/js/plugins/pickadate/themes/rtl.css');
     wp_enqueue_style('ahLocal', get_template_directory_uri() . '/css/style.css');
     $ua=getBrowser();
     if($ua['name'] == "Internet Explorer"){
