@@ -1154,12 +1154,17 @@ article.post {
 /* landingPage*/
 
 .mobile-button {
-    border: 1px solid;
-    border-radius: 4px;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
     list-style: none outside none;
     margin-right: 10px;
     padding: 5px 10px !important;
     text-align: center;
+}
+
+.notRight {
+	margin-left:10px;
 }
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
@@ -1180,6 +1185,25 @@ ul.desktop-hidden.topHomeNav {
 .landingBody .container {
     margin-top: 0;
 }
+
+/* global navigation */
+nav .nav {
+	border-top:1px solid #aaa;
+}
+
+nav .nav li {
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+nav .current_page_item, nav .current_page_parent {
+	border-image:none;
+	background-color:#eee;
+	border:0;
+}
+
+/* end global navigation*/
 
 .topHomeNav {
     text-align: center;
@@ -1262,6 +1286,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: 100%;
+	border-top:0;
 }
 
 
@@ -1306,6 +1331,7 @@ footer .right, footer .left {
 
 .location a {
 	display:block;
+	margin-top:5px;
 }
 .headerContents .right, .headerContents .left {
 	float:none;
@@ -1330,6 +1356,7 @@ footer .right, footer .left {
 .bodyContent {
 	margin-left:10px;
 	margin-right:10px;
+	margin-top:20px;
 }
 	
 .bodyContent .content {
@@ -1393,20 +1420,27 @@ footer .right, footer .left {
 /* end homepage*/
 
 #aboutAlison, #reviewServices, #readBLog {
-    background-color: #343434;
     background-image: none;
-    border: 3px solid #D19F98;
-    border-radius: 5px;
+    border-image: none;
+    border-top-style: solid;
+    border-width: 1px 0;
     clear: both;
+    color: #AAAAAA;
     height: auto;
-    margin-top: 10px;
-    padding-top: 8px;
-    width: 99%;
-	left:0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#readBlog {
+	position:none;
 	top:0;
+	border-bottom:1px solid #aaa;
 }
 .featuredLinks a {
-	color:#fff;
+	color:#000000;
+	font-weight:600;
+	text-transform:uppercase;
 }
 
 .featuredLinks .center {
@@ -1461,8 +1495,9 @@ footer .right, footer .left {
 /* landingPage*/
 
 .mobile-button {
-    border: 1px solid;
-    border-radius: 4px;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
     list-style: none outside none;
     margin-right: 10px;
     padding: 5px 10px !important;
@@ -1488,6 +1523,24 @@ ul.desktop-hidden.topHomeNav {
     margin-top: 0;
 }
 
+/* global navigation */
+nav .nav {
+	border-top:1px solid #aaa;
+}
+
+nav .nav li {
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+nav .current_page_item, nav .current_page_parent {
+	border-image:none;
+	background-color:#eee;
+	border:0;
+}
+
+/* end global navigation*/
 .topHomeNav {
     text-align: center;
     top: 0;
@@ -1569,6 +1622,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: 100%;
+	border-top:0;
 }
 
 
@@ -1611,6 +1665,14 @@ footer .right, footer .left {
 	padding-top:35px;
 }
 
+.location a {
+	display:block;
+	margin-top:5px;
+}
+
+.notRight {
+    margin-left: 10px;
+}
 
 .headerContents .right, .headerContents .left {
 	float:none;
@@ -1640,6 +1702,7 @@ footer .right, footer .left {
 .bodyContent .content {
     overflow: hidden;
     width: 100%;
+	margin-top:20px;
 }
 
 .column {
@@ -1688,25 +1751,29 @@ footer .right, footer .left {
     padding-right: 5px;
 }
 
-.featuredLinks {
-    margin-top: 0px;
-}
 
 #aboutAlison, #reviewServices, #readBLog {
-    background-color: #343434;
     background-image: none;
-    border: 3px solid #D19F98;
-    border-radius: 5px;
+    border-image: none;
+    border-top-style: solid;
+    border-width: 1px 0;
     clear: both;
+    color: #AAAAAA;
     height: auto;
-    margin-top: 10px;
-    padding-top: 8px;
-    width: 99%;
-	left:0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#readBlog {
+	position:none;
 	top:0;
+	border-bottom:1px solid #aaa;
 }
 .featuredLinks a {
-	color:#fff;
+	color:#000000;
+	font-weight:600;
+	text-transform:uppercase;
 }
 
 .featuredLinks .center {
@@ -1778,8 +1845,9 @@ footer .right, footer .left {
 /* landingPage*/
 
 .mobile-button {
-    border: 1px solid;
-    border-radius: 4px;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
     list-style: none outside none;
     margin-right: 10px;
     padding: 5px 10px !important;

@@ -29,7 +29,7 @@
                 if (getCurrentCity("cat_name")) {
                     echo "<div class='location uppercase'>";
                     echo "Welcome to " . getCurrentCity("cat_name");
-                    echo "<a href='" . site_url() . "'>not right?</a>";
+                    echo "<a class='mobile-button notRight' href='" . site_url() . "'>not right?</a>";
                     echo "</div>";
                 }
             ?>
