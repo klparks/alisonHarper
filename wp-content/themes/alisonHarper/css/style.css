@@ -34,7 +34,6 @@ body {
 
 
 body a {
-	text-decoration:none;
 	color:black;
 }
 
@@ -606,6 +605,7 @@ input.ui-button:hover {
 .city header nav li a {
 	color:black;
 	font-family:Raleway;
+	text-decoration:none;
 }
 
 .city header nav li a:hover {
@@ -663,6 +663,7 @@ li.noHighlight {
 .city aside li a{
 	color:black;
 	font-family:Raleway;
+	text-decoration:none;
 }
 
 /* begin content */
@@ -1292,6 +1293,7 @@ footer .right, footer .left {
 
 .city .topHomeNav {
 	padding-top:0;
+	border-bottom:0;
 }
 
 .location {
@@ -1387,6 +1389,8 @@ footer .right, footer .left {
     margin-top: 0px;
 }
 
+/* end homepage*/
+
 #aboutAlison, #reviewServices, #readBLog {
     background-color: #343434;
     background-image: none;
@@ -1422,6 +1426,23 @@ footer .right, footer .left {
 .column .mobile-button {
 	display:block;
 	clear:both;
+}
+
+/*begin sub pages */
+.featuredText h2 {
+	text-align:center;
+	font-size:3em;
+}
+
+.content header h2 {
+    padding-top: 50px;
+}
+/* end sub pages */
+
+/* begin forms */
+/*begin sub pages */
+.formGroup textarea, .formGroup input[type="text"] {
+    width: 100%;
 }
 	
 	
@@ -1578,6 +1599,7 @@ footer .right, footer .left {
 
 .city .topHomeNav {
 	padding-top:0;
+	border-bottom:0;
 }
 
 .location {
@@ -1734,6 +1756,13 @@ footer .right, footer .left {
     float: left;
     width: 72%;
 }
+
+/*begin sub pages */
+.featuredText h2 {
+	text-align:center;
+}
+
+/* end sub pages */
 	
 }
 
@@ -1888,6 +1917,7 @@ footer .right, footer .left {
 
 .city .topHomeNav {
 	padding-top:0;
+	border-bottom:0;
 }
 
 .location {
@@ -2055,6 +2085,14 @@ footer .right, footer .left {
 .featuredText .intro {
     margin-top: -70px;
 }
+
+/*begin sub pages */
+
+.content header h2 {
+	padding-top:72px;
+}
+
+/* end sub pages */
 }
 
 @media screen and (min-width:980px) and (max-width: 1199px) {	
@@ -2209,6 +2247,7 @@ footer .right, footer .left {
 
 .city .topHomeNav {
 	padding-top:0;
+	border-bottom:0;
 }
 
 .location {
@@ -2228,6 +2267,14 @@ footer .right, footer .left {
 .city header nav li {
 	float:none;
 	margin-right:0;
+}
+
+.city header nav li a {
+	display:inline;
+}
+
+.nav {
+	margin-bottom:-2px;
 }
 
 /*end header content*/
@@ -2355,6 +2402,13 @@ footer .right, footer .left {
 .featuredText .intro {
     margin-top: -70px;
 }
+
+/* begin sub pages */ 
+.content header h2 {
+	padding-top:72px;
+}
+
+/* end subpages */
 }
 
 
