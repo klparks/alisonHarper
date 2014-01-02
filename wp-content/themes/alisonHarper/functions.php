@@ -103,8 +103,8 @@ function enqueueStyles() {
     if($ua['name'] == "Google Chrome"){
         wp_enqueue_style('chrome', get_template_directory_uri() . '/css/chrome.css');
     }
-    if($ua['platform'] == "windows" && $ua['name'] == "Google Chrome"){
-        wp_enqueue_style('winchrome', get_template_directory_uri() . '/css/chrome-win.css');
+    if($ua['platform'] == "windows"){
+        wp_enqueue_style('win', get_template_directory_uri() . '/css/win.css');
     }
     //wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
     //TODO: REMOVE ON PROD
