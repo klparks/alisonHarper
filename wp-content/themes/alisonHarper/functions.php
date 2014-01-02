@@ -94,6 +94,9 @@ function enqueueStyles() {
     wp_enqueue_style('pickadateDefaultTime', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.time.css');
     wp_enqueue_style('ahLocal', get_template_directory_uri() . '/css/style.css');
     $ua=getBrowser();
+    if($ua['platform'] == "windows"){
+        wp_enqueue_style('win', get_template_directory_uri() . '/css/win.css');
+    }
     if($ua['name'] == "Internet Explorer"){
         wp_enqueue_style('msie', get_template_directory_uri() . '/css/msie.css');
     }
@@ -103,9 +106,7 @@ function enqueueStyles() {
     if($ua['name'] == "Google Chrome"){
         wp_enqueue_style('chrome', get_template_directory_uri() . '/css/chrome.css');
     }
-    if($ua['platform'] == "windows"){
-        wp_enqueue_style('win', get_template_directory_uri() . '/css/win.css');
-    }
+
     //wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
     //TODO: REMOVE ON PROD
 //    wp_enqueue_style('bsLocal', 'http://josie-pc/wp-content/themes/alisonHarper/bootstrap/css/bootstrap.min.css');

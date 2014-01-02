@@ -1,4 +1,10 @@
 
 .landingBody .headline, .intro .emphasize {line-height:.9em;}
 .featuredText h2 {margin-bottom: 15px}
-.content header h2 {margin-bottom: 0px}
+
+
+
+
+.landingBody .brand {position:relative; top:14px;}
+.landingBody aside {position:relative; top:-32px}
+.landingBody .landingLocations {position:relative; top:33px;}

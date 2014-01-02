@@ -37,7 +37,7 @@
         
     </nav>
 
-     <div>
+     <div class="landingLocations">
      		<figure id="ladies" class="left mobile-hidden"></figure>
             <aside class="left">
      <div class="helloFriend mobile-hidden">
