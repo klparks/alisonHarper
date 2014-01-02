@@ -23,7 +23,7 @@
             
             
           
-          <?php get_template_part("page-templates/header", "nav"); ?>
+          <div class="mobile-hidden"><?php get_template_part("page-templates/header", "nav"); ?></div>
                         <?php
                 //Welcome to city link
                 if (getCurrentCity("cat_name")) {

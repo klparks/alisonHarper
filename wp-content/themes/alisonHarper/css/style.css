@@ -1301,6 +1301,7 @@ footer .right, footer .left {
 	text-align:center;
 	float:none;
 	color:#000000;
+	padding-top:35px;
 }
 
 .location a {
@@ -1607,11 +1608,10 @@ footer .right, footer .left {
 	text-align:center;
 	float:none;
 	color:#000000;
+	padding-top:35px;
 }
 
-.location a {
-	display:block;
-}
+
 .headerContents .right, .headerContents .left {
 	float:none;
 }
@@ -1925,11 +1925,10 @@ footer .right, footer .left {
 	text-align:center;
 	float:none;
 	color:#000000;
+	padding-top:35px;
 }
 
-.location a {
-	display:block;
-}
+
 .headerContents .right, .headerContents .left {
 	float:none;
 }
@@ -2255,11 +2254,10 @@ footer .right, footer .left {
 	text-align:center;
 	float:none;
 	color:#000000;
+	padding-top:35px;
 }
 
-.location a {
-	display:block;
-}
+
 .headerContents .right, .headerContents .left {
 	float:none;
 }

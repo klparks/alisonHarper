@@ -19,4 +19,5 @@
         <?php } ?>
     </div>
 </div>
+<div class="desktop-hidden"><?php get_template_part("page-templates/header", "nav"); ?></div>
 <?php get_footer(); ?>

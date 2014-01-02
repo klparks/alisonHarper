@@ -72,7 +72,7 @@ function url_filtered($fields)
 }
 function enqueueScripts() {
     if (!is_admin()) {
-        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery', 'jquery-ui-core','jquery-ui-button', 'jquery-effects-core', 'jquery-ui-widget'));
+        //wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery', 'jquery-ui-core','jquery-ui-button', 'jquery-effects-core', 'jquery-ui-widget'));
         wp_enqueue_script('customselect', get_template_directory_uri() . '/js/plugins/customSelect/customSelect.js', array('jquery'));
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-button', 'jquery-effects-core', 'jquery-effects-blind', 'customselect')); 
     

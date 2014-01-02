@@ -1,4 +1,4 @@
-<nav class="nav-collapse collapse clear clearfix">
+<nav class="clear clearfix">
     <ul class="nav uppercase">
         <?php
         //If we're on a location, list the child pages
