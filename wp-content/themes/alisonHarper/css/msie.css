@@ -12,3 +12,8 @@
 footer .left li {
     padding-bottom:15px;
 }
+
+/* the carat was not clickable in IE*/
+.customSelectInner {
+	background-image:none;
+}
