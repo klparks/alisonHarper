@@ -92,7 +92,6 @@ function enqueueStyles() {
     wp_enqueue_style('pickadateDefault', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.css');
     wp_enqueue_style('pickdateDefaultDate', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.date.css');
     wp_enqueue_style('pickadateDefaultTime', get_template_directory_uri() . '/js/plugins/pickadate/themes/default.time.css');
-    wp_enqueue_style('pickadateRTL', get_template_directory_uri() . '/js/plugins/pickadate/themes/rtl.css');
     wp_enqueue_style('ahLocal', get_template_directory_uri() . '/css/style.css');
     $ua=getBrowser();
     if($ua['name'] == "Internet Explorer"){
