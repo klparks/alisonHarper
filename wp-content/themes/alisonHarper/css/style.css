@@ -221,10 +221,18 @@ height:300px;
 .landingBody .container {
 	margin-top:-50px;
 }
+
 #ladies {
     background-image: url("/wp-content/themes/alisonHarper/images/map.png");
     height: 592px;
     width: 704px;
+	position:relative;
+	top:21px;
+}
+
+.landingLocations aside {
+    position: relative;
+    top: -10px;
 }
 .topHomeNav {
     padding-top: 10px;
@@ -1172,10 +1180,15 @@ body {
     margin-right: 10px;
     padding: 5px 10px !important;
     text-align: center;
+	background-color: transparent;
 }
 
 .notRight {
-	margin-left:10px;
+    background-color: transparent;
+    border: 1px solid #D19F98;
+    border-radius: 4px;
+    margin: auto;
+    width: 30%;
 }
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
@@ -1202,25 +1215,33 @@ nav .nav {
 	border-top:1px solid #aaa;
 }
 
-nav .nav li {
+nav .nav li, .city aside li {
 	text-align:center;
 	border-bottom:1px solid #aaa;
 	padding-top:10px;
 	padding-bottom:10px;
 }
-nav .current_page_item, nav .current_page_parent {
+nav .current_page_item, nav .current_page_parent, aside li.current_page_item, aside li.current_page_parent {
 	border-image:none;
 	background-color:#eee;
 	border:0;
 }
 
-.headerContents .nav li {
-    display: block;
+aside li.current_page_item, aside li.current_page_parent {
+	border-bottom:1px solid #aaa;
+}
+
+.city aside li.current_page_item a, .city aside li.current_page_parent a {
+	border-bottom:0;
 }
 
 .noHighlight.current_page_parent {
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #AAAAAA !important;
+	background-color:transparent;
+	border-bottom:1px solid #AAAAAA !important;
+}
+
+.headerContents .nav li {
+	display:block;
 }
 /* end global navigation*/
 
@@ -1270,7 +1291,7 @@ nav .current_page_item, nav .current_page_parent {
 
 .landingBody .headline {
     font-size: 4em;
-	margin-top:.9em;
+	margin-top:0.3em;
 }
 
 .landingBody .subline {
@@ -1281,6 +1302,11 @@ nav .current_page_item, nav .current_page_parent {
 .locationSelect {
 	width:100%;
 	background-position:center;
+}
+
+footer .locationSelect {
+	padding-top:20px;
+	padding-bottom:20px;
 }
 .locationSelect li {
 	display:block;
@@ -1307,12 +1333,11 @@ nav .current_page_item, nav .current_page_parent {
 
 
 footer {
-    padding: 20px 0;
+    border-top: 0 none;
+    padding: 0 0 20px;
     text-align: center;
     width: 100%;
-	border-top:0;
 }
-
 
 footer .right, footer .left {
 	clear:both;
@@ -1349,14 +1374,14 @@ footer .right, footer .left {
     color: #000000;
     float: none;
     font-size: 1em;
-    padding-top: 15px;
     text-align: center;
     top: 0;
 }
 
 .location a {
-	display:block;
-	margin-top:5px;
+    color: #D19F98;
+    display: block;
+    margin-top: 5px;
 }
 .headerContents .right, .headerContents .left {
 	float:none;
@@ -1370,11 +1395,20 @@ footer .right, footer .left {
 /*end header content*/
 
 /*sidebar*/
-
 .city aside {
-    display:none;
+    width: 100%;
 }
 
+.city aside ul {
+	border-top:1px solid #aaa;
+}
+.noSidebar aside {
+	display:none;
+}
+
+.noLocation aside ul {
+	border:0;
+}
 /* end sidebar */
 
 /* body */
@@ -1393,7 +1427,7 @@ footer .right, footer .left {
 }
 /* featured */
 .container {
-	height:194px;
+	height:auto;
 
 }
 .featuredImage {
@@ -1421,16 +1455,9 @@ footer .right, footer .left {
 
 .intro .barText {
     font-size: 1.1em;
-    padding-top: 0;
+    padding-top: 10px;
 }
-.barText {
-    color: #D19F98;
-    font-size: 1.4em;
-    letter-spacing: 0.07em;
-    padding-bottom: 7px;
-    width: 100%;
-	background-color:transparent;
-}
+
 
 .blurb {
     padding-left: 5px;
@@ -1497,9 +1524,6 @@ footer .right, footer .left {
 	font-size:3em;
 }
 
-.content header h2 {
-    padding-top: 0px;
-}
 /* end sub pages */
 
 /* begin forms */
@@ -1516,9 +1540,11 @@ footer .right, footer .left {
 	text-align:center;
 }
 /* portfolio landing */
-#portfolioLanding .size-full{
-	display:none;
-	
+#portfolioLanding .left {
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 /*about landing */ 
@@ -1528,6 +1554,7 @@ footer .right, footer .left {
 
 #aboutLanding h2 {
 	font-size:2.8em;
+	color:#949494;
 }
 
 #aboutLanding .clear {
@@ -1535,13 +1562,37 @@ footer .right, footer .left {
 	padding-top:15px;
 }
 
-.headline {
-    padding-top: 0;
-}
-
 #aboutLanding p {
 	padding-bottom:0;
 	margin-bottom:0;
+}
+
+/* about ALison */
+/*about*/
+.meetAlison h2 {
+	font-size:5em;
+}
+
+.meetAlison .barText {
+    font-size: 1.1em;
+	padding-top:10px;
+	margin-top:10px;
+}
+
+.meetAlison .uppercase {
+	font-size:1.2em;
+}
+
+.meetAlison header {
+    height: 179px;
+}
+
+.faq .leftSide {
+	display:none;
+}
+
+.faq .left {
+	width:100% !important;
 }
 }
 @media screen and (min-width:501px) and (max-width:700px) {
@@ -1559,6 +1610,7 @@ body {
 /* landingPage*/
 
 .mobile-button {
+    background-color: rgba(0, 0, 0, 0);
     border-image: none;
     border-style: solid none;
     border-width: 1px 0;
@@ -1566,6 +1618,11 @@ body {
     margin-right: 10px;
     padding: 5px 10px !important;
     text-align: center;
+}
+
+.landingBody .topHomeNav li.mobile-button {
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
 }
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
@@ -1662,7 +1719,7 @@ aside li.current_page_item, aside li.current_page_parent {
 
 .landingBody .headline {
     font-size: 5em;
-	margin-top:.9em;
+	margin-top:.7em;
 }
 
 .landingBody .subline {
@@ -1699,12 +1756,16 @@ aside li.current_page_item, aside li.current_page_parent {
 
 
 footer {
-    padding: 20px 0;
+    padding: 0 0 20px;
     text-align: center;
     width: 100%;
 	border-top:0;
 }
 
+footer .locationSelect {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 footer .right, footer .left {
 	clear:both;
@@ -1730,6 +1791,7 @@ footer .right, footer .left {
 /* header content */
 .city .headerContents {
     width: 100%;
+	height:auto;
 }
 
 .city .topHomeNav {
@@ -1741,20 +1803,24 @@ footer .right, footer .left {
     color: #000000;
     float: none;
     font-size: 1em;
-    padding-top: 15px;
     text-align: center;
     top: 0;
 }
 
 .location a {
-	display:block;
-	margin-top:5px;
+    color: #D19F98;
+    display: block;
+    margin-top: 5px;
 }
 
 .notRight {
-    margin-left: 10px;
-	border:0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #D19F98;
+    border-radius: 4px;
+    margin: auto;
+    width: 30%;
 }
+
 
 .headerContents .right, .headerContents .left {
 	float:none;
@@ -1776,7 +1842,13 @@ aside ul {
 	border-top:1px solid #aaa;
 }
 
+.noSidebar aside {
+	display:none;
+}
 
+.noLocation aside ul {
+	border:0;
+}
 /* end sidebar */
 
 /* body */
@@ -1785,7 +1857,7 @@ aside ul {
 	margin-right:10px;
 }
 	
-.noSidebar .content {
+.bodyContent .content {
     overflow: hidden;
     width: 100%;
 }
@@ -1799,7 +1871,7 @@ aside ul {
 }
 /* featured */
 .container {
-	height:194px;
+	height:auto;
 }
 .featuredImage {
 	height: auto;
@@ -1822,8 +1894,8 @@ aside ul {
 }
 
 .intro .barText {
-    font-size: 1.7em;
-    padding-top: 0;
+    font-size: 1.5em;
+    padding-top: 10px;
 }
 
 .blurb {
@@ -1926,6 +1998,29 @@ aside ul {
     padding-top: 0;
 }
 
+/*about*/
+.meetAlison .uppercase {
+	text-align:center;
+}
+
+.comingSoon {
+	text-align:center;
+}
+
+/* faq*/
+.faq .leftSide {
+	display:none;
+}
+
+.faq .left {
+	width:100% !important;
+}
+
+/*services*/
+.services ul {
+	border-bottom: 1px solid #d2d3d3;
+}
+
 
 /* end sub pages */
 	
@@ -1946,6 +2041,7 @@ body {
 /* landingPage*/
 
 .mobile-button {
+    background-color: rgba(0, 0, 0, 0);
     border-image: none;
     border-style: solid none;
     border-width: 1px 0;
@@ -1953,6 +2049,11 @@ body {
     margin-right: 10px;
     padding: 5px 10px !important;
     text-align: center;
+}
+
+.landingBody .topHomeNav li.mobile-button {
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
 }
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
@@ -2045,7 +2146,7 @@ nav .current_page_item, nav .current_page_parent {
 
 .landingBody .headline {
     font-size: 5em;
-	margin-top:.9em;
+	margin-top:.4em;
 }
 
 .landingBody .subline {
@@ -2082,12 +2183,16 @@ nav .current_page_item, nav .current_page_parent {
 
 
 footer {
-    padding: 20px 0;
+    padding: 0 0 20px;
     text-align: center;
     width: 100%;
 	border-top:0;
 }
 
+footer .locationSelect {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 footer .right, footer .left {
 	clear:both;
@@ -2113,6 +2218,7 @@ footer .right, footer .left {
 /* header content */
 .city .headerContents {
     width: 100%;
+	height:auto;
 }
 
 .city .topHomeNav {
@@ -2124,15 +2230,22 @@ footer .right, footer .left {
     color: #000000;
     float: none;
     font-size: 1em;
-    padding-top: 15px;
     text-align: center;
     top: 0;
 }
 
 .location a {
+    color: #D19F98;
     display: block;
-    margin-left: 10px;
     margin-top: 5px;
+}
+
+.notRight {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #D19F98;
+    border-radius: 4px;
+    margin: auto;
+    width: 30%;
 }
 
 .headerContents .right, .headerContents .left {
@@ -2147,11 +2260,39 @@ footer .right, footer .left {
 /*end header content*/
 
 /*sidebar*/
-
-.city aside li {
-	padding-bottom:1.5em;
+.city aside {
+	width:100%;
+}
+nav .nav li, .city aside li {
+    border-bottom: 1px solid #AAAAAA;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
 
+nav .current_page_item, nav .current_page_parent, aside li.current_page_item, aside li.current_page_parent {
+    background-color: #EEEEEE;
+    border: 0 none;
+}
+
+aside li.current_page_item, aside li.current_page_parent {
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.city aside li.current_page_item a, .city aside li.current_page_parent a {
+    border-bottom: 0 none;
+}
+
+.city aside ul {
+	border-top:1px solid #aaa;
+}
+.noSidebar aside{
+	display:none;
+}
+
+.noLocation aside ul {
+	border:0;
+}
 /* end sidebar */
 
 /* body */
@@ -2160,7 +2301,7 @@ footer .right, footer .left {
 	margin-right:10px;
 }
 	
-.noSidebar .content {
+.bodyContent .content {
     overflow: hidden;
     width: 100%;
 }
@@ -2170,7 +2311,7 @@ footer .right, footer .left {
 }
 /* featured */
 .container {
-	height:194px;
+	height:auto;
 }
 .featuredImage {
 	height: auto;
@@ -2198,7 +2339,11 @@ footer .right, footer .left {
 }
 
 .featuredLinks p {
-	display:none !important;
+    visibility: hidden;
+}
+
+.featuredLinks a {
+	padding-bottom: 150px;
 }
 
 #aboutAlison {
@@ -2291,6 +2436,9 @@ footer .right, footer .left {
 }
 
 /*begin sub pages */
+.content header h2 {
+	text-align:center;
+}
 
 /*about landing page image */
 left.leftSide .wp-caption {
@@ -2324,6 +2472,14 @@ left.leftSide .wp-caption {
 	width:100%;
 }
 
+.meetAlison h2, .meetAlison .uppercase {
+	text-align:center;
+}
+/* meet the team*/
+.comingSoon {
+	text-align:center;
+}
+
 /* faq removing image */
 .faq .left.leftSide {
 	display:none;
@@ -2339,6 +2495,14 @@ left.leftSide .wp-caption {
 	width:100%;
 }
 
+.services ul {
+	border-bottom: 1px solid #d2d3d3;
+}
+
+/*portfolio */
+#portfolioLanding div {
+	width:30%;
+}
 
 /* end sub pages */
 }
@@ -2355,13 +2519,14 @@ left.leftSide .wp-caption {
 	display:none !important;
 }
 
-
+body {
+	overflow-x:hidden;
+}
 /* landingPage*/
 
 ul.desktop-hidden.topHomeNav {
 	margin:0 0 10px;
 }
-
 
 .landingBody {
 	padding:0;
@@ -2378,6 +2543,20 @@ ul.desktop-hidden.topHomeNav {
     margin-top: 0;
 }
 
+.location {
+	color:#000;
+}
+.location a {
+    color: #D19F98;
+    margin-top: 5px;
+}
+
+.landingBody .topHomeNav li.mobile-button {
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
 
 .topHomeNav {
     text-align: center;
@@ -2420,8 +2599,9 @@ ul.desktop-hidden.topHomeNav {
 }
 
 .landingBody .headline {
-    font-size: 5em;
-	margin-top:.9em;
+    font-size: 6em;
+    margin-top: 0.8em;
+	padding-bottom:15px;
 }
 
 .landingBody .subline {
@@ -2461,9 +2641,12 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: 100%;
-	border-top:0;
 }
 
+footer .locationSelect {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 footer .right, footer .left {
 	clear:both;
@@ -2489,6 +2672,7 @@ footer .right, footer .left {
 /* header content */
 .city .headerContents {
     width: 100%;
+	height:auto;
 }
 
 .city .topHomeNav {
@@ -2522,12 +2706,20 @@ footer .right, footer .left {
 
 /*sidebar*/
 
-.city .noSidebar aside {
+.noSidebar aside {
 	display:none;
 }
 
-.city .noSidebar .content.left {
+.noSidebar .content.left {
 	width:100%;
+}
+
+.bodyContent .content {
+	width:100%;
+}
+
+.noLocation aside ul {
+	border:0;
 }
 
 /* end sidebar */
@@ -2548,7 +2740,7 @@ footer .right, footer .left {
 }
 /* featured */
 .container {
-	height:208px;
+	height:auto;
 }
 .featuredImage {
 	height: auto;
@@ -2576,9 +2768,14 @@ footer .right, footer .left {
 }
 
 .featuredLinks p {
-	display:none !important;
+	visibility:hidden;
 }
 
+.featuredLinks a {
+    padding-bottom: 200px;
+    padding-left: 150px;
+    padding-right: 50px;
+}
 .awards, #one {
     display:none;
 }

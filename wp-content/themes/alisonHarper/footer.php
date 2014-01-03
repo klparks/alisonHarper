@@ -1,7 +1,13 @@
 </div>
 <footer class="gradient clearfix">
     <section class="left">
+            <nav class="topHomeNav desktop-hidden socialMedia">
         <ul>
+            <?php get_template_part("page-templates/header", "socialMedia"); ?>
+        </ul>
+        </nav>
+        <ul>
+        	 <li class="locationSelect desktop-hidden"><?php get_template_part("page-templates/footer", "select"); ?></li>
             <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
             <li><?php echo getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID); ?>Contact Us</a></li>
             
