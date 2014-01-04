@@ -1339,12 +1339,12 @@ footer .locationSelect {
 
 #ladies {
     background-image: url("/wp-content/themes/alisonHarper/images/map650.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 485px;
+    height: 509px;
     min-height: 485px;
+    top: 0;
     width: 100%;
-	background-position:center;
-	margin-top:20px;
 }
 
 
@@ -1359,6 +1359,10 @@ footer .right, footer .left {
 	clear:both;
 	text-align:center;
 	width:100%;
+}
+
+.globalNavFooter {
+	display:inline !important;
 }
 
 /* city homepage */
@@ -1379,6 +1383,7 @@ footer .right, footer .left {
 /* header content */
 .city .headerContents {
     width: 100%;
+	height:auto;
 }
 
 .city .topHomeNav {
@@ -1418,7 +1423,7 @@ footer .right, footer .left {
 .city aside ul {
 	border-top:1px solid #aaa;
 }
-.noSidebar aside {
+.noSidebar {
 	display:none;
 }
 
@@ -1519,6 +1524,7 @@ footer .right, footer .left {
 
 .city h3 {
 	line-height: 1.4em;
+	font-size:1.3em;
 }
 
 .miniBlog {
@@ -1538,6 +1544,10 @@ footer .right, footer .left {
 .featuredText h2 {
 	text-align:center;
 	font-size:3em;
+}
+
+.content header h2 {
+	padding-bottom:10px;
 }
 
 /* end sub pages */
@@ -1610,6 +1620,22 @@ footer .right, footer .left {
 .faq .left {
 	width:100% !important;
 }
+
+/* blog */
+.blog aside h3 {
+	display:none;
+}
+
+.blog aside {
+	padding-top:0;
+}
+.blog .sidebar {
+	text-align:center;
+}
+#archivesSelect {
+	width:100% !important;
+}
+	
 }
 @media screen and (min-width:501px) and (max-width:700px) {
     /* this is for the javascript to know what display to create
@@ -1770,12 +1796,13 @@ aside li.current_page_item, aside li.current_page_parent {
 
 #ladies {
     background-image: url("/wp-content/themes/alisonHarper/images/map650.png");
+    background-position: center center;
     background-repeat: no-repeat;
     height: 485px;
+    margin-top: 20px;
     min-height: 485px;
+    top: 0;
     width: 100%;
-	background-position:center;
-	margin-top:20px;
 }
 
 
@@ -1866,7 +1893,7 @@ aside ul {
 	border-top:1px solid #aaa;
 }
 
-.noSidebar aside {
+.noSidebar  {
 	display:none;
 }
 
@@ -1890,9 +1917,6 @@ aside ul {
 	width:100%;
 }
 
-.leftSide {
-	padding:0;
-}
 /* featured */
 .container {
 	height:auto;
@@ -2013,24 +2037,47 @@ aside ul {
     width: 33%;
 }
 
+
+/* meet the team */
+.comingSoon {
+	text-align:center;
+}
+
+/* about Landing */
 #aboutLanding .clear {
     width: 100%;
 	padding-top:15px;
 }
 
 .headline {
-    padding-top: 0;
+    padding-top: 20px;
+}
+#aboutLanding {
+	padding-top:10px;
 }
 
-/*about*/
+#aboutLanding .column {
+    background-color: #FFFFFF;
+    clear: both;
+    width: 100%;
+    z-index: 100;
+}
+
+#aboutLanding img, #aboutLanding .wp-caption.alignleft {
+	width: 100% !important;
+}
+
+#aboutLanding .wp-caption.alignleft {
+	height:200px !important;
+}
+
+/*about Alison*/
 .meetAlison .uppercase {
 	text-align:center;
 }
-
-.comingSoon {
-	text-align:center;
+.meetAlison img {
+	width:100% !important;
 }
-
 /* faq*/
 .faq .leftSide {
 	display:none;
@@ -2045,6 +2092,28 @@ aside ul {
 	border-bottom: 1px solid #d2d3d3;
 }
 
+/* blog */
+.blog aside h3 {
+	display:none;
+}
+
+.blog aside {
+	padding-top:0;
+}
+
+#archivesSelect {
+	width:100% !important;
+}
+
+.content header h2 {
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+
+.blog .sidebar {
+	text-align:center;
+}
+	
 
 /* end sub pages */
 	
@@ -2207,9 +2276,10 @@ nav .current_page_item, nav .current_page_parent {
     background-image: url("/wp-content/themes/alisonHarper/images/map.png");
     background-position: center center;
     background-repeat: no-repeat;
-    height: 583px;
+    height: 594px;
     margin-top: 20px;
     min-height: 485px;
+    top: 0;
     width: 100%;
 }
 
@@ -2291,7 +2361,7 @@ footer .right, footer .left {
 
 /*end header content*/
 
-/*sidebar*/
+/*sidebar */
 .city aside {
 	width:100%;
 }
@@ -2318,14 +2388,20 @@ aside li.current_page_item, aside li.current_page_parent {
 .city aside ul {
 	border-top:1px solid #aaa;
 }
-.noSidebar aside{
+.noSidebar{
 	display:none;
 }
+/* end sidebar */
 
+/* no location styles */
 .noLocation aside ul {
 	border:0;
 }
-/* end sidebar */
+
+.noLocation .content.left {
+	margin-top:-20px;
+}
+
 
 /* body */
 .bodyContent {
@@ -2472,17 +2548,21 @@ aside li.current_page_item, aside li.current_page_parent {
 	text-align:center;
 }
 
-/*about landing page image */
-left.leftSide .wp-caption {
-	width:443px;
-	
-}
-
 /*stacking the about landing page columns */
 
 #aboutLanding .column {
-	clear:both;
-	width:100%;
+    background-color: #FFFFFF;
+    clear: both;
+    width: 100%;
+    z-index: 100;
+}
+
+#aboutLanding img, #aboutLanding .wp-caption.alignleft {
+	width: 100% !important;
+}
+
+#aboutLanding .wp-caption.alignleft {
+	height:300px !important;
 }
 
 #aboutLanding p {
@@ -2494,6 +2574,13 @@ left.leftSide .wp-caption {
 	padding-top:15px;
 }
 
+#aboutLanding {
+	padding-top:10px;
+}
+
+
+
+
 /*meet Alison, clear floats */
 .meetAlison section {
 	clear:both !important;
@@ -2502,6 +2589,14 @@ left.leftSide .wp-caption {
 
 .meetAlison .column {
 	width:100%;
+}
+
+.meetAlison img {
+	width:100% !important;
+}
+
+.meetAlison .wp-caption {
+	margin:auto;
 }
 
 .meetAlison h2, .meetAlison .uppercase {
@@ -2534,6 +2629,27 @@ left.leftSide .wp-caption {
 /*portfolio */
 #portfolioLanding div {
 	width:30%;
+}
+
+/* blog */
+.blog aside h3 {
+	display:none;
+}
+
+.bodyContent.blog h2 {
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+.blog aside {
+	padding-top:0;
+}
+
+.blog .sidebar {
+	text-align:center;
+}
+
+#archivesSelect {
+	width:400px !important;
 }
 
 /* end sub pages */
@@ -2670,9 +2786,10 @@ ul.desktop-hidden.topHomeNav {
     background-image: url("/wp-content/themes/alisonHarper/images/map.png");
     background-position: center center;
     background-repeat: no-repeat;
-    height: 589px;
+    height: 592px;
     margin-top: 20px;
     min-height: 485px;
+    top: 0;
     width: 100%;
 }
 
@@ -2746,12 +2863,12 @@ footer .right, footer .left {
 
 /*sidebar*/
 
-.noSidebar aside {
-	display:none;
+.noSidebar~.content.left {
+	width:100%;
 }
 
-.noSidebar .content.left {
-	width:100%;
+.noSidebar {
+	display:none;
 }
 
 .bodyContent .content {
@@ -2921,6 +3038,13 @@ footer .right, footer .left {
 	width:100%;
 }
 
+.meetAlison img {
+	width:100%;
+}
+
+.meetAlison .wp-caption {
+	margin:auto;
+}
 /* faq removing image */
 .faq .left.leftSide {
 	display:none;
@@ -2937,6 +3061,10 @@ footer .right, footer .left {
 
 .services ul  {
 	border-bottom:1px solid #D8D8D8;
+}
+
+.blog header {
+	padding-top:20px;
 }
 	
 
