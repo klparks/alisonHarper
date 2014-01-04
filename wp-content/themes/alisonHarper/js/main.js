@@ -5,10 +5,13 @@ jQuery(document).ready(function($) {
     $("input.time").pickatime();
     $("input[type=submit], button" ).button();
     if($("aside.left .current_page_item").length == 0){
-        var ancestors = $(".headerContents nav .current_page_parent");
-        $.each(ancestors, function(idx, e){
-                $(e).addClass("noHighlight");
-        });
+        
+        if(!$("#selectedItemHack")){
+            var ancestors = $(".headerContents nav .current_page_parent");
+            $.each(ancestors, function(idx, e){
+                    $(e).addClass("noHighlight");
+            });
+        }
     }
     $('body').on('contextmenu', 'img', function(e){ return false; });
     var toggleCollapse = function(target){

@@ -2,7 +2,7 @@
 <?php get_header("nav"); ?>
 <div class="container city">
     <div class="bodyContent blog featuredText clear">
-
+<span id="selectedItemHack" style="display:none"></span>
 
 
 <aside class="left">
