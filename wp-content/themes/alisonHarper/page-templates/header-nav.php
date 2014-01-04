@@ -2,6 +2,7 @@
     <ul class="nav uppercase">
         <?php
         //If we're on a location, list the child pages
+
         if (getCurrentCity("cat_name")) {
             listCityChildrenPages();
         } else {//Otherwise link to the global pages
