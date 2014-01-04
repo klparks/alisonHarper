@@ -1154,10 +1154,26 @@ article.post {
 	display:none !important;
 }
 
-
+/* this is for the javascript to know what display to create
+black: desktop
+red: mobile
+green: tablet
+*/
+#responsiveTest{
+    background-color: black;
+}
 
 /*phone styles */
 @media screen and (max-width: 500px) {
+    
+/* this is for the javascript to know what display to create
+black: desktop
+red: mobile
+green: tablet
+*/
+#responsiveTest{
+    background-color: red;
+}
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -1596,6 +1612,14 @@ footer .right, footer .left {
 }
 }
 @media screen and (min-width:501px) and (max-width:700px) {
+    /* this is for the javascript to know what display to create
+black: desktop
+red: mobile
+green: tablet
+*/
+#responsiveTest{
+    background-color: red;
+}
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -2026,7 +2050,15 @@ aside ul {
 	
 }
 
-@media screen and (min-width:701px) and (max-width: 979px) {	
+@media screen and (min-width:701px) and (max-width: 979px) {
+    /* this is for the javascript to know what display to create
+black: desktop
+red: mobile
+green: tablet
+*/
+#responsiveTest{
+    background-color: red;
+}
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -2508,6 +2540,14 @@ left.leftSide .wp-caption {
 }
 
 @media screen and (min-width:980px) and (max-width: 1199px) {	
+    /* this is for the javascript to know what display to create
+black: desktop
+red: mobile
+green: tablet
+*/
+#responsiveTest{
+    background-color: green;
+}
 .desktop-hidden {
 		display:inline-block !important;
 }

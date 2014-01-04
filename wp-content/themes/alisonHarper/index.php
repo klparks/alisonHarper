@@ -4,10 +4,30 @@
 	<aside class="left">
     	<section class="sidebar">
     	<h3>Archives</h3>
-    <ul>
-    	<?php wp_get_archives('type=monthly'); ?>
-    </ul>
-    </section>
+        <ul class="mobile-hidden">
+    	<?php wp_get_archives(array(
+            'type'            => 'monthly',
+            'limit'           => '',
+            'format'          => 'html', 
+            'before'          => '',
+            'after'           => '',
+            'show_post_count' => false,
+            'echo'            => 1,
+            'order'           => 'DESC')); ?>
+        </ul>
+        <select id="archivesSelect" class="desktop-hidden">
+            <option value="" selected>Archives</option>
+            <?php wp_get_archives(array(
+                'type'            => 'monthly',
+                'limit'           => '',
+                'format'          => 'option', 
+                'before'          => '',
+                'after'           => '',
+                'show_post_count' => false,
+                'echo'            => 1,
+                'order'           => 'DESC')); ?>
+        </select>
+        </section>
     
 <!--    <section class="sidebar">
     <h3>Categories</h3>

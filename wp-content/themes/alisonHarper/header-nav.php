@@ -4,6 +4,7 @@
         echo "class='noLocation'";
     }
     ?>>
+    <span id="responsiveTest" style="display: none;"></span>
     <div class="container city">
         <header>
 

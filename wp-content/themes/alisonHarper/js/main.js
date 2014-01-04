@@ -22,4 +22,48 @@ jQuery(document).ready(function($) {
     $(".collapseState").click(function(e){
         toggleCollapse(e.target.parentNode)
     })
+    $("#archivesSelect").val("").change();
+    $("#archivesSelect").change(function(e){
+        if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;
+    })
+    
+    var longTextPrev = jQuery(".nav-previous a").html();
+    var longTextNext = jQuery(".nav-next a").html();
+    var shortTextPrev = "<span class='meta-nav'>&lt;&lt;</span> last";
+    var shortTextNext = "next <span class='meta-nav'>&gt;&gt;</span>";
+    var shortenBlogNavText = function(){
+        jQuery(".nav-previous a").html(shortTextPrev);
+        jQuery(".nav-next a").html(shortTextNext);
+    }
+    var restoreBlogNavText = function(){
+        jQuery(".nav-previous a").html(longTextPrev);
+        jQuery(".nav-next a").html(longTextNext);
+    }
+    
+    var doResponsiveLayoutDesktop = function(){
+        restoreBlogNavText();
+    }
+    var doResponsiveLayoutPhone = function(){
+        shortenBlogNavText();
+    }
+    var doResponsiveLayoutTablet = function(){
+        shortenBlogNavText();
+    }
+    //This is a nice way to do some simple responsive layout work.  If we need much more lets import a librarys such as jRespond
+    var handleResponsiveLayout = function() {
+        if ($("#responsiveTest").css("background-color") == "rgb(0, 0, 0)" ){
+		doResponsiveLayoutDesktop();
+	} else if ($("#responsiveTest").css("background-color") == "rgb(255, 0, 0)" ){
+		doResponsiveLayoutPhone();
+	} else if ($("#responsiveTest").css("background-color") == "rgb(0, 128, 0)" ){
+            doResponsiveLayoutTablet();
+        }
+    }
+    
+    handleResponsiveLayout();
+    
+    $(window).resize(function(){	
+	handleResponsiveLayout();
+    });
+    
 });
