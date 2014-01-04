@@ -2,9 +2,7 @@
 <div class="container city">
     <div class="bodyContent clear">
         <!-- SIDE NAVIGATION -->
-        <aside class="uppercase left">
-           &nbsp; <?php listLocationNav(); ?>
-        </aside>
+       <?php listLocationNav(); ?>
 
         <!-- PAGE CONTENT (context sensitive) -->
         <?php if (getCityHomepage() && getCityHomepage()->ID == $post->ID) { ?>

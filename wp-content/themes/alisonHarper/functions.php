@@ -433,7 +433,8 @@ function listLocationNav(){
     $rootPage = $currentPage;
     //Args for home
     if(getCityHomePage() && $rootPage->ID == getCityHomePage()->ID){
-        echo '<ul class="noSidebar">';
+        echo '<aside class="uppercase left noSidebar">&nbsp;';
+        echo '<ul>';
         if(getLocationPage(PORTFOLIO_PAGE_SLUG)){
            echo '<li class="page_item"><a href="' .  get_page_link(getLocationPage(PORTFOLIO_PAGE_SLUG)->ID) . '">View our portfolio</a></li>';
         }
@@ -449,7 +450,8 @@ function listLocationNav(){
              echo '<li class="page_item"><a href="' .  get_page_link(CAREERS_PAGE_ID) . '">We\'re Hiring</a></li>';
         }
     } else if (!getCityHomePage()){
-        echo '<ul class="noSidebar">';
+        echo '<aside class="uppercase left noSidebar">&nbsp;';
+        echo '<ul>';
         if($currentPage->post_name == CONTACT_PAGE_SLUG){ //contact page is special too
             //list contact info
             echo '<li><a href="mailto:' . get_userdata(ADMIN_USER_ID)->user_email . '">' . get_userdata(ADMIN_USER_ID)->user_email . '</a></li>';
@@ -463,8 +465,10 @@ function listLocationNav(){
         if($currentPage->post_name == SERVICES_PAGE_SLUG ||
            $currentPage->post_name == PORTFOLIO_PAGE_SLUG||
            $currentPage->post_name == CONTACT_PAGE_SLUG){
-            echo '<ul class="noSidebar">';
+            echo '<aside class="uppercase left noSidebar">&nbsp;';
+            echo '<ul>';
         } else {
+            echo '<aside class="uppercase left">&nbsp;';
             echo '<ul>';
         }
         if($currentPage->post_name == CONTACT_PAGE_SLUG){ //contact page is special too
@@ -476,7 +480,7 @@ function listLocationNav(){
             wp_list_pages($childArgs);
         }
     }
-    echo '</ul>';
+    echo '</aside></ul>';
 }
 function getSlug(){
     global $wp_query;
