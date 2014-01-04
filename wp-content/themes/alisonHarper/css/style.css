@@ -2829,7 +2829,7 @@ footer .right, footer .left {
 /* header content */
 .city .headerContents {
     width: 100%;
-	height:auto;
+	height:60px;
 }
 
 .city .topHomeNav {
@@ -2864,11 +2864,14 @@ footer .right, footer .left {
 /*sidebar*/
 
 .noSidebar~.content.left {
-	width:100%;
+    width: 100% !important;
 }
-
 .noSidebar {
 	display:none;
+}
+
+.bodyContent {
+	margin-top:15px;
 }
 
 .bodyContent .content {
@@ -2882,10 +2885,6 @@ footer .right, footer .left {
 /* end sidebar */
 
 /* body */
-.bodyContent {
-	margin-left:10px;
-	margin-right:10px;
-}
 	
 .bodyContent .content {
     overflow: hidden;
