@@ -3063,8 +3063,19 @@ footer .right, footer .left {
 	border-bottom:1px solid #D8D8D8;
 }
 
+
+
+/* blog */
 .blog header {
 	padding-top:20px;
+}
+.blog aside h3 {
+	display:none;
+}
+
+.blog .content.left {
+	width:100%;
+	clear:both;
 }
 	
 
