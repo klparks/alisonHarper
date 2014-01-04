@@ -428,7 +428,7 @@ function getRecentPosts($numToShow = 3)
     } else {
         echo "<div>Hello friend! We don't have anything fresh excerpts for you here, but feel free to head over to the <a href='" . get_permalink( BLOG_PAGE_ID ) . "'>blog</a> to see what's new.";
     }
-	wp_reset_query();var
+	wp_reset_query();
 }
 function listLocationNav(){
     $currentPage = get_page(get_the_ID());
