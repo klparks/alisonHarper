@@ -1,5 +1,9 @@
 <?php get_template_part("page-templates/header", "head"); ?>
-<body>
+<body<?php
+    if (!getCurrentCity("cat_name")) {
+        echo "class='noLocation'";
+    }
+    ?>>
     <div class="container city">
         <header>
                              <?php get_template_part("page-templates/header", "logo"); ?>
@@ -12,4 +16,5 @@
             </div>
             </div>
         </header>
+    </div>
         
