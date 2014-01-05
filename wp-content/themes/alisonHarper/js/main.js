@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     $("input[type=submit], button" ).button();
     if($("aside.left .current_page_item").length == 0){
         
-        if(!$("#selectedItemHack")){
+        if($("#selectedItemHack").length < 1){
             var ancestors = $(".headerContents nav .current_page_parent");
             $.each(ancestors, function(idx, e){
                     $(e).addClass("noHighlight");
