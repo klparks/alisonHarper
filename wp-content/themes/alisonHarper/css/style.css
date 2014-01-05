@@ -1441,6 +1441,7 @@ footer .right, footer .left {
 .bodyContent .content {
     overflow: hidden;
     width: 100%;
+	margin-top:10px;
 }
 
 .column {
