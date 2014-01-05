@@ -40,8 +40,8 @@ function more_link() {
 function theme_get_archives_link ( $link_html ) {
     global $wp;
     static $current_url;
-    if ( empty( $current_url ) ) {
-        $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
+    if ( empty( $current_url ) &&  isset($_SERVER['QUERY_STRING']) ) {
+        $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request.'/' ) );
     }
     if ( stristr( $link_html, $current_url ) !== false ) {
         $link_html = preg_replace( '/(<[^\s>]+)/', '\1 class="current_page_item"', $link_html, 1 );
@@ -108,6 +108,9 @@ function enqueueStyles() {
     }
     if($ua['name'] == "Google Chrome"){
         wp_enqueue_style('chrome', get_template_directory_uri() . '/css/chrome.css');
+    }
+    if($ua['name'] == "Apple Safari"){
+        wp_enqueue_style('safari', get_template_directory_uri() . '/css/safari.css');
     }
 
     //wp_enqueue_style('fonts', get_template_directory_uri() . '/MyFontsWebfontsOrderM4523650.css');
