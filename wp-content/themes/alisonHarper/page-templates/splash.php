@@ -22,7 +22,7 @@
             </hgroup>
         </div>
         <nav class="topHomeNav">
-        <ul>
+        <ul class="mobile-hidden">
             
             <li class="mobile-hidden uppercase"><a href="<?php echo get_page_link(BLOG_PAGE_ID); ?>">Blog</a></li>
             <li class="mobile-hidden uppercase"><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>

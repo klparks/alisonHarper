@@ -1,9 +1,9 @@
 
 .landingBody .headline, .intro .emphasize {line-height:.9em;}
-.featuredText h2 {margin-bottom: 15px}
+.featuredText h2 {margin-bottom: 15px;}
 
 .landingBody .brand {position:relative; top:14px;}
-.landingBody aside {position:relative; top:-32px}
+.landingBody aside {position:relative; top:-32px;}
 .landingBody .landingLocations {position:relative; top:33px;}
 
 /* chrome only hacks */
@@ -18,4 +18,67 @@
 .landingBody aside {position:relative; top:-65px}
 .landingBody .landingLocations {position:relative; top:63px;}
 
+}
+
+/* responsive view hacks */
+@media screen and (max-width: 500px) {
+ .landingBody .brand {
+    position: relative;
+    top: 0px;
+} 
+
+.bodyContent .content {
+   padding-top:10px; 
+}
+
+.landingBody .headline {
+   margin-top:0px;
+} 
+
+.intro .emphasize {
+    font-size: 3.8em;
+}
+}
+
+@media screen and (min-width:501px) and (max-width:700px) {
+ .landingBody .brand {
+    position: relative;
+    top: 0px;
+} 
+
+.landingBody .headline {
+   margin-top:0px;
+} 
+
+.bodyContent .content {
+   padding-top:10px; 
+}
+    
+}
+
+@media screen and (min-width:701px) and (max-width: 979px) {
+ .landingBody .brand {
+    position: relative;
+    top: 0px;
+} 
+
+.landingBody .headline {
+   margin-top:0px;
+}   
+.bodyContent .content {
+   padding-top:10px; 
+}
+    
+}
+
+@media screen and (min-width:980px) and (max-width: 1199px) {
+.landingBody .brand {
+    position: relative;
+    top: 0px;
+} 
+
+.landingBody .headline {
+   margin-top:15px;
+}    
+    
 }

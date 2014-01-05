@@ -4,3 +4,50 @@
 .bodyContent {
     margin-top:-20px;
 }
+
+/* responsive view hacks */
+@media screen and (max-width: 500px) {
+.bodyContent {
+    margin-top: 0px;
+}
+
+.brand hgroup {
+    position: relative;
+    top: 0;
+}    
+}
+
+@media screen and (min-width:501px) and (max-width:700px) {
+.bodyContent {
+    margin-top: 0px;
+}
+
+.brand hgroup {
+    position: relative;
+    top: 0;
+}    
+    
+}
+
+@media screen and (min-width:701px) and (max-width: 979px) {
+.bodyContent {
+    margin-top: 0px;
+}
+
+.brand hgroup {
+    position: relative;
+    top: 0;
+}
+    
+}
+
+@media screen and (min-width:980px) and (max-width: 1199px) {
+.bodyContent {
+    margin-top: 10px;
+}
+
+.brand hgroup {
+    position: relative;
+    top: 0;
+}
+}
