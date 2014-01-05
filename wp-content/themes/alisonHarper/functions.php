@@ -37,11 +37,17 @@ add_filter( 'the_content_more_link', 'more_link' );
 function more_link() {
 	return '&hellip; <a class="more-link mobile-button" href="' . get_permalink() . '"> read more</a>';
 }
+
+//Add a current item highlight class to a selected archive
 function theme_get_archives_link ( $link_html ) {
     global $wp;
     static $current_url;
-    if ( empty( $current_url ) &&  isset($_SERVER['QUERY_STRING']) ) {
-        $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request.'/' ) );
+    if ( empty( $current_url ) ) {
+        if(isset($_SERVER['QUERY_STRING'])){
+            $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request.'/' ) );
+        } else {
+            $current_url = home_url( $wp->request.'/' );
+        }
     }
     if ( stristr( $link_html, $current_url ) !== false ) {
         $link_html = preg_replace( '/(<[^\s>]+)/', '\1 class="current_page_item"', $link_html, 1 );
