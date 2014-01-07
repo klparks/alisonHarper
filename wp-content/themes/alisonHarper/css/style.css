@@ -2558,7 +2558,7 @@ aside li.current_page_item, aside li.current_page_parent {
     z-index: 100;
 }
 
-#aboutLanding img, #aboutLanding .wp-caption.alignleft {
+#aboutLanding img, #aboutLanding .wp-caption {
 	width: 100% !important;
 }
 

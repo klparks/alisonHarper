@@ -50,6 +50,7 @@
 	margin-left:165px;
    
 }
+}
 
 @media screen and (min-width:980px) and (max-width: 1199px) {
  #logo {
@@ -69,4 +70,5 @@
 	width:99%;
 
 
+}
 }
