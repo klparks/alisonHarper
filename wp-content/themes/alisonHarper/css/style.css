@@ -2413,6 +2413,7 @@ aside li.current_page_item, aside li.current_page_parent {
 .bodyContent .content {
     overflow: hidden;
     width: 100%;
+	padding-top:10px;
 }
 
 .column {
