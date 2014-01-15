@@ -280,12 +280,12 @@ function getCurrentCity($property) {
 	$cats = get_the_category ();
 	foreach ( $cats as $category ) {
 		if (! in_array ( $category->cat_ID, $ignoreIds ) && cat_is_ancestor_of ( LOCATION_ROOT_ID, $category->cat_ID )) {
+			$currentLocation = $category;
 			if ($property) {
 				return $category->$property;
 			} else {
 				return $category;
 			}
-			$currentLocation = $category;
 		}
 	}
 	return "";
