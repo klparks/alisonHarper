@@ -2563,7 +2563,7 @@ aside li.current_page_item, aside li.current_page_parent {
 	width: 100% !important;
 }
 
-#aboutLanding .wp-caption.alignleft {
+#aboutLanding .wp-caption {
 	height:300px !important;
 }
 
