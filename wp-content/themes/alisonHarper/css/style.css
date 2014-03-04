@@ -989,6 +989,11 @@ li.teamMemberBio {
 	cursor:pointer;
 }
 
+.blog .aligncenter {
+	margin:auto;
+	text-align:center;
+}
+
 /* expand collapse */
 
 .collapsed{
