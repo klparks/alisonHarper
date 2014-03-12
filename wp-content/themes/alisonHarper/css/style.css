@@ -511,7 +511,7 @@ input.ui-button:hover {
 }
 	
 	
-.formGroup span {
+.formGroup .required span {
     float: left;
     left: -10px;
     position: relative;
@@ -941,6 +941,14 @@ li.teamMemberBio {
 
 /*blog */
 
+.blog header h2 {
+	background-image: url("/wp-content/themes/alisonHarper/images/harperBlog.png") ;
+	background-repeat:no-repeat;
+	width: 915px;
+	height: 340px;
+	margin: 30px 0 50px 0;
+	padding: 0;
+} 
 
 .blog h2 a {
     color: #8E367B;
@@ -988,6 +996,12 @@ li.teamMemberBio {
     padding: 10px 20px 5px 10px;
 	cursor:pointer;
 }
+
+.blog .aligncenter {
+	margin:auto;
+	text-align:center;
+}
+
 
 /* expand collapse */
 
@@ -1174,6 +1188,11 @@ green: tablet
 #responsiveTest{
     background-color: red;
 }
+
+.harperBlog {
+	text-align:center;
+}
+
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -1623,6 +1642,15 @@ footer .right, footer .left {
 }
 
 /* blog */
+.blog header h2 {
+	background-image: url("/wp-content/themes/alisonHarper/images/harperBlog300.png");
+	background-repeat:no-repeat;
+	width:300px;
+	height: 158px;
+	margin: 30px 0;
+	padding: 0;
+} 
+
 .blog aside h3 {
 	display:none;
 }
@@ -1647,6 +1675,11 @@ green: tablet
 #responsiveTest{
     background-color: red;
 }
+
+.harperBlog {
+	text-align:center;
+}
+
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -2094,6 +2127,15 @@ aside ul {
 }
 
 /* blog */
+.blog header h2 {
+	background-image: url("/wp-content/themes/alisonHarper/images/harperBlog500.png");
+	background-repeat:no-repeat;
+	width: 500px;
+	height: 187px;
+	margin: 30px 0;
+	padding: 0;
+} 
+
 .blog aside h3 {
 	display:none;
 }
@@ -2129,6 +2171,11 @@ green: tablet
 #responsiveTest{
     background-color: red;
 }
+
+.harperBlog {
+	text-align:center;
+}
+
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -2634,6 +2681,16 @@ aside li.current_page_item, aside li.current_page_parent {
 }
 
 /* blog */
+.blog header h2 {
+	background-image: url("/wp-content/themes/alisonHarper/images/harperBlog700.png");
+	background-repeat:no-repeat;
+	width: 700px;
+	height: 243px;
+	margin: 30px 0;
+	padding: 0;
+} 
+
+
 .blog aside h3 {
 	display:none;
 }
@@ -2666,6 +2723,11 @@ green: tablet
 #responsiveTest{
     background-color: green;
 }
+
+.harperBlog {
+	text-align:center;
+}
+
 .desktop-hidden {
 		display:inline-block !important;
 }
@@ -3067,6 +3129,7 @@ footer .right, footer .left {
 
 
 /* blog */
+
 .blog header {
 	padding-top:20px;
 }

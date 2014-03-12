@@ -16,9 +16,9 @@
     </section>
 	
     <section class="featuredLinks clearfix">
-        <div id="aboutAlison" class="left"><a href="about/alison"><p class="desktop-hidden">About Alison Harper</p></a></a></div>
-        <div id="reviewServices" class="center left"><a href="services"><a href="<?php echo get_page_link(getLocationPage(SERVICES_PAGE_SLUG)->ID) ?>"><p class="desktop-hidden">Review Our Services</p></a></a></div>
-        <div id="readBlog" class="left"><a href="/blog/"><a href="/blog/"><p class="desktop-hidden">Read the Blog</p></a></a></div>
+        <a href="about/alison"><div id="aboutAlison" class="left"><p class="desktop-hidden">About Alison Harper</p></div></a>
+        <a href="<?php echo get_page_link(getLocationPage(SERVICES_PAGE_SLUG)->ID) ?>"><div id="reviewServices" class="center left"><p class="desktop-hidden">Review Our Services</p></div></a>
+        <a href="/blog/"><div id="readBlog" class="left"><p class="desktop-hidden">Read the Blog</p></div></a>
     </section>
     <section class="awards"><?php echo gcb(36); ?></section>
     
