@@ -152,6 +152,7 @@ function getBrowser() {
 	$bname = 'Unknown';
 	$platform = 'Unknown';
 	$version = "";
+	$ub = null;
 	
 	// First get the platform?
 	if (preg_match ( '/linux/i', $u_agent )) {
@@ -183,7 +184,7 @@ function getBrowser() {
 	}
 	
 	// finally get the correct version number
-	if($ub){
+	if(isset($ub)){
 		$known = array (
 				'Version',
 				$ub,
