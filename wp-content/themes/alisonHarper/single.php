@@ -34,7 +34,7 @@
     </section>
 </aside>
 <div class="content left">
-<header><h2>The Harper Blog</h2></header>
+<div class="harperBlog"><header><h2>The Harper Blog</h2></header></div>
 <?php get_template_part("page-templates/header", "noNav"); ?>
     <nav class="nav-single">
             <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '<<', 'Previous post link') . '</span> %title' ); ?></span>
