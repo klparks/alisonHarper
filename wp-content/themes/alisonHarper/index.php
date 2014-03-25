@@ -42,10 +42,10 @@
 <div class="container city">
     <div class="content left">
         <?php if(have_posts()) { ?>
-            <header> <h2>The Harper Blog</h2></header> 
+            <div class="harperBlog"><header><h2>The Harper Blog</h2></header></div>
         <?php } ?>
-        
-		<?php query_posts($query_string . '&ignore_sticky_posts=1'); ?>
+
+	<?php query_posts($query_string . '&ignore_sticky_posts=1'); ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
         
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
