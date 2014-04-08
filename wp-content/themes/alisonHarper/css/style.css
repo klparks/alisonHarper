@@ -1327,16 +1327,24 @@ aside li.current_page_item, aside li.current_page_parent {
 .landingBody .headline {
     font-size: 4em;
 	margin-top:0.3em;
+	text-align:center;
 }
 
 .landingBody .subline {
     margin-bottom: 0.8em;
     margin-left: 0;
+	text-align:center;
 }
 
 .locationSelect {
 	width:100%;
 	background-position:center;
+	margin:auto;
+}
+
+.locationSelect .splashCenter{
+	margin: auto;
+	width:220px;
 }
 
 footer .locationSelect {
@@ -1804,16 +1812,24 @@ aside li.current_page_item, aside li.current_page_parent {
 .landingBody .headline {
     font-size: 5em;
 	margin-top:.7em;
+	text-align:center;
 }
 
 .landingBody .subline {
     margin-bottom: 0.8em;
     margin-left: 0;
+	text-align:center;
 }
 
 .locationSelect {
 	width:100%;
 	background-position:center;
+	margin:auto;
+}
+
+.locationSelect .splashCenter{
+	margin: auto;
+	width:220px;
 }
 .locationSelect li {
 	display:block;
@@ -2296,16 +2312,24 @@ nav .current_page_item, nav .current_page_parent {
 .landingBody .headline {
     font-size: 5em;
 	margin-top:.4em;
+	text-align:center;
 }
 
 .landingBody .subline {
     margin-bottom: 0.8em;
     margin-left: 0;
+	text-align:center;
 }
 
 .locationSelect {
 	width:100%;
 	background-position:center;
+	margin:auto;
+}
+
+.locationSelect .splashCenter{
+	margin: auto;
+	width:220px;
 }
 .locationSelect li {
 	display:block;
@@ -2822,16 +2846,24 @@ ul.desktop-hidden.topHomeNav {
     font-size: 6em;
     margin-top: 0.8em;
 	padding-bottom:15px;
+	text-align:center;
 }
 
 .landingBody .subline {
     margin-bottom: 0.8em;
     margin-left: 0;
+	text-align:center;
 }
 
 .locationSelect {
 	width:100%;
 	background-position:center;
+	margin:auto;
+}
+
+.locationSelect .splashCenter{
+	margin: auto;
+	width:220px;
 }
 .locationSelect li {
 	display:block;

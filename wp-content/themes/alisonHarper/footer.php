@@ -6,7 +6,7 @@
             </ul>
         </nav>
         <ul>
-            <li class="locationSelect desktop-hidden"><?php get_template_part("page-templates/footer", "select"); ?></li>
+            <li class="locationSelect desktop-hidden"><div class="splashCenter"><?php get_template_part("page-templates/footer", "select"); ?></div></li>
             <li><?php echo getLocationOpenAnchor(CAREERS_PAGE_SLUG, CAREERS_PAGE_ID); ?>Career Opportunities</a></li>
             <li><?php echo getLocationOpenAnchor(CONTACT_PAGE_SLUG, CONTACT_PAGE_ID); ?>Contact Us</a></li>
 
@@ -23,7 +23,7 @@
             <li class="locationSelect"><?php get_template_part("page-templates/footer", "select"); ?></li>
             <li>All images and materials Copyright &copy; 2013</li>
             <li>Web design by eleven peppers studios</li>
-            <li>Alison Harper and Company, LLC. All Rights Reserved</li>
+            <li>All Rights Reserved</li>
         </ul>
     </section>
 </footer>

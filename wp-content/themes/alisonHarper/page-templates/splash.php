@@ -28,13 +28,13 @@
             <li class="mobile-hidden uppercase"><a href="<?php echo get_page_link(CONTACT_PAGE_ID); ?>">Contact</a></li>
             <?php get_template_part("page-templates/header", "socialMedia"); ?>
         </ul>
-        <ul class="desktop-hidden locationSelect">
-            <li class="headline clearfix">Hello Friend!</li>
-            <li class="subline">Please select your closest location</li>
-            <li><?php get_template_part("page-templates/footer", "select"); ?></li>
-            <li id="ladies"></li>
-        </ul>
         
+        <section class="desktop-hidden locationSelect">
+            <div class="headline clearfix">Hello Friend!</div>
+            <div class="subline">Please select your closest location</div>
+            <div class="splashCenter"><?php get_template_part("page-templates/footer", "select"); ?></div>   
+        </section>
+        <div id="ladies" class="desktop-hidden"></div>
     </nav>
 
      <div class="landingLocations">

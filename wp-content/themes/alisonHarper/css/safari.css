@@ -3,6 +3,9 @@
     
 }
  
+ .locationSelect {
+	 text-align:left;
+ }
 
 /* responsive view hacks */
 @media screen and (max-width: 500px) {
@@ -27,9 +30,6 @@
 	 top:10px !important;
  } 
  
- .locationSelect select {
-	margin-left: 250px;
-} 
 
 }
 
@@ -42,9 +42,6 @@
 	 position:relative !important;
 	 top:10px !important;
  }
-  .locationSelect select {
-	margin-left: 250px;
-} 
 
 #archivesSelect {
 	margin-left:165px;
@@ -62,10 +59,6 @@
 	 top:10px !important;
  }
  
-.locationSelect select {
-	margin-left: 360px;
-}
-
 .featuredImage {
 	width:99%;
 

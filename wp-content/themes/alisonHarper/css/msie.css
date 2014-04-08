@@ -13,7 +13,6 @@ footer .left li {
     padding-bottom:15px;
 }
 
-/* the carat was not clickable in IE*/
-.locationSelect select {
-	margin-left: 41px;
+.locationSelect {
+	text-align:left;
 }
