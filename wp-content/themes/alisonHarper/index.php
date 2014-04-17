@@ -45,8 +45,10 @@
             <div class="harperBlog"><header><h2>The Harper Blog</h2></header></div>
         <?php } ?>
 
-	<?php query_posts($query_string . '&ignore_sticky_posts=1'); ?>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+	<?php query_posts($query_string . '&ignore_sticky_posts=1'); 
+			if ( have_posts() ) :
+				// Start the Loop.
+				while ( have_posts() ) : the_post(); ?>
         
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
             <p class="timestamp"><?php the_time('l, F jS, Y'); ?><span class="right"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?>.</span></p>
@@ -60,8 +62,14 @@
                     <!-- Twitter Tweet Code --><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=<?php the_permalink(); ?>&via=xtapit&text=<?php the_title(); ?>" style="width:115px; height:21px;"></iframe>
                 </li>
             </ul>
-            <p><?php $withcomments = 1; comments_template(); ?></p>
-        <?php endwhile; else: ?> 
+            <p>
+            <?php $withcomments = 1; comments_template(); ?></p>
+        <?php endwhile;
+				// Previous/next post navigation.
+				getPagingNav();
+
+			else :
+		?> 
             <?php get_template_part("page-templates/index", "notFound"); ?>
         <?php endif; ?>
     </div>
