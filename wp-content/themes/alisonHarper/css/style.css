@@ -987,6 +987,12 @@ li.teamMemberBio {
 	margin-top:10px;
 }
 
+.blog aside .sidebar .desktop-hidden {
+	line-height: 2em;
+	border-bottom:0;
+	
+}
+
 
 .city .comments-title {
     background-color: #D19F98;
@@ -1680,9 +1686,7 @@ footer .right, footer .left {
 .blog .sidebar {
 	text-align:center;
 }
-#archivesSelect {
-	width:100% !important;
-}
+
 	
 }
 @media screen and (min-width:501px) and (max-width:700px) {
@@ -2171,9 +2175,7 @@ aside ul {
 	padding-top:0;
 }
 
-#archivesSelect {
-	width:100% !important;
-}
+
 
 .content header h2 {
     padding-bottom: 20px;
@@ -2744,9 +2746,7 @@ aside li.current_page_item, aside li.current_page_parent {
 	text-align:center;
 }
 
-#archivesSelect {
-	width:400px !important;
-}
+
 
 /* end sub pages */
 }

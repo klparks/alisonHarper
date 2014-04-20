@@ -15,7 +15,8 @@
             'echo'            => 1,
             'order'           => 'DESC')); ?>
         </ul>
-        <select id="archivesSelect" class="desktop-hidden">
+        <div>
+        <li class="desktop-hidden"><select id="archivesSelect">
             <option value="" selected>Archives</option>
             <?php wp_get_archives(array(
                 'type'            => 'monthly',
@@ -26,7 +27,8 @@
                 'show_post_count' => false,
                 'echo'            => 1,
                 'order'           => 'DESC')); ?>
-        </select>
+        </select></li>
+        </div>
         </section>
     
 <!--    <section class="sidebar">
