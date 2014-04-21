@@ -3200,5 +3200,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
 #tagline { padding-top:.8em; font-size:1em; }
 }
 
+/*ipad mini querks */
+
+/* Portrait */
+@media only screen and (width:768px) and (resolution: 163dpi) {
+ #tagline { padding-top:.8em; font-size:1em; }
+}
+/* Landscape */
+@media only screen and (width:1024px) and (resolution: 163dpi) {
+ #tagline { padding-top:.8em; font-size:1em; }
+}
+
 
 
