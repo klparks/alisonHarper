@@ -627,8 +627,8 @@ function getPagingNav(){
 			'current'  => $paged,
 			'mid_size' => 1,
 			'add_args' => array_map( 'urlencode', $query_args ),
-			'prev_text' => __( '&larr; Previous' ),
-			'next_text' => __( 'Next &rarr;'),
+			'prev_text' => __( 'Previous' ),
+			'next_text' => __( 'Next'),
 	) );
 	
 	if ( $links ) :
