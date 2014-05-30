@@ -903,6 +903,12 @@ li.teamMemberBio {
 	clear:both;
 }
 
+/* meet the team*/
+.teamLine {
+	border-bottom:1px solid #aaa;
+	padding-bottom:40px;
+}
+
 .teamMemberBio .wp-post-image {
 	float:left;
 	padding-right:10px;
