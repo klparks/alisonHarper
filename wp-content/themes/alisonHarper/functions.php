@@ -10,12 +10,12 @@ define ( "HIRING_CAT_ID", "19" );
 define ( "LOCATION_ROOT_ID", "2" );
 define ( "NEW_CAT_ID", "18" );
 // Non-Location Page Ids
-define ( "WELCOME_PAGE_ID", "2078" );
-define ( "ABOUT_PAGE_ID", "2081" );
-define ( "SERVICES_PAGE_ID", "2097" );
-define ( "PORTFOLIO_PAGE_ID", "2089" );
-define ( "CONTACT_PAGE_ID", "2079" );
-define ( "TEAM_PAGE_ID", "2084" );
+define ( "WELCOME_PAGE_ID", "3224" );
+define ( "ABOUT_PAGE_ID", "3201" );
+define ( "SERVICES_PAGE_ID", "3209" );
+define ( "PORTFOLIO_PAGE_ID", "3211" );
+define ( "CONTACT_PAGE_ID", "3219" );
+define ( "TEAM_PAGE_ID", "3205" );
 
 
 define ( "BLOG_PAGE_ID", "19" );
