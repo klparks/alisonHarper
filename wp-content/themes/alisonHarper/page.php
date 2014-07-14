@@ -5,10 +5,10 @@
        <?php listLocationNav(); ?>
 
         <!-- PAGE CONTENT (context sensitive) -->
-        <?php if (getSlug() == WELCOME_PAGE_SLUG ){ /* getCityHomepage() && getCityHomepage()->ID == $post->ID) { */?>
+        <?php if ($post->ID == WELCOME_PAGE_ID ){ /* getCityHomepage() && getCityHomepage()->ID == $post->ID) { */?>
             <!-- Home Page -->
             <?php get_template_part("page-templates/page", "cityHome"); ?>
-        <?php } else if (getSlug() == TEAM_PAGE_SLUG) { ?>
+        <?php } else if ($post->ID == TEAM_PAGE_ID) { ?>
             <!-- Team Page -->
             <?php get_template_part("page-templates/page", "team"); ?>
         <?php } else { ?>

@@ -627,11 +627,11 @@ function getPortfolioPages() {
 function listTeamMembers() {
 	
 	// The Query
-	$city = getCurrentCity ( "cat_name" );
+// 	$city = getCurrentCity ( "cat_name" );
 	$the_query = new WP_Query ( array (
 			'post_type' => 'page',
-			'post_parent' => TEAM_PAGE_ID,
-			'category_name' => $city,
+			'post_parent' => TEAM_PAGE_ID_OLD,
+			//'category_name' => $city,
 			'posts_per_page' => - 1,
 			'orderby' => 'title',
 			'order' => 'ASC' 
