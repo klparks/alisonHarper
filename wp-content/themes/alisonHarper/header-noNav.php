@@ -1,8 +1,8 @@
 <?php get_template_part("page-templates/header", "head"); ?>
 <body<?php
-    if (!getCurrentCity("cat_name")) {
+    //if (!getCurrentCity("cat_name")) {
         echo "class='noLocation'";
-    }
+    //}
     ?>>
     <div class="container city">
         <header>

@@ -5,7 +5,7 @@
        <?php listLocationNav(); ?>
 
         <!-- PAGE CONTENT (context sensitive) -->
-        <?php if (getCityHomepage() && getCityHomepage()->ID == $post->ID) { ?>
+        <?php if (getSlug() == WELCOME_PAGE_SLUG ){ /* getCityHomepage() && getCityHomepage()->ID == $post->ID) { */?>
             <!-- Home Page -->
             <?php get_template_part("page-templates/page", "cityHome"); ?>
         <?php } else if (getSlug() == TEAM_PAGE_SLUG) { ?>

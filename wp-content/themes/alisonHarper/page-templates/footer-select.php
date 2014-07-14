@@ -1,4 +1,4 @@
-<div>
+<?php /* <div>
 <select name="page-dropdown" onchange='if(this.options[this.selectedIndex].value != "")document.location.href=this.options[this.selectedIndex].value;'> 
     <option value=""><?php echo esc_attr(__('Select location')); ?></option> 
     <?php
@@ -15,3 +15,4 @@
     ?>
 </select>
 </div>
+*/ ?>

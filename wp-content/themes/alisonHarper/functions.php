@@ -10,12 +10,21 @@ define ( "HIRING_CAT_ID", "19" );
 define ( "LOCATION_ROOT_ID", "2" );
 define ( "NEW_CAT_ID", "18" );
 // Non-Location Page Ids
+define ( "WELCOME_PAGE_ID", "2078" );
+define ( "ABOUT_PAGE_ID", "2081" );
+define ( "SERVICES_PAGE_ID", "2097" );
+define ( "PORTFOLIO_PAGE_ID", "2089" );
+define ( "CONTACT_PAGE_ID", "2079" );
+define ( "TEAM_PAGE_ID", "2084" );
+
+
 define ( "BLOG_PAGE_ID", "19" );
 define ( "CAREERS_PAGE_ID", "245" );
-define ( "CONTACT_PAGE_ID", "16" );
-define ( "PORTFOLIO_PAGE_ID", "95" );
-define ( "TEAM_PAGE_ID", "252" );
+define ( "CONTACT_PAGE_ID_OLD", "16" );
+define ( "PORTFOLIO_PAGE_ID_OLD", "95" );
+define ( "TEAM_PAGE_ID_OLD", "252" );
 // Page Slugs
+define ( "WELCOME_PAGE_SLUG", "welcome" );
 define ( "CAREERS_PAGE_SLUG", "careers" );
 define ( "CONTACT_PAGE_SLUG", "contact-us" );
 define ( "PORTFOLIO_PAGE_SLUG", "portfolio" );
@@ -338,54 +347,71 @@ function getLocations() {
 	return $allLocations;
 }
 function getCityHomePage($cityId = "") {
-	if (! $cityId) {
-		$cityId = getCurrentCity ( "cat_ID" );
-	}
 	
-	$locationPages = get_posts ( 'numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page' );
+	return(get_page(WELCOME_PAGE_ID));
 	
-	foreach ( $locationPages as $page ) {
-		if (in_category ( ( string ) LOCATION_ROOT_ID, $page ) && in_category ( $cityId, $page )) {
-			return $page;
-		}
-	}
+// 	if (! $cityId) {
+// 		$cityId = getCurrentCity ( "cat_ID" );
+// 	}
+	
+// 	$locationPages = get_posts ( 'numberposts=-1&category=' . LOCATION_ROOT_ID . '&orderby=title&order=ASC&post_type=page' );
+	
+// 	foreach ( $locationPages as $page ) {
+// 		if (in_category ( ( string ) LOCATION_ROOT_ID, $page ) && in_category ( $cityId, $page )) {
+// 			return $page;
+// 		}
+// 	}
 }
 function listCityChildrenPages() {
-	// Args for home
-	$locationHomePage = getCityHomePage ();
-	if (! $locationHomePage) {
-		return;
-	}
-	$excludes = '';
-	if (getLocationPage ( CAREERS_PAGE_SLUG )) {
-		$excludes = getLocationPage ( CAREERS_PAGE_SLUG )->ID;
-	}
+
 	$homeArgs = array (
 			'title_li' => '',
-			'depth' => '1',
-			'include' => $locationHomePage->ID 
-	);
-	$cityArgs = array (
-			'title_li' => '',
-			'depth' => '1',
-			'child_of' => $locationHomePage->ID,
-			'exclude' => $excludes 
-	);
-	$blogArgs = array (
-			'title_li' => '',
-			'depth' => '1',
-			'include' => BLOG_PAGE_ID 
+			'include' =>array ( WELCOME_PAGE_ID, ABOUT_PAGE_ID, SERVICES_PAGE_ID, PORTFOLIO_PAGE_ID, CONTACT_PAGE_ID, BLOG_PAGE_ID)
 	);
 	wp_list_pages ( $homeArgs );
-	wp_list_pages ( $cityArgs );
-	wp_list_pages ( $blogArgs );
+	// Args for home
+// 	$locationHomePage = getCityHomePage ();
+// 	if (! $locationHomePage) {
+// 		return;
+// 	}
+// 	$excludes = '';
+// 	if (getLocationPage ( CAREERS_PAGE_SLUG )) {
+// 		$excludes = getLocationPage ( CAREERS_PAGE_SLUG )->ID;
+// 	}
+// 	$homeArgs = array (
+// 			'title_li' => '',
+// 			'depth' => '1',
+// 			'include' => $locationHomePage->ID 
+// 	);
+// 	$cityArgs = array (
+// 			'title_li' => '',
+// 			'depth' => '1',
+// 			'child_of' => $locationHomePage->ID,
+// 			'exclude' => $excludes 
+// 	);
+// 	$blogArgs = array (
+// 			'title_li' => '',
+// 			'depth' => '1',
+// 			'include' => BLOG_PAGE_ID 
+// 	);
+// 	wp_list_pages ( $homeArgs );
+// 	wp_list_pages ( $cityArgs );
+// 	wp_list_pages ( $blogArgs );
+
+// 	$homeArgs = array (
+// 			'title_li' => '',
+// 			'depth' => '1',
+// 			'include' => WELCOME_PAGE_ID, ABOUT_PAGE_ID, SERVICES_PAGE_ID, PORTFOLIO_PAGE_ID, CONTACT_PAGE_ID, BLOG_PAGE_ID
+// 	);
+// 	wp_list_pages ( $homeArgs );
+	
 }
 function getLocationHomeOpenAnchor() {
-	if (getCurrentCity ( "cat_name" )) {
-		echo '<a class="brand" href="' . get_page_link ( getCityHomepage ()->ID ) . '">';
-	} else {
+// 	if (getCurrentCity ( "cat_name" )) {
+// 		echo '<a class="brand" href="' . get_page_link ( getCityHomepage ()->ID ) . '">';
+// 	} else {
 		echo '<a class="brand" href="' . site_url () . '">';
-	}
+// 	}
 }
 function getLocationPage($slug) {
 	if (getCurrentCity ( "cat_name" )) {
@@ -482,57 +508,91 @@ function listLocationNav() {
 	$currentPage = get_page ( get_the_ID () );
 	$rootPage = $currentPage;
 	// Args for home
-	if (getCityHomePage () && $rootPage->ID == getCityHomePage ()->ID) {
+	if ($currentPage->ID == WELCOME_PAGE_ID) {
+		echo '<aside class="uppercase left">&nbsp;';
+		echo '<ul>';
+		echo '<li class="page_item"><a href="' . get_page_link ( PORTFOLIO_PAGE_ID) . '">View our portfolio</a></li>';
+		echo '<li class="page_item"><a href="' . get_page_link ( CONTACT_PAGE_ID) . '">Drop us a note</a></li>';
+		echo '<li class="page_item"><a href="' . get_page_link ( TEAM_PAGE_ID ) . '">Meet the team</a></li>';
+		echo '<li class="page_item"><a href="' . get_page_link ( CAREERS_PAGE_ID ) . '">We\'re Hiring</a></li>';
+	} else if($currentPage->ID == CONTACT_PAGE_ID){
+		echo '<aside class="uppercase left">&nbsp;';
+		echo '<ul>';
+		echo '<li><a href="mailto:' . get_userdata ( ADMIN_USER_ID )->user_email . '">' . get_userdata ( ADMIN_USER_ID )->user_email . '</a></li>';
+		echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '">' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '</a></li>';
+	} else if($currentPage->ID == SERVICES_PAGE_ID ){
 		echo '<aside class="uppercase left noSidebar">&nbsp;';
 		echo '<ul>';
-		if (getLocationPage ( PORTFOLIO_PAGE_SLUG )) {
-			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( PORTFOLIO_PAGE_SLUG )->ID ) . '">View our portfolio</a></li>';
-		}
-		if (getLocationPage ( CONTACT_PAGE_SLUG )) {
-			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( CONTACT_PAGE_SLUG )->ID ) . '">Drop us a note</a></li>';
-		}
-		if (getLocationPage ( TEAM_PAGE_SLUG )) {
-			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( TEAM_PAGE_SLUG )->ID ) . '">Meet the team</a></li>';
-		}
-		if (isLocationHiring () && getLocationPage ( CAREERS_PAGE_SLUG )) {
-			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( CAREERS_PAGE_SLUG )->ID ) . '">We\'re Hiring</a></li>';
-		} else {
-			echo '<li class="page_item"><a href="' . get_page_link ( CAREERS_PAGE_ID ) . '">We\'re Hiring</a></li>';
-		}
-	} else if (! getCityHomePage ()) {
-		echo '<aside class="uppercase left noSidebar">&nbsp;';
-		echo '<ul>';
-		if ($currentPage->post_name == CONTACT_PAGE_SLUG) { // contact page is special too
-		                                                  // list contact info
-			echo '<li><a href="mailto:' . get_userdata ( ADMIN_USER_ID )->user_email . '">' . get_userdata ( ADMIN_USER_ID )->user_email . '</a></li>';
-			echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '">' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '</a></li>';
-		}
 	} else {
-		// make sure we're at the top level page
-		while ( ! in_category ( LOCATION_ROOT_ID, $rootPage->post_parent ) ) {
+		while ($rootPage->post_parent) {
 			$rootPage = get_page ( $rootPage->post_parent );
 		}
-		if ($currentPage->post_name == SERVICES_PAGE_SLUG || $currentPage->post_name == PORTFOLIO_PAGE_SLUG || $currentPage->post_name == CONTACT_PAGE_SLUG) {
-			echo '<aside class="uppercase left noSidebar">&nbsp;';
-			echo '<ul>';
-		} else {
-			echo '<aside class="uppercase left">&nbsp;';
-			echo '<ul>';
-		}
-		if ($currentPage->post_name == CONTACT_PAGE_SLUG) { // contact page is special too
-		                                                  // list contact info
-			echo '<li><a href="mailto:' . get_userdata ( ADMIN_USER_ID )->user_email . '">' . get_userdata ( ADMIN_USER_ID )->user_email . '</a></li>';
-			echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '">' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '</a></li>';
-		} else {
-			$childArgs = array (
-					'title_li' => '',
-					'depth' => '1',
-					'child_of' => $rootPage->ID 
-			);
-			wp_list_pages ( $childArgs );
-		}
+		echo '<aside class="uppercase left">&nbsp;';
+		echo '<ul>';
+		$childArgs = array (
+				'title_li' => '',
+				'depth' => '1',
+				'child_of' => $rootPage->ID
+		);
+		wp_list_pages ( $childArgs );
 	}
-	echo '</aside></ul>';
+
+	echo '</ul></aside>';
+	
+// 	$currentPage = get_page ( get_the_ID () );
+// 	$rootPage = $currentPage;
+// 	// Args for home
+// 	if (getCityHomePage () && $rootPage->ID == getCityHomePage ()->ID) {
+// 		echo '<aside class="uppercase left noSidebar">&nbsp;';
+// 		echo '<ul>';
+// 		if (getLocationPage ( PORTFOLIO_PAGE_SLUG )) {
+// 			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( PORTFOLIO_PAGE_SLUG )->ID ) . '">View our portfolio</a></li>';
+// 		}
+// 		if (getLocationPage ( CONTACT_PAGE_SLUG )) {
+// 			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( CONTACT_PAGE_SLUG )->ID ) . '">Drop us a note</a></li>';
+// 		}
+// 		if (getLocationPage ( TEAM_PAGE_SLUG )) {
+// 			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( TEAM_PAGE_SLUG )->ID ) . '">Meet the team</a></li>';
+// 		}
+// 		if (isLocationHiring () && getLocationPage ( CAREERS_PAGE_SLUG )) {
+// 			echo '<li class="page_item"><a href="' . get_page_link ( getLocationPage ( CAREERS_PAGE_SLUG )->ID ) . '">We\'re Hiring</a></li>';
+// 		} else {
+// 			echo '<li class="page_item"><a href="' . get_page_link ( CAREERS_PAGE_ID ) . '">We\'re Hiring</a></li>';
+// 		}
+// 	} else if (! getCityHomePage ()) {
+// 		echo '<aside class="uppercase left noSidebar">&nbsp;';
+// 		echo '<ul>';
+// 		if ($currentPage->post_name == CONTACT_PAGE_SLUG) { // contact page is special too
+// 		                                                  // list contact info
+// 			echo '<li><a href="mailto:' . get_userdata ( ADMIN_USER_ID )->user_email . '">' . get_userdata ( ADMIN_USER_ID )->user_email . '</a></li>';
+// 			echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '">' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '</a></li>';
+// 		}
+// 	} else {
+// 		// make sure we're at the top level page
+// 		while ( ! in_category ( LOCATION_ROOT_ID, $rootPage->post_parent ) ) {
+// 			$rootPage = get_page ( $rootPage->post_parent );
+// 		}
+// 		if ($currentPage->post_name == SERVICES_PAGE_SLUG || $currentPage->post_name == PORTFOLIO_PAGE_SLUG || $currentPage->post_name == CONTACT_PAGE_SLUG) {
+// 			echo '<aside class="uppercase left noSidebar">&nbsp;';
+// 			echo '<ul>';
+// 		} else {
+// 			echo '<aside class="uppercase left">&nbsp;';
+// 			echo '<ul>';
+// 		}
+// 		if ($currentPage->post_name == CONTACT_PAGE_SLUG) { // contact page is special too
+// 		                                                  // list contact info
+// 			echo '<li><a href="mailto:' . get_userdata ( ADMIN_USER_ID )->user_email . '">' . get_userdata ( ADMIN_USER_ID )->user_email . '</a></li>';
+// 			echo '<li><a class="noLinkStyle" href="tel:' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '">' . get_user_meta ( ADMIN_USER_ID, 'phone', true ) . '</a></li>';
+// 		} else {
+// 			$childArgs = array (
+// 					'title_li' => '',
+// 					'depth' => '1',
+// 					'child_of' => $rootPage->ID 
+// 			);
+// 			wp_list_pages ( $childArgs );
+// 		}
+// 	}
+// 	echo '</aside></ul>';
 }
 function getSlug() {
 	global $wp_query;

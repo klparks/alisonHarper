@@ -81,7 +81,7 @@
  </div>
 
 <div class="mobile-hidden desktop-hidden globalNavFooter"><?php get_template_part("page-templates/header", "nav"); ?></div>
-                        <?php
+                        <?php /*
                 //Welcome to city link
                 if (getCurrentCity("cat_name")) {
                     echo "<div class='location uppercase'>";
@@ -89,7 +89,7 @@
                     echo "<a class='mobile-button notRight' href='" . site_url() . "'>not right?</a>";
                     echo "</div>";
                 }
-            ?>
+            */ ?>
            
            
 </div> 
