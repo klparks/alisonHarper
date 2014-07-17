@@ -514,7 +514,7 @@ input.ui-button:hover {
 }
 	
 	
-.formGroup .required span {
+.formGroup .required > span[style] {
     float: left;
     left: -10px;
     position: relative;
